@@ -5,12 +5,17 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "codegen": "graphql-codegen",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
     "@apollo/client": "^3.11.10",
+    "@apollo/experimental-nextjs-app-support": "^0.11.6",
     "@apollo/server": "^4.11.2",
+    "@as-integrations/next": "^3.2.0",
+    "@evyweb/ioctopus": "^1.0.0",
+    "@formkit/auto-animate": "^0.8.2",
     "graphql": "^16.9.0",
     "next": "15.0.3",
     "react": "19.0.0-rc-66855b96-20241106",

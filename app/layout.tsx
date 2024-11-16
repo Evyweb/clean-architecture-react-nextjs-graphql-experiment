@@ -1,6 +1,9 @@
-import type { Metadata } from "next";
+import type {Metadata} from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import ApolloWrapper from "@/src/client/presentation/providers/ApolloProvider";
+import {dependencyContainer} from "@/src/client/DependencyInjection";
+import {DependencyProvider} from "@/src/client/presentation/providers/DependencyProvider";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -28,7 +31,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+          <DependencyProvider container={dependencyContainer}>
+            <ApolloWrapper>{children}</ApolloWrapper>
+          </DependencyProvider>
       </body>
     </html>
   );
