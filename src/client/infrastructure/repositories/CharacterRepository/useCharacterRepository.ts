@@ -1,8 +1,8 @@
 import {ICharacterRepository} from "@/src/client/application/ports/driven/ICharacterRepository";
 import {CreateCharacterDTO} from "@/src/client/application/usecases/CreateCharacter/CreateCharacterDTO";
-import {useCreateCharacterMutation} from "@/src/client/infrastructure/repositories/useCreateCharacterMutation";
+import {useCreateCharacterMutation} from "@/src/client/infrastructure/repositories/CharacterRepository/useCreateCharacterMutation";
 import {Character} from "@/src/client/domain/Character";
-import {useLoadCharactersQuery} from "@/src/client/infrastructure/repositories/useLoadCharactersQuery";
+import {useLoadCharactersQuery} from "@/src/client/infrastructure/repositories/CharacterRepository/useLoadCharactersQuery";
 
 export const useCharacterRepository = (): ICharacterRepository => {
     const {createCharacterMutation} = useCreateCharacterMutation();

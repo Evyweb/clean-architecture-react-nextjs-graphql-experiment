@@ -3,7 +3,7 @@
 import {ICreateCharacterUseCase} from "@/src/client/application/ports/driver/ICreateCharacterUseCase";
 import {ICharacterRepository} from "@/src/client/application/ports/driven/ICharacterRepository";
 import {useCreateCharacterUseCase} from "@/src/client/application/usecases/CreateCharacter/useCreateCharacterUseCase";
-import {useCharacterRepository} from "@/src/client/infrastructure/repositories/useCharacterRepository";
+import {useCharacterRepository} from "@/src/client/infrastructure/repositories/CharacterRepository/useCharacterRepository";
 import {
     ICreateCharacterController,
     useCreateCharacterController
