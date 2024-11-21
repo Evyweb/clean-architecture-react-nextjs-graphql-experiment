@@ -4,7 +4,7 @@ import {gql} from "graphql-tag";
 let tempIdCounter = 0;
 
 export const useCreateCharacterMutation = () => {
-    const [createCharacterMutation, createCharacterStatus] = useMutation(
+    const [createCharacterMutation] = useMutation(
         gql`
             mutation CreateCharacter($name: String!, $species: String!, $homeworld: String!) {
                 createCharacter(name: $name, species: $species, homeworld: $homeworld) {
@@ -49,7 +49,6 @@ export const useCreateCharacterMutation = () => {
     );
 
     return {
-        createCharacterMutation,
-        createCharacterStatus,
+        createCharacterMutation
     };
 };
