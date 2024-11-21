@@ -7,9 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "deps:all": "npx depcruise src --include-only \"^src\" -x \"^src\/(server|client)\/DependencyInjection\" --output-type dot | dot -T svg | depcruise-wrap-stream-in-html > tools/dependency-graph.html",
-    "deps:server": "npx depcruise src --include-only \"^src\/server\" -x \"^src\/server\/DependencyInjection\" --output-type dot | dot -T svg | depcruise-wrap-stream-in-html > tools/server-dependency-graph.html",
-    "deps:client": "npx depcruise src --include-only \"^src\/client\" -x \"^src\/client\/DependencyInjection\" --output-type dot | dot -T svg | depcruise-wrap-stream-in-html > tools/client-dependency-graph.html"
+    "deps:all": "npx depcruise src --include-only \"^src\" -x \"DependencyInjection|useDependency|DependencyProvider|providers\" --output-type dot | dot -T svg | depcruise-wrap-stream-in-html > tools/index.html",
+    "deps:server": "npx depcruise src --include-only \"^src\/server\" -x \"DependencyInjection|useDependency|DependencyProvider|providers\" --output-type dot | dot -T svg | depcruise-wrap-stream-in-html > tools/server-dependency-graph.html",
+    "deps:client": "npx depcruise src --include-only \"^src\/client\" -x \"DependencyInjection|useDependency|DependencyProvider|providers\" --output-type dot | dot -T svg | depcruise-wrap-stream-in-html > tools/client-dependency-graph.html"
   },
   "dependencies": {
     "@apollo/client": "^3.11.10",

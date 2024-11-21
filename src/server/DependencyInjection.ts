@@ -1,36 +1,56 @@
 import {createContainer, InjectionTokens} from "@evyweb/ioctopus";
-import {InMemoryCharacterRepository} from "@/src/server/infrastructure/repositories/InMemoryCharacterRepository";
-import {CharactersController} from "@/src/server/presentation/controllers/CharactersController";
-import {LoadCharactersUseCase} from "@/src/server/application/usecases/LoadCharactersUseCase/LoadCharactersUseCase";
-import {UuidIdentityProvider} from "@/src/server/infrastructure/providers/UuidIdentityProvider";
-import {CreateCharacterUseCase} from "@/src/server/application/usecases/CreateCharacterUseCase/CreateCharacterUseCase";
-import {ICharacterRepository} from "@/src/server/application/ports/driven/ICharacterRepository";
-import {IGetCharactersUseCase} from "@/src/server/application/ports/driver/IGetCharactersUseCase";
-import {IIdentityProvider} from "@/src/server/application/ports/driven/IIdentityProvider";
-import {ICreateCharacterUseCase} from "@/src/server/application/ports/driver/ICreateCharacterUseCase";
+import {InMemoryCharacterRepository} from "@/src/server/infrastructure/InMemoryCharacterRepository";
+import {GetCharactersUseCase} from "@/src/server/application/usecases/GetCharactersUseCase";
+import {UuidIdentityProvider} from "@/src/server/infrastructure/UuidIdentityProvider";
+import {CreateCharacterUseCase} from "@/src/server/application/usecases/CreateCharacterUseCase";
+import {ICharacterRepository} from "@/src/server/application/ports/ICharacterRepository";
+import {IGetCharactersUseCase} from "@/src/server/application/ports/IGetCharactersUseCase";
+import {IIdentityProvider} from "@/src/server/application/ports/IIdentityProvider";
+import {ICreateCharacterUseCase} from "@/src/server/application/ports/ICreateCharacterUseCase";
+import {
+    CreateCharacterController,
+    ICreateCharacterController
+} from "@/src/server/presentation/controllers/CreateCharacterController";
+import {
+    GetCharactersController,
+    IGetCharactersController
+} from "@/src/server/presentation/controllers/GetCharactersController";
 
 const DI_SYMBOLS: InjectionTokens = {
     CHARACTER_REPOSITORY: Symbol('CHARACTER_REPOSITORY'),
-    LOAD_CHARACTERS_USE_CASE: Symbol('LOAD_CHARACTERS_USE_CASE'),
+    GET_CHARACTERS_USE_CASE: Symbol('GET_CHARACTERS_USE_CASE'),
     IDENTITY_PROVIDER: Symbol('IDENTITY_PROVIDER'),
     CREATE_CHARACTER_USE_CASE: Symbol('CREATE_CHARACTER_USE_CASE'),
-    CHARACTERS_CONTROLLER: Symbol('CHARACTERS_CONTROLLER'),
+    CREATE_CHARACTER_CONTROLLER: Symbol('CREATE_CHARACTER_CONTROLLER'),
+    GET_CHARACTERS_CONTROLLER: Symbol('GET_CHARACTERS_CONTROLLER'),
 }
 
 type DI_RETURN_TYPES = {
     CHARACTER_REPOSITORY: ICharacterRepository,
-    LOAD_CHARACTERS_USE_CASE: IGetCharactersUseCase,
+    GET_CHARACTERS_USE_CASE: IGetCharactersUseCase,
     IDENTITY_PROVIDER: IIdentityProvider,
     CREATE_CHARACTER_USE_CASE: ICreateCharacterUseCase,
-    CHARACTERS_CONTROLLER: CharactersController,
+    CREATE_CHARACTER_CONTROLLER: ICreateCharacterController,
+    GET_CHARACTERS_CONTROLLER: IGetCharactersController,
 }
 
 const container = createContainer();
-container.bind(DI_SYMBOLS.CHARACTER_REPOSITORY).toClass(InMemoryCharacterRepository);
-container.bind(DI_SYMBOLS.LOAD_CHARACTERS_USE_CASE).toClass(LoadCharactersUseCase, [DI_SYMBOLS.CHARACTER_REPOSITORY]);
-container.bind(DI_SYMBOLS.IDENTITY_PROVIDER).toClass(UuidIdentityProvider);
-container.bind(DI_SYMBOLS.CREATE_CHARACTER_USE_CASE).toClass(CreateCharacterUseCase, [DI_SYMBOLS.CHARACTER_REPOSITORY, DI_SYMBOLS.IDENTITY_PROVIDER]);
-container.bind(DI_SYMBOLS.CHARACTERS_CONTROLLER).toClass(CharactersController, [DI_SYMBOLS.LOAD_CHARACTERS_USE_CASE, DI_SYMBOLS.CREATE_CHARACTER_USE_CASE]);
+
+container.bind(DI_SYMBOLS.CHARACTER_REPOSITORY).toHigherOrderFunction(InMemoryCharacterRepository);
+container.bind(DI_SYMBOLS.GET_CHARACTERS_USE_CASE).toHigherOrderFunction(GetCharactersUseCase, {
+    characterRepository: DI_SYMBOLS.CHARACTER_REPOSITORY
+});
+container.bind(DI_SYMBOLS.IDENTITY_PROVIDER).toHigherOrderFunction(UuidIdentityProvider);
+container.bind(DI_SYMBOLS.CREATE_CHARACTER_USE_CASE).toHigherOrderFunction(CreateCharacterUseCase, {
+    characterRepository: DI_SYMBOLS.CHARACTER_REPOSITORY,
+    identityProvider: DI_SYMBOLS.IDENTITY_PROVIDER
+});
+container.bind(DI_SYMBOLS.CREATE_CHARACTER_CONTROLLER).toHigherOrderFunction(CreateCharacterController, {
+    createCharacterUseCase: DI_SYMBOLS.CREATE_CHARACTER_USE_CASE
+});
+container.bind(DI_SYMBOLS.GET_CHARACTERS_CONTROLLER).toHigherOrderFunction(GetCharactersController, {
+    getCharactersUseCase: DI_SYMBOLS.GET_CHARACTERS_USE_CASE
+});
 
 export function inject<K extends keyof typeof DI_SYMBOLS>(
     symbol: K

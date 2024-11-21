@@ -1,4 +1,4 @@
-export interface GetAllCharactersDTO {
+export interface GetCharactersDTO {
     characters: {
         id: string;
         name: string;

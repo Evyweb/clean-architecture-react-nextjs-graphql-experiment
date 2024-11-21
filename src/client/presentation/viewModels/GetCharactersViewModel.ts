@@ -1,4 +1,4 @@
-export interface LoadCharactersViewModel {
+export interface GetCharactersViewModel {
     characters: {
         id: string;
         name: string;

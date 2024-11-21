@@ -1,9 +1,9 @@
 import {Character} from "@/src/server/domain/Character";
-import {ICreateCharacterPresenter} from "@/src/server/application/ports/driven/ICreateCharacterPresenter";
+import {ICreateCharacterPresenter} from "@/src/server/application/ports/ICreateCharacterPresenter";
 import {CreateCharacterViewModel} from "@/src/server/presentation/viewModels/CreateCharacterViewModel";
 
-export class CreateCharacterPresenter implements ICreateCharacterPresenter {
-    private viewModel: CreateCharacterViewModel = {
+export const CreateCharacterPresenter = (): ICreateCharacterPresenter => {
+    const viewModel: CreateCharacterViewModel = {
         createdCharacter: {
             id: '',
             name: '',
@@ -12,16 +12,18 @@ export class CreateCharacterPresenter implements ICreateCharacterPresenter {
         }
     };
 
-    presentCharacter(character: Character): void {
-        this.viewModel.createdCharacter = {
-            id: character.id,
-            name: character.name,
-            species: character.species,
-            homeworld: character.homeworld,
-        };
-    }
+    return {
+        presentCharacter(character: Character): void {
+            viewModel.createdCharacter = {
+                id: character.id,
+                name: character.name,
+                species: character.species,
+                homeworld: character.homeworld,
+            };
+        },
 
-    getViewModel(): CreateCharacterViewModel {
-        return this.viewModel;
+        getViewModel<T>(): T {
+            return viewModel as T;
+        }
     }
 }

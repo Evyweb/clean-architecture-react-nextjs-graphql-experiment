@@ -1,9 +1,10 @@
-import {ILoadCharactersPresenter} from "@/src/client/application/ports/driven/ILoadCharactersPresenter";
-import {LoadCharactersViewModel} from "@/src/client/presentation/viewModels/LoadCharactersViewModel";
+import {IGetCharactersPresenter} from "@/src/client/application/ports/IGetCharactersPresenter";
 import {Character} from "@/src/client/domain/Character";
 
-export const LoadCharactersPresenter = (): ILoadCharactersPresenter => {
-    const viewModel: LoadCharactersViewModel = {
+import {GetCharactersViewModel} from "@/src/client/presentation/viewModels/GetCharactersViewModel";
+
+export const GetCharactersPresenter = (): IGetCharactersPresenter => {
+    const viewModel: GetCharactersViewModel = {
         characters: []
     };
 
@@ -15,9 +16,8 @@ export const LoadCharactersPresenter = (): ILoadCharactersPresenter => {
                 description: `${character.species} from ${character.homeworld}`
             }));
         },
-        getViewModel() {
-            return viewModel;
+        getViewModel<T>(): T {
+            return viewModel as T;
         }
     };
-
 }

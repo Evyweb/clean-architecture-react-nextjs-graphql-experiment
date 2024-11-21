@@ -4,8 +4,8 @@ import {useAutoAnimate} from '@formkit/auto-animate/react';
 import {useDependency} from "@/src/client/presentation/hooks/useDependency";
 
 const CharactersList = () => {
-    const loadCharactersController = useDependency('loadCharactersController');
-    const viewModel = loadCharactersController.loadCharacters();
+    const getCharactersController = useDependency('getCharactersController');
+    const viewModel = getCharactersController.getCharacters();
 
     const [animationParent] = useAutoAnimate();
 
