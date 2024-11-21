@@ -2,7 +2,7 @@ import {ILoadCharactersPresenter} from "@/src/client/application/ports/driven/IL
 import {LoadCharactersViewModel} from "@/src/client/presentation/viewModels/LoadCharactersViewModel";
 import {Character} from "@/src/client/domain/Character";
 
-export const LoadCharactersPresenter = (): ILoadCharactersPresenter<LoadCharactersViewModel> => {
+export const LoadCharactersPresenter = (): ILoadCharactersPresenter => {
     const viewModel: LoadCharactersViewModel = {
         characters: []
     };

@@ -3,8 +3,8 @@ import {LoadCharactersPresenter} from "@/src/server/presentation/presenters/Load
 import {CreateCharacterRequest} from "@/src/server/presentation/requests/CreateCharacterRequest";
 import {ICreateCharacterUseCase} from "@/src/server/application/ports/driver/ICreateCharacterUseCase";
 import {CreateCharacterPresenter} from "@/src/server/presentation/presenters/CreateCharacterPresenter";
-import {CharacterViewModel} from "@/src/server/presentation/viewModels/CharacterViewModel";
-import {CreatedCharacterViewModel} from "@/src/server/presentation/viewModels/CreatedCharacterViewModel";
+import {CreateCharacterViewModel} from "@/src/server/presentation/viewModels/CreateCharacterViewModel";
+import {GetCharactersViewModel} from "@/src/server/presentation/viewModels/GetCharactersViewModel";
 
 export class CharactersController {
     constructor(
@@ -13,13 +13,13 @@ export class CharactersController {
     ) {
     }
 
-    async getCharacters(): Promise<CharacterViewModel[]> {
+    async getCharacters(): Promise<GetCharactersViewModel> {
         const presenter = new LoadCharactersPresenter();
         await this.getCharactersUseCase.execute(presenter);
-        return presenter.getViewModels();
+        return presenter.getViewModel();
     }
 
-    async createCharacter(request: CreateCharacterRequest): Promise<CreatedCharacterViewModel> {
+    async createCharacter(request: CreateCharacterRequest): Promise<CreateCharacterViewModel> {
         const presenter = new CreateCharacterPresenter();
         // Validate request here
         const createCharacterDTO = {

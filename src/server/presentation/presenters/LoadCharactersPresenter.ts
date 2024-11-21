@@ -1,12 +1,14 @@
 import {ILoadCharactersPresenter} from "@/src/server/application/ports/driven/ILoadCharactersPresenter";
 import {Character} from "@/src/server/domain/Character";
-import {CharacterViewModel} from "@/src/server/presentation/viewModels/CharacterViewModel";
+import {GetCharactersViewModel} from "@/src/server/presentation/viewModels/GetCharactersViewModel";
 
-export class LoadCharactersPresenter implements ILoadCharactersPresenter<CharacterViewModel[]> {
-    private viewModels: CharacterViewModel[] = [];
+export class LoadCharactersPresenter implements ILoadCharactersPresenter {
+    private viewModel: GetCharactersViewModel = {
+        characters: []
+    };
 
     presentCharacters(characters: Character[]): void {
-        this.viewModels = characters.map(character => ({
+        this.viewModel.characters = characters.map(character => ({
             id: character.id,
             name: character.name,
             species: character.species,
@@ -14,7 +16,7 @@ export class LoadCharactersPresenter implements ILoadCharactersPresenter<Charact
         }));
     }
 
-    getViewModels(): CharacterViewModel[] {
-        return this.viewModels;
+    getViewModel(): GetCharactersViewModel {
+        return this.viewModel;
     }
 }

@@ -26,10 +26,16 @@ const controller = inject('CHARACTERS_CONTROLLER');
 const server = new ApolloServer({
     resolvers: {
         Query: {
-            characters: () => controller.getCharacters(),
+            characters: async () => {
+                const viewModel = await controller.getCharacters();
+                return viewModel.characters;
+            },
         },
         Mutation: {
-            createCharacter: (_: never, request: CreateCharacterRequest) => controller.createCharacter(request),
+            createCharacter: async (_: never, request: CreateCharacterRequest) => {
+                const viewModel = await controller.createCharacter(request);
+                return viewModel.createdCharacter;
+            },
         },
     },
     typeDefs: gql`${TYPE_DEFS}`,
