@@ -1,7 +1,17 @@
 import {useSuspenseQuery} from "@apollo/client";
 import {GetAllCharactersDTO} from "@/src/client/infrastructure/dtos/GetAllCharactersDTO";
 import {gql} from "graphql-tag";
-import {GET_CHARACTERS} from "@/src/shared/graphQL/queries";
+
+const GET_CHARACTERS = `
+    query {
+        characters {
+            id
+            name
+            species
+            homeworld
+        }
+    }
+`;
 
 export const useLoadCharactersQuery = (): GetAllCharactersDTO => {
     const {data} = useSuspenseQuery<GetAllCharactersDTO>(gql`${GET_CHARACTERS}`);

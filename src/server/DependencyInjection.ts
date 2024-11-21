@@ -4,9 +4,9 @@ import {CharactersController} from "@/src/server/presentation/controllers/Charac
 import {LoadCharactersUseCase} from "@/src/server/application/usecases/LoadCharactersUseCase/LoadCharactersUseCase";
 import {UuidIdentityProvider} from "@/src/server/infrastructure/providers/UuidIdentityProvider";
 import {CreateCharacterUseCase} from "@/src/server/application/usecases/CreateCharacterUseCase/CreateCharacterUseCase";
-import {CharacterRepository} from "@/src/server/application/ports/driven/CharacterRepository";
+import {ICharacterRepository} from "@/src/server/application/ports/driven/ICharacterRepository";
 import {IGetCharactersUseCase} from "@/src/server/application/ports/driver/IGetCharactersUseCase";
-import {IdentityProvider} from "@/src/server/application/ports/driven/IdentityProvider";
+import {IIdentityProvider} from "@/src/server/application/ports/driven/IIdentityProvider";
 import {ICreateCharacterUseCase} from "@/src/server/application/ports/driver/ICreateCharacterUseCase";
 
 const DI_SYMBOLS: InjectionTokens = {
@@ -18,9 +18,9 @@ const DI_SYMBOLS: InjectionTokens = {
 }
 
 type DI_RETURN_TYPES = {
-    CHARACTER_REPOSITORY: CharacterRepository,
+    CHARACTER_REPOSITORY: ICharacterRepository,
     LOAD_CHARACTERS_USE_CASE: IGetCharactersUseCase,
-    IDENTITY_PROVIDER: IdentityProvider,
+    IDENTITY_PROVIDER: IIdentityProvider,
     CREATE_CHARACTER_USE_CASE: ICreateCharacterUseCase,
     CHARACTERS_CONTROLLER: CharactersController,
 }

@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "deps:all": "npx depcruise src --include-only \"^src\" -x \"^src\/(server|client)\/DependencyInjection\" --output-type dot | dot -T svg | depcruise-wrap-stream-in-html > tools/dependency-graph.html",
+    "deps:server": "npx depcruise src --include-only \"^src\/server\" -x \"^src\/server\/DependencyInjection\" --output-type dot | dot -T svg | depcruise-wrap-stream-in-html > tools/server-dependency-graph.html",
+    "deps:client": "npx depcruise src --include-only \"^src\/client\" -x \"^src\/client\/DependencyInjection\" --output-type dot | dot -T svg | depcruise-wrap-stream-in-html > tools/client-dependency-graph.html"
   },
   "dependencies": {
     "@apollo/client": "^3.11.10",
@@ -24,6 +27,7 @@
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "dependency-cruiser": "^16.6.0",
     "eslint": "^8",
     "eslint-config-next": "15.0.3",
     "postcss": "^8",

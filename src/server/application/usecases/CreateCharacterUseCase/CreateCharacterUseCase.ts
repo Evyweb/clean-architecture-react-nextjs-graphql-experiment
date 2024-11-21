@@ -1,14 +1,14 @@
-import {CharacterRepository} from "@/src/server/application/ports/driven/CharacterRepository";
+import {ICharacterRepository} from "@/src/server/application/ports/driven/ICharacterRepository";
 import {CreateCharacterDTO} from "@/src/server/application/usecases/CreateCharacterUseCase/CreateCharacterDTO";
 import {Character} from "@/src/server/domain/Character";
 import {ICreateCharacterUseCase} from "@/src/server/application/ports/driver/ICreateCharacterUseCase";
 import {ICreateCharacterPresenter} from "@/src/server/application/ports/driven/ICreateCharacterPresenter";
-import {IdentityProvider} from "@/src/server/application/ports/driven/IdentityProvider";
+import {IIdentityProvider} from "@/src/server/application/ports/driven/IIdentityProvider";
 
 export class CreateCharacterUseCase implements ICreateCharacterUseCase {
     constructor(
-        private readonly characterRepository: CharacterRepository,
-        private readonly identityProvider: IdentityProvider,
+        private readonly characterRepository: ICharacterRepository,
+        private readonly identityProvider: IIdentityProvider,
     ) {
     }
 

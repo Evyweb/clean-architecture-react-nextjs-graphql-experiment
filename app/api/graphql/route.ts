@@ -3,7 +3,23 @@ import {ApolloServer} from '@apollo/server';
 import {gql} from 'graphql-tag';
 import {CreateCharacterRequest} from "@/src/server/presentation/requests/CreateCharacterRequest";
 import {inject} from "@/src/server/DependencyInjection";
-import {TYPE_DEFS} from "@/src/shared/graphQL/types";
+
+export const TYPE_DEFS = `
+    type Query {
+        characters: [Character]
+    }
+    
+    type Mutation {
+        createCharacter(name: String!, species: String!, homeworld: String!): Character
+    }
+    
+    type Character {
+        id: String
+        name: String
+        species: String
+        homeworld: String
+    }
+`
 
 const controller = inject('CHARACTERS_CONTROLLER');
 
