@@ -2,7 +2,7 @@ import {ILoadCharactersPresenter} from "@/src/server/application/ports/driven/IL
 import {Character} from "@/src/server/domain/Character";
 import {CharacterViewModel} from "@/src/server/presentation/viewModels/CharacterViewModel";
 
-export class LoadCharactersPresenter implements ILoadCharactersPresenter {
+export class LoadCharactersPresenter implements ILoadCharactersPresenter<CharacterViewModel[]> {
     private viewModels: CharacterViewModel[] = [];
 
     presentCharacters(characters: Character[]): void {

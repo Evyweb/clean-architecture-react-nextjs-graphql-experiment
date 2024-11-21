@@ -2,7 +2,7 @@ import {Character} from "@/src/server/domain/Character";
 import {ICreateCharacterPresenter} from "@/src/server/application/ports/driven/ICreateCharacterPresenter";
 import {CreatedCharacterViewModel} from "@/src/server/presentation/viewModels/CreatedCharacterViewModel";
 
-export class CreateCharacterPresenter implements ICreateCharacterPresenter {
+export class CreateCharacterPresenter implements ICreateCharacterPresenter<CreatedCharacterViewModel> {
     private viewModel: CreatedCharacterViewModel = {
         id: '',
         name: '',

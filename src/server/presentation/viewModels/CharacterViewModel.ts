@@ -1,5 +1,6 @@
 export interface CharacterViewModel {
     id: string;
     name: string;
-    description: string;
+    species: string;
+    homeworld: string;
 }
