@@ -1,13 +1,17 @@
 import {useDependency} from "@/src/client/presentation/hooks/useDependency";
 import {CreateCharacterRequest} from "@/src/client/presentation/requests/CreateCharacterRequest";
-import {CreateCharacterUseCaseRequest} from "@/src/client/application/usecases/CreateCharacter/CreateCharacterUseCaseRequest";
+import {
+    CreateCharacterUseCaseRequest
+} from "@/src/client/application/usecases/CreateCharacter/CreateCharacterUseCaseRequest";
+import {CreateCharacterUseCase} from "@/src/client/application/usecases/CreateCharacter/CreateCharacterUseCase";
 
 export interface ICreateCharacterController {
     createCharacter(request: CreateCharacterRequest): Promise<void>;
 }
 
 export const useCreateCharacterController = (): ICreateCharacterController => {
-    const useCase = useDependency('createCharacterUseCase');
+    const repository = useDependency('characterRepository');
+    const useCase = CreateCharacterUseCase(repository);
 
     return {
         createCharacter: async (request: CreateCharacterUseCaseRequest) => {

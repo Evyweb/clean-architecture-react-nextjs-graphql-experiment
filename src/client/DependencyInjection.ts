@@ -1,8 +1,6 @@
 'use client';
 
-import {ICreateCharacterUseCase} from "@/src/client/application/ports/ICreateCharacterUseCase";
 import {ICharacterRepository} from "@/src/client/application/ports/ICharacterRepository";
-import {useCreateCharacterUseCase} from "@/src/client/application/usecases/CreateCharacter/useCreateCharacterUseCase";
 import {useCharacterRepository} from "@/src/client/infrastructure/useCharacterRepository";
 import {
     ICreateCharacterController,
@@ -12,23 +10,17 @@ import {
     IGetCharactersController,
     useGetCharactersController
 } from "@/src/client/presentation/controllers/useGetCharactersController";
-import {IGetCharactersUseCase} from "@/src/client/application/ports/IGetCharactersUseCase";
-import {useGetCharactersUseCase} from "@/src/client/application/usecases/GetCharacters/useGetCharactersUseCase";
 
 type Hook<T> = () => T;
 
 export type DependencyContainer = {
-    createCharacterUseCase: Hook<ICreateCharacterUseCase>;
     characterRepository: Hook<ICharacterRepository>;
     createCharacterController: Hook<ICreateCharacterController>;
     getCharactersController: Hook<IGetCharactersController>;
-    getCharactersUseCase: Hook<IGetCharactersUseCase>;
 }
 
 export const dependencyContainer: DependencyContainer = {
-    createCharacterUseCase: useCreateCharacterUseCase,
     characterRepository: useCharacterRepository,
     createCharacterController: useCreateCharacterController,
     getCharactersController: useGetCharactersController,
-    getCharactersUseCase: useGetCharactersUseCase
 };
