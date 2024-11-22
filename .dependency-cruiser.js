@@ -70,6 +70,8 @@ module.exports = {
   ],
   options: {
 
+    baseDir: './',
+
     /* Which modules not to follow further when encountered */
     doNotFollow: {
       /* path: an array of regular expressions in strings to match against */

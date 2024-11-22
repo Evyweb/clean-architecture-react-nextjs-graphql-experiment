@@ -127,7 +127,7 @@
 <!-- src/client/DependencyInjection.ts -->
 <g id="node1" class="node">
 <title>src/client/DependencyInjection.ts</title>
-<g id="a_node1"><a xlink:href="src/client/DependencyInjection.ts" xlink:title="DependencyInjection.ts">
+<g id="a_node1"><a xlink:href="https://github.com/Evyweb/star-wars-app/blob/master/src/client/DependencyInjection.ts" xlink:title="DependencyInjection.ts">
 <path fill="#ddfeff" stroke="black" d="M129.83,-160.25C129.83,-160.25 30.17,-160.25 30.17,-160.25 27.08,-160.25 24,-157.17 24,-154.08 24,-154.08 24,-147.92 24,-147.92 24,-144.83 27.08,-141.75 30.17,-141.75 30.17,-141.75 129.83,-141.75 129.83,-141.75 132.92,-141.75 136,-144.83 136,-147.92 136,-147.92 136,-154.08 136,-154.08 136,-157.17 132.92,-160.25 129.83,-160.25"/>
 <text text-anchor="start" x="32" y="-147.7" font-family="Helvetica,sans-Serif" font-size="9.00">DependencyInjection.ts</text>
 </a>
@@ -136,7 +136,7 @@
 <!-- src/client/application/ports/ICharacterRepository.ts -->
 <g id="node2" class="node">
 <title>src/client/application/ports/ICharacterRepository.ts</title>
-<g id="a_node2"><a xlink:href="src/client/application/ports/ICharacterRepository.ts" xlink:title="ICharacterRepository.ts">
+<g id="a_node2"><a xlink:href="https://github.com/Evyweb/star-wars-app/blob/master/src/client/application/ports/ICharacterRepository.ts" xlink:title="ICharacterRepository.ts">
 <polygon fill="#fb6969" stroke="black" points="455.25,-95.25 344,-95.25 344,-76.75 455.25,-76.75 455.25,-95.25"/>
 <text text-anchor="start" x="352" y="-82.7" font-family="Helvetica,sans-Serif" font-size="9.00">ICharacterRepository.ts</text>
 </a>
@@ -151,7 +151,7 @@
 <!-- src/client/application/ports/ICreateCharacterUseCase.ts -->
 <g id="node3" class="node">
 <title>src/client/application/ports/ICreateCharacterUseCase.ts</title>
-<g id="a_node3"><a xlink:href="src/client/application/ports/ICreateCharacterUseCase.ts" xlink:title="ICreateCharacterUseCase.ts">
+<g id="a_node3"><a xlink:href="https://github.com/Evyweb/star-wars-app/blob/master/src/client/application/ports/ICreateCharacterUseCase.ts" xlink:title="ICreateCharacterUseCase.ts">
 <polygon fill="#fb6969" stroke="black" points="466.5,-126.25 332.75,-126.25 332.75,-107.75 466.5,-107.75 466.5,-126.25"/>
 <text text-anchor="start" x="340.75" y="-113.7" font-family="Helvetica,sans-Serif" font-size="9.00">ICreateCharacterUseCase.ts</text>
 </a>
@@ -166,7 +166,7 @@
 <!-- src/client/application/ports/IGetCharactersUseCase.ts -->
 <g id="node4" class="node">
 <title>src/client/application/ports/IGetCharactersUseCase.ts</title>
-<g id="a_node4"><a xlink:href="src/client/application/ports/IGetCharactersUseCase.ts" xlink:title="IGetCharactersUseCase.ts">
+<g id="a_node4"><a xlink:href="https://github.com/Evyweb/star-wars-app/blob/master/src/client/application/ports/IGetCharactersUseCase.ts" xlink:title="IGetCharactersUseCase.ts">
 <polygon fill="#fb6969" stroke="black" points="462,-64.25 337.25,-64.25 337.25,-45.75 462,-45.75 462,-64.25"/>
 <text text-anchor="start" x="345.25" y="-51.7" font-family="Helvetica,sans-Serif" font-size="9.00">IGetCharactersUseCase.ts</text>
 </a>
@@ -181,7 +181,7 @@
 <!-- src/client/application/usecases/useCreateCharacterUseCase.ts -->
 <g id="node5" class="node">
 <title>src/client/application/usecases/useCreateCharacterUseCase.ts</title>
-<g id="a_node5"><a xlink:href="src/client/application/usecases/useCreateCharacterUseCase.ts" xlink:title="useCreateCharacterUseCase.ts">
+<g id="a_node5"><a xlink:href="https://github.com/Evyweb/star-wars-app/blob/master/src/client/application/usecases/useCreateCharacterUseCase.ts" xlink:title="useCreateCharacterUseCase.ts">
 <polygon fill="#fb6969" stroke="black" points="307.25,-108.25 160.75,-108.25 160.75,-89.75 307.25,-89.75 307.25,-108.25"/>
 <text text-anchor="start" x="168.75" y="-95.7" font-family="Helvetica,sans-Serif" font-size="9.00">useCreateCharacterUseCase.ts</text>
 </a>
@@ -196,7 +196,7 @@
 <!-- src/client/application/usecases/useGetCharactersUseCase.ts -->
 <g id="node6" class="node">
 <title>src/client/application/usecases/useGetCharactersUseCase.ts</title>
-<g id="a_node6"><a xlink:href="src/client/application/usecases/useGetCharactersUseCase.ts" xlink:title="useGetCharactersUseCase.ts">
+<g id="a_node6"><a xlink:href="https://github.com/Evyweb/star-wars-app/blob/master/src/client/application/usecases/useGetCharactersUseCase.ts" xlink:title="useGetCharactersUseCase.ts">
 <polygon fill="#fb6969" stroke="black" points="302.75,-77.25 165.25,-77.25 165.25,-58.75 302.75,-58.75 302.75,-77.25"/>
 <text text-anchor="start" x="173.25" y="-64.7" font-family="Helvetica,sans-Serif" font-size="9.00">useGetCharactersUseCase.ts</text>
 </a>
@@ -211,7 +211,7 @@
 <!-- src/client/infrastructure/useCharacterRepository.ts -->
 <g id="node7" class="node">
 <title>src/client/infrastructure/useCharacterRepository.ts</title>
-<g id="a_node7"><a xlink:href="src/client/infrastructure/useCharacterRepository.ts" xlink:title="useCharacterRepository.ts">
+<g id="a_node7"><a xlink:href="https://github.com/Evyweb/star-wars-app/blob/master/src/client/infrastructure/useCharacterRepository.ts" xlink:title="useCharacterRepository.ts">
 <polygon fill="#6cbaff" stroke="black" points="296,-220.25 172,-220.25 172,-201.75 296,-201.75 296,-220.25"/>
 <text text-anchor="start" x="180" y="-207.7" font-family="Helvetica,sans-Serif" font-size="9.00">useCharacterRepository.ts</text>
 </a>
@@ -226,7 +226,7 @@
 <!-- src/client/presentation/controllers/useCreateCharacterController.ts -->
 <g id="node8" class="node">
 <title>src/client/presentation/controllers/useCreateCharacterController.ts</title>
-<g id="a_node8"><a xlink:href="src/client/presentation/controllers/useCreateCharacterController.ts" xlink:title="useCreateCharacterController.ts">
+<g id="a_node8"><a xlink:href="https://github.com/Evyweb/star-wars-app/blob/master/src/client/presentation/controllers/useCreateCharacterController.ts" xlink:title="useCreateCharacterController.ts">
 <polygon fill="#9fff9f" stroke="black" points="308,-320.25 160,-320.25 160,-301.75 308,-301.75 308,-320.25"/>
 <text text-anchor="start" x="168" y="-307.7" font-family="Helvetica,sans-Serif" font-size="9.00">useCreateCharacterController.ts</text>
 </a>
@@ -241,7 +241,7 @@
 <!-- src/client/presentation/controllers/useGetCharactersController.ts -->
 <g id="node9" class="node">
 <title>src/client/presentation/controllers/useGetCharactersController.ts</title>
-<g id="a_node9"><a xlink:href="src/client/presentation/controllers/useGetCharactersController.ts" xlink:title="useGetCharactersController.ts">
+<g id="a_node9"><a xlink:href="https://github.com/Evyweb/star-wars-app/blob/master/src/client/presentation/controllers/useGetCharactersController.ts" xlink:title="useGetCharactersController.ts">
 <polygon fill="#9fff9f" stroke="black" points="303.5,-351.25 164.5,-351.25 164.5,-332.75 303.5,-332.75 303.5,-351.25"/>
 <text text-anchor="start" x="172.5" y="-338.7" font-family="Helvetica,sans-Serif" font-size="9.00">useGetCharactersController.ts</text>
 </a>
@@ -256,7 +256,7 @@
 <!-- src/client/domain/Character.ts -->
 <g id="node10" class="node">
 <title>src/client/domain/Character.ts</title>
-<g id="a_node10"><a xlink:href="src/client/domain/Character.ts" xlink:title="Character.ts">
+<g id="a_node10"><a xlink:href="https://github.com/Evyweb/star-wars-app/blob/master/src/client/domain/Character.ts" xlink:title="Character.ts">
 <polygon fill="#fa9f36" stroke="black" points="725.5,-161.25 660.75,-161.25 660.75,-142.75 725.5,-142.75 725.5,-161.25"/>
 <text text-anchor="start" x="668.75" y="-148.7" font-family="Helvetica,sans-Serif" font-size="9.00">Character.ts</text>
 </a>
@@ -271,7 +271,7 @@
 <!-- src/client/application/ports/IGetCharactersPresenter.ts -->
 <g id="node11" class="node">
 <title>src/client/application/ports/IGetCharactersPresenter.ts</title>
-<g id="a_node11"><a xlink:href="src/client/application/ports/IGetCharactersPresenter.ts" xlink:title="IGetCharactersPresenter.ts">
+<g id="a_node11"><a xlink:href="https://github.com/Evyweb/star-wars-app/blob/master/src/client/application/ports/IGetCharactersPresenter.ts" xlink:title="IGetCharactersPresenter.ts">
 <polygon fill="#fb6969" stroke="black" points="622,-123.25 496.5,-123.25 496.5,-104.75 622,-104.75 622,-123.25"/>
 <text text-anchor="start" x="504.5" y="-110.7" font-family="Helvetica,sans-Serif" font-size="9.00">IGetCharactersPresenter.ts</text>
 </a>
@@ -322,7 +322,7 @@
 <!-- src/client/infrastructure/useCreateCharacterMutation.ts -->
 <g id="node13" class="node">
 <title>src/client/infrastructure/useCreateCharacterMutation.ts</title>
-<g id="a_node13"><a xlink:href="src/client/infrastructure/useCreateCharacterMutation.ts" xlink:title="useCreateCharacterMutation.ts">
+<g id="a_node13"><a xlink:href="https://github.com/Evyweb/star-wars-app/blob/master/src/client/infrastructure/useCreateCharacterMutation.ts" xlink:title="useCreateCharacterMutation.ts">
 <polygon fill="#6cbaff" stroke="black" points="471.38,-251.25 327.88,-251.25 327.88,-232.75 471.38,-232.75 471.38,-251.25"/>
 <text text-anchor="start" x="335.88" y="-238.7" font-family="Helvetica,sans-Serif" font-size="9.00">useCreateCharacterMutation.ts</text>
 </a>
@@ -337,7 +337,7 @@
 <!-- src/client/infrastructure/useGetCharactersQuery.ts -->
 <g id="node14" class="node">
 <title>src/client/infrastructure/useGetCharactersQuery.ts</title>
-<g id="a_node14"><a xlink:href="src/client/infrastructure/useGetCharactersQuery.ts" xlink:title="useGetCharactersQuery.ts">
+<g id="a_node14"><a xlink:href="https://github.com/Evyweb/star-wars-app/blob/master/src/client/infrastructure/useGetCharactersQuery.ts" xlink:title="useGetCharactersQuery.ts">
 <polygon fill="#6cbaff" stroke="black" points="461.25,-220.25 338,-220.25 338,-201.75 461.25,-201.75 461.25,-220.25"/>
 <text text-anchor="start" x="346" y="-207.7" font-family="Helvetica,sans-Serif" font-size="9.00">useGetCharactersQuery.ts</text>
 </a>
@@ -358,7 +358,7 @@
 <!-- src/client/presentation/requests/CreateCharacterRequest.ts -->
 <g id="node15" class="node">
 <title>src/client/presentation/requests/CreateCharacterRequest.ts</title>
-<g id="a_node15"><a xlink:href="src/client/presentation/requests/CreateCharacterRequest.ts" xlink:title="CreateCharacterRequest.ts">
+<g id="a_node15"><a xlink:href="https://github.com/Evyweb/star-wars-app/blob/master/src/client/presentation/requests/CreateCharacterRequest.ts" xlink:title="CreateCharacterRequest.ts">
 <polygon fill="#9fff9f" stroke="black" points="463.5,-320.25 335.75,-320.25 335.75,-301.75 463.5,-301.75 463.5,-320.25"/>
 <text text-anchor="start" x="343.75" y="-307.7" font-family="Helvetica,sans-Serif" font-size="9.00">CreateCharacterRequest.ts</text>
 </a>
@@ -373,7 +373,7 @@
 <!-- src/client/presentation/presenters/GetCharactersPresenter.ts -->
 <g id="node16" class="node">
 <title>src/client/presentation/presenters/GetCharactersPresenter.ts</title>
-<g id="a_node16"><a xlink:href="src/client/presentation/presenters/GetCharactersPresenter.ts" xlink:title="GetCharactersPresenter.ts">
+<g id="a_node16"><a xlink:href="https://github.com/Evyweb/star-wars-app/blob/master/src/client/presentation/presenters/GetCharactersPresenter.ts" xlink:title="GetCharactersPresenter.ts">
 <polygon fill="#9fff9f" stroke="black" points="461.25,-381.25 338,-381.25 338,-362.75 461.25,-362.75 461.25,-381.25"/>
 <text text-anchor="start" x="346" y="-368.7" font-family="Helvetica,sans-Serif" font-size="9.00">GetCharactersPresenter.ts</text>
 </a>
@@ -388,7 +388,7 @@
 <!-- src/client/presentation/viewModels/GetCharactersViewModel.ts -->
 <g id="node17" class="node">
 <title>src/client/presentation/viewModels/GetCharactersViewModel.ts</title>
-<g id="a_node17"><a xlink:href="src/client/presentation/viewModels/GetCharactersViewModel.ts" xlink:title="GetCharactersViewModel.ts">
+<g id="a_node17"><a xlink:href="https://github.com/Evyweb/star-wars-app/blob/master/src/client/presentation/viewModels/GetCharactersViewModel.ts" xlink:title="GetCharactersViewModel.ts">
 <polygon fill="#9fff9f" stroke="black" points="624.25,-386.25 494.25,-386.25 494.25,-367.75 624.25,-367.75 624.25,-386.25"/>
 <text text-anchor="start" x="502.25" y="-373.7" font-family="Helvetica,sans-Serif" font-size="9.00">GetCharactersViewModel.ts</text>
 </a>
@@ -409,7 +409,7 @@
 <!-- src/client/infrastructure/GetCharactersDTO.ts -->
 <g id="node12" class="node">
 <title>src/client/infrastructure/GetCharactersDTO.ts</title>
-<g id="a_node12"><a xlink:href="src/client/infrastructure/GetCharactersDTO.ts" xlink:title="GetCharactersDTO.ts">
+<g id="a_node12"><a xlink:href="https://github.com/Evyweb/star-wars-app/blob/master/src/client/infrastructure/GetCharactersDTO.ts" xlink:title="GetCharactersDTO.ts">
 <polygon fill="#6cbaff" stroke="black" points="610.75,-220.25 507.75,-220.25 507.75,-201.75 610.75,-201.75 610.75,-220.25"/>
 <text text-anchor="start" x="515.75" y="-207.7" font-family="Helvetica,sans-Serif" font-size="9.00">GetCharactersDTO.ts</text>
 </a>
@@ -442,7 +442,7 @@
 <!-- src/server/DependencyInjection.ts -->
 <g id="node18" class="node">
 <title>src/server/DependencyInjection.ts</title>
-<g id="a_node18"><a xlink:href="src/server/DependencyInjection.ts" xlink:title="DependencyInjection.ts">
+<g id="a_node18"><a xlink:href="https://github.com/Evyweb/star-wars-app/blob/master/src/server/DependencyInjection.ts" xlink:title="DependencyInjection.ts">
 <path fill="#ddfeff" stroke="black" d="M129.83,-697.25C129.83,-697.25 30.17,-697.25 30.17,-697.25 27.08,-697.25 24,-694.17 24,-691.08 24,-691.08 24,-684.92 24,-684.92 24,-681.83 27.08,-678.75 30.17,-678.75 30.17,-678.75 129.83,-678.75 129.83,-678.75 132.92,-678.75 136,-681.83 136,-684.92 136,-684.92 136,-691.08 136,-691.08 136,-694.17 132.92,-697.25 129.83,-697.25"/>
 <text text-anchor="start" x="32" y="-684.7" font-family="Helvetica,sans-Serif" font-size="9.00">DependencyInjection.ts</text>
 </a>
@@ -451,7 +451,7 @@
 <!-- src/server/application/ports/ICharacterRepository.ts -->
 <g id="node19" class="node">
 <title>src/server/application/ports/ICharacterRepository.ts</title>
-<g id="a_node19"><a xlink:href="src/server/application/ports/ICharacterRepository.ts" xlink:title="ICharacterRepository.ts">
+<g id="a_node19"><a xlink:href="https://github.com/Evyweb/star-wars-app/blob/master/src/server/application/ports/ICharacterRepository.ts" xlink:title="ICharacterRepository.ts">
 <polygon fill="#dd1c1c" stroke="black" points="455.25,-665.25 344,-665.25 344,-646.75 455.25,-646.75 455.25,-665.25"/>
 <text text-anchor="start" x="352" y="-652.7" font-family="Helvetica,sans-Serif" font-size="9.00" fill="white">ICharacterRepository.ts</text>
 </a>
@@ -466,7 +466,7 @@
 <!-- src/server/application/ports/ICreateCharacterUseCase.ts -->
 <g id="node20" class="node">
 <title>src/server/application/ports/ICreateCharacterUseCase.ts</title>
-<g id="a_node20"><a xlink:href="src/server/application/ports/ICreateCharacterUseCase.ts" xlink:title="ICreateCharacterUseCase.ts">
+<g id="a_node20"><a xlink:href="https://github.com/Evyweb/star-wars-app/blob/master/src/server/application/ports/ICreateCharacterUseCase.ts" xlink:title="ICreateCharacterUseCase.ts">
 <polygon fill="#dd1c1c" stroke="black" points="466.5,-696.25 332.75,-696.25 332.75,-677.75 466.5,-677.75 466.5,-696.25"/>
 <text text-anchor="start" x="340.75" y="-683.7" font-family="Helvetica,sans-Serif" font-size="9.00" fill="white">ICreateCharacterUseCase.ts</text>
 </a>
@@ -481,7 +481,7 @@
 <!-- src/server/application/ports/IGetCharactersUseCase.ts -->
 <g id="node21" class="node">
 <title>src/server/application/ports/IGetCharactersUseCase.ts</title>
-<g id="a_node21"><a xlink:href="src/server/application/ports/IGetCharactersUseCase.ts" xlink:title="IGetCharactersUseCase.ts">
+<g id="a_node21"><a xlink:href="https://github.com/Evyweb/star-wars-app/blob/master/src/server/application/ports/IGetCharactersUseCase.ts" xlink:title="IGetCharactersUseCase.ts">
 <polygon fill="#dd1c1c" stroke="black" points="462,-727.25 337.25,-727.25 337.25,-708.75 462,-708.75 462,-727.25"/>
 <text text-anchor="start" x="345.25" y="-714.7" font-family="Helvetica,sans-Serif" font-size="9.00" fill="white">IGetCharactersUseCase.ts</text>
 </a>
@@ -496,7 +496,7 @@
 <!-- src/server/application/ports/IIdentityProvider.ts -->
 <g id="node22" class="node">
 <title>src/server/application/ports/IIdentityProvider.ts</title>
-<g id="a_node22"><a xlink:href="src/server/application/ports/IIdentityProvider.ts" xlink:title="IIdentityProvider.ts">
+<g id="a_node22"><a xlink:href="https://github.com/Evyweb/star-wars-app/blob/master/src/server/application/ports/IIdentityProvider.ts" xlink:title="IIdentityProvider.ts">
 <polygon fill="#dd1c1c" stroke="black" points="444.75,-634.25 354.5,-634.25 354.5,-615.75 444.75,-615.75 444.75,-634.25"/>
 <text text-anchor="start" x="362.5" y="-621.7" font-family="Helvetica,sans-Serif" font-size="9.00" fill="white">IIdentityProvider.ts</text>
 </a>
@@ -511,7 +511,7 @@
 <!-- src/server/application/usecases/CreateCharacterUseCase.ts -->
 <g id="node23" class="node">
 <title>src/server/application/usecases/CreateCharacterUseCase.ts</title>
-<g id="a_node23"><a xlink:href="src/server/application/usecases/CreateCharacterUseCase.ts" xlink:title="CreateCharacterUseCase.ts">
+<g id="a_node23"><a xlink:href="https://github.com/Evyweb/star-wars-app/blob/master/src/server/application/usecases/CreateCharacterUseCase.ts" xlink:title="CreateCharacterUseCase.ts">
 <polygon fill="#dd1c1c" stroke="black" points="299.75,-614.25 168.25,-614.25 168.25,-595.75 299.75,-595.75 299.75,-614.25"/>
 <text text-anchor="start" x="176.25" y="-601.7" font-family="Helvetica,sans-Serif" font-size="9.00" fill="white">CreateCharacterUseCase.ts</text>
 </a>
@@ -526,7 +526,7 @@
 <!-- src/server/application/usecases/GetCharactersUseCase.ts -->
 <g id="node24" class="node">
 <title>src/server/application/usecases/GetCharactersUseCase.ts</title>
-<g id="a_node24"><a xlink:href="src/server/application/usecases/GetCharactersUseCase.ts" xlink:title="GetCharactersUseCase.ts">
+<g id="a_node24"><a xlink:href="https://github.com/Evyweb/star-wars-app/blob/master/src/server/application/usecases/GetCharactersUseCase.ts" xlink:title="GetCharactersUseCase.ts">
 <polygon fill="#dd1c1c" stroke="black" points="295.25,-645.25 172.75,-645.25 172.75,-626.75 295.25,-626.75 295.25,-645.25"/>
 <text text-anchor="start" x="180.75" y="-632.7" font-family="Helvetica,sans-Serif" font-size="9.00" fill="white">GetCharactersUseCase.ts</text>
 </a>
@@ -541,7 +541,7 @@
 <!-- src/server/infrastructure/InMemoryCharacterRepository.ts -->
 <g id="node25" class="node">
 <title>src/server/infrastructure/InMemoryCharacterRepository.ts</title>
-<g id="a_node25"><a xlink:href="src/server/infrastructure/InMemoryCharacterRepository.ts" xlink:title="InMemoryCharacterRepository.ts">
+<g id="a_node25"><a xlink:href="https://github.com/Evyweb/star-wars-app/blob/master/src/server/infrastructure/InMemoryCharacterRepository.ts" xlink:title="InMemoryCharacterRepository.ts">
 <polygon fill="#248cea" stroke="black" points="308.75,-514.25 159.25,-514.25 159.25,-495.75 308.75,-495.75 308.75,-514.25"/>
 <text text-anchor="start" x="167.25" y="-501.7" font-family="Helvetica,sans-Serif" font-size="9.00" fill="white">InMemoryCharacterRepository.ts</text>
 </a>
@@ -556,7 +556,7 @@
 <!-- src/server/infrastructure/UuidIdentityProvider.ts -->
 <g id="node26" class="node">
 <title>src/server/infrastructure/UuidIdentityProvider.ts</title>
-<g id="a_node26"><a xlink:href="src/server/infrastructure/UuidIdentityProvider.ts" xlink:title="UuidIdentityProvider.ts">
+<g id="a_node26"><a xlink:href="https://github.com/Evyweb/star-wars-app/blob/master/src/server/infrastructure/UuidIdentityProvider.ts" xlink:title="UuidIdentityProvider.ts">
 <polygon fill="#248cea" stroke="black" points="287.75,-545.25 180.25,-545.25 180.25,-526.75 287.75,-526.75 287.75,-545.25"/>
 <text text-anchor="start" x="188.25" y="-532.7" font-family="Helvetica,sans-Serif" font-size="9.00" fill="white">UuidIdentityProvider.ts</text>
 </a>
@@ -571,7 +571,7 @@
 <!-- src/server/presentation/controllers/CreateCharacterController.ts -->
 <g id="node27" class="node">
 <title>src/server/presentation/controllers/CreateCharacterController.ts</title>
-<g id="a_node27"><a xlink:href="src/server/presentation/controllers/CreateCharacterController.ts" xlink:title="CreateCharacterController.ts">
+<g id="a_node27"><a xlink:href="https://github.com/Evyweb/star-wars-app/blob/master/src/server/presentation/controllers/CreateCharacterController.ts" xlink:title="CreateCharacterController.ts">
 <polygon fill="#20b520" stroke="black" points="300.5,-823.25 167.5,-823.25 167.5,-804.75 300.5,-804.75 300.5,-823.25"/>
 <text text-anchor="start" x="175.5" y="-810.7" font-family="Helvetica,sans-Serif" font-size="9.00" fill="white">CreateCharacterController.ts</text>
 </a>
@@ -586,7 +586,7 @@
 <!-- src/server/presentation/controllers/GetCharactersController.ts -->
 <g id="node28" class="node">
 <title>src/server/presentation/controllers/GetCharactersController.ts</title>
-<g id="a_node28"><a xlink:href="src/server/presentation/controllers/GetCharactersController.ts" xlink:title="GetCharactersController.ts">
+<g id="a_node28"><a xlink:href="https://github.com/Evyweb/star-wars-app/blob/master/src/server/presentation/controllers/GetCharactersController.ts" xlink:title="GetCharactersController.ts">
 <polygon fill="#20b520" stroke="black" points="296,-854.25 172,-854.25 172,-835.75 296,-835.75 296,-854.25"/>
 <text text-anchor="start" x="180" y="-841.7" font-family="Helvetica,sans-Serif" font-size="9.00" fill="white">GetCharactersController.ts</text>
 </a>
@@ -601,7 +601,7 @@
 <!-- src/server/domain/Character.ts -->
 <g id="node29" class="node">
 <title>src/server/domain/Character.ts</title>
-<g id="a_node29"><a xlink:href="src/server/domain/Character.ts" xlink:title="Character.ts">
+<g id="a_node29"><a xlink:href="https://github.com/Evyweb/star-wars-app/blob/master/src/server/domain/Character.ts" xlink:title="Character.ts">
 <polygon fill="#dc6b0d" stroke="black" points="725.5,-696.25 660.75,-696.25 660.75,-677.75 725.5,-677.75 725.5,-696.25"/>
 <text text-anchor="start" x="668.75" y="-683.7" font-family="Helvetica,sans-Serif" font-size="9.00" fill="white">Character.ts</text>
 </a>
@@ -616,7 +616,7 @@
 <!-- src/server/application/ports/ICreateCharacterPresenter.ts -->
 <g id="node30" class="node">
 <title>src/server/application/ports/ICreateCharacterPresenter.ts</title>
-<g id="a_node30"><a xlink:href="src/server/application/ports/ICreateCharacterPresenter.ts" xlink:title="ICreateCharacterPresenter.ts">
+<g id="a_node30"><a xlink:href="https://github.com/Evyweb/star-wars-app/blob/master/src/server/application/ports/ICreateCharacterPresenter.ts" xlink:title="ICreateCharacterPresenter.ts">
 <polygon fill="#dd1c1c" stroke="black" points="626.5,-696.25 492,-696.25 492,-677.75 626.5,-677.75 626.5,-696.25"/>
 <text text-anchor="start" x="500" y="-683.7" font-family="Helvetica,sans-Serif" font-size="9.00" fill="white">ICreateCharacterPresenter.ts</text>
 </a>
@@ -631,7 +631,7 @@
 <!-- src/server/application/ports/IGetCharactersPresenter.ts -->
 <g id="node31" class="node">
 <title>src/server/application/ports/IGetCharactersPresenter.ts</title>
-<g id="a_node31"><a xlink:href="src/server/application/ports/IGetCharactersPresenter.ts" xlink:title="IGetCharactersPresenter.ts">
+<g id="a_node31"><a xlink:href="https://github.com/Evyweb/star-wars-app/blob/master/src/server/application/ports/IGetCharactersPresenter.ts" xlink:title="IGetCharactersPresenter.ts">
 <polygon fill="#dd1c1c" stroke="black" points="622,-727.25 496.5,-727.25 496.5,-708.75 622,-708.75 622,-727.25"/>
 <text text-anchor="start" x="504.5" y="-714.7" font-family="Helvetica,sans-Serif" font-size="9.00" fill="white">IGetCharactersPresenter.ts</text>
 </a>
@@ -718,7 +718,7 @@
 <!-- src/server/presentation/presenters/CreateCharacterPresenter.ts -->
 <g id="node32" class="node">
 <title>src/server/presentation/presenters/CreateCharacterPresenter.ts</title>
-<g id="a_node32"><a xlink:href="src/server/presentation/presenters/CreateCharacterPresenter.ts" xlink:title="CreateCharacterPresenter.ts">
+<g id="a_node32"><a xlink:href="https://github.com/Evyweb/star-wars-app/blob/master/src/server/presentation/presenters/CreateCharacterPresenter.ts" xlink:title="CreateCharacterPresenter.ts">
 <polygon fill="#20b520" stroke="black" points="465.75,-823.25 333.5,-823.25 333.5,-804.75 465.75,-804.75 465.75,-823.25"/>
 <text text-anchor="start" x="341.5" y="-810.7" font-family="Helvetica,sans-Serif" font-size="9.00" fill="white">CreateCharacterPresenter.ts</text>
 </a>
@@ -733,7 +733,7 @@
 <!-- src/server/presentation/requests/CreateCharacterRequest.ts -->
 <g id="node33" class="node">
 <title>src/server/presentation/requests/CreateCharacterRequest.ts</title>
-<g id="a_node33"><a xlink:href="src/server/presentation/requests/CreateCharacterRequest.ts" xlink:title="CreateCharacterRequest.ts">
+<g id="a_node33"><a xlink:href="https://github.com/Evyweb/star-wars-app/blob/master/src/server/presentation/requests/CreateCharacterRequest.ts" xlink:title="CreateCharacterRequest.ts">
 <polygon fill="#20b520" stroke="black" points="463.5,-915.25 335.75,-915.25 335.75,-896.75 463.5,-896.75 463.5,-915.25"/>
 <text text-anchor="start" x="343.75" y="-902.7" font-family="Helvetica,sans-Serif" font-size="9.00" fill="white">CreateCharacterRequest.ts</text>
 </a>
@@ -748,7 +748,7 @@
 <!-- src/server/presentation/viewModels/CreateCharacterViewModel.ts -->
 <g id="node34" class="node">
 <title>src/server/presentation/viewModels/CreateCharacterViewModel.ts</title>
-<g id="a_node34"><a xlink:href="src/server/presentation/viewModels/CreateCharacterViewModel.ts" xlink:title="CreateCharacterViewModel.ts">
+<g id="a_node34"><a xlink:href="https://github.com/Evyweb/star-wars-app/blob/master/src/server/presentation/viewModels/CreateCharacterViewModel.ts" xlink:title="CreateCharacterViewModel.ts">
 <polygon fill="#20b520" stroke="black" points="628.75,-886.25 489.75,-886.25 489.75,-867.75 628.75,-867.75 628.75,-886.25"/>
 <text text-anchor="start" x="497.75" y="-873.7" font-family="Helvetica,sans-Serif" font-size="9.00" fill="white">CreateCharacterViewModel.ts</text>
 </a>
@@ -769,7 +769,7 @@
 <!-- src/server/presentation/presenters/GetCharactersPresenter.ts -->
 <g id="node35" class="node">
 <title>src/server/presentation/presenters/GetCharactersPresenter.ts</title>
-<g id="a_node35"><a xlink:href="src/server/presentation/presenters/GetCharactersPresenter.ts" xlink:title="GetCharactersPresenter.ts">
+<g id="a_node35"><a xlink:href="https://github.com/Evyweb/star-wars-app/blob/master/src/server/presentation/presenters/GetCharactersPresenter.ts" xlink:title="GetCharactersPresenter.ts">
 <polygon fill="#20b520" stroke="black" points="461.25,-854.25 338,-854.25 338,-835.75 461.25,-835.75 461.25,-854.25"/>
 <text text-anchor="start" x="346" y="-841.7" font-family="Helvetica,sans-Serif" font-size="9.00" fill="white">GetCharactersPresenter.ts</text>
 </a>
@@ -784,7 +784,7 @@
 <!-- src/server/presentation/viewModels/GetCharactersViewModel.ts -->
 <g id="node36" class="node">
 <title>src/server/presentation/viewModels/GetCharactersViewModel.ts</title>
-<g id="a_node36"><a xlink:href="src/server/presentation/viewModels/GetCharactersViewModel.ts" xlink:title="GetCharactersViewModel.ts">
+<g id="a_node36"><a xlink:href="https://github.com/Evyweb/star-wars-app/blob/master/src/server/presentation/viewModels/GetCharactersViewModel.ts" xlink:title="GetCharactersViewModel.ts">
 <polygon fill="#20b520" stroke="black" points="624.25,-917.25 494.25,-917.25 494.25,-898.75 624.25,-898.75 624.25,-917.25"/>
 <text text-anchor="start" x="502.25" y="-904.7" font-family="Helvetica,sans-Serif" font-size="9.00" fill="white">GetCharactersViewModel.ts</text>
 </a>
