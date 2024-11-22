@@ -1,4 +1,4 @@
-import {useDependency} from "@/src/client/presentation/hooks/useDependency";
+import {useDependency} from "@/app/_hooks/useDependency";
 import {CreateCharacterRequest} from "@/src/client/presentation/requests/CreateCharacterRequest";
 import {
     CreateCharacterUseCaseRequest

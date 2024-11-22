@@ -1,8 +1,10 @@
+type CharacterDTO = {
+    id: string;
+    name: string;
+    homeworld: string;
+    species: string;
+};
+
 export interface GetCharactersDTO {
-    characters: {
-        id: string;
-        name: string;
-        homeworld: string;
-        species: string;
-    }[];
+    characters: CharacterDTO[];
 }

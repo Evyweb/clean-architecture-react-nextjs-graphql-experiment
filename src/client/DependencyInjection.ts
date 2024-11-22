@@ -1,7 +1,7 @@
 'use client';
 
 import {ICharacterRepository} from "@/src/client/application/ports/ICharacterRepository";
-import {useCharacterRepository} from "@/src/client/infrastructure/useCharacterRepository";
+import {useCharacterRepository} from "@/app/_hooks/useCharacterRepository";
 import {
     ICreateCharacterController,
     useCreateCharacterController

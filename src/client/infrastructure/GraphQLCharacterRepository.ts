@@ -1,29 +1,23 @@
 import {CharacterToCreateDTO, ICharacterRepository} from "@/src/client/application/ports/ICharacterRepository";
-import {
-    useCreateCharacterMutation
-} from "@/src/client/infrastructure/useCreateCharacterMutation";
 import {Character} from "@/src/client/domain/Character";
-import {
-    useGetCharactersQuery
-} from "@/src/client/infrastructure/useGetCharactersQuery";
+import {IGraphQLAdapter} from "@/src/client/infrastructure/IGraphQLAdapter";
 
-export const useCharacterRepository = (): ICharacterRepository => {
-    const {createCharacterMutation} = useCreateCharacterMutation();
-    const getCharactersQueryResult = useGetCharactersQuery();
-
+export const GraphQLCharacterRepository = (
+    graphQlAdapter: IGraphQLAdapter,
+): ICharacterRepository => {
     return {
         createCharacter: async (characterToCreate: CharacterToCreateDTO) => {
-            await createCharacterMutation({
+            await graphQlAdapter.createCharacterMutation({
                 variables: characterToCreate,
             })
         },
         getAll: (): Character[] => {
-            return getCharactersQueryResult.characters.map(character => ({
+            return graphQlAdapter.getCharactersQueryResult.characters.map((character) => ({
                 id: character.id,
                 name: character.name,
                 homeworld: character.homeworld,
                 species: character.species
             }));
         }
-    };
+    }
 }

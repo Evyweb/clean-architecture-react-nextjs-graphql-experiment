@@ -1,4 +1,4 @@
-import {useDependency} from "@/src/client/presentation/hooks/useDependency";
+import {useDependency} from "@/app/_hooks/useDependency";
 import {GetCharactersPresenter} from "@/src/client/presentation/presenters/GetCharactersPresenter";
 
 import {GetCharactersViewModel} from "@/src/client/presentation/viewModels/GetCharactersViewModel";

@@ -1,7 +1,7 @@
 'use client';
 
 import {FormEvent, useState} from 'react';
-import {useDependency} from "@/src/client/presentation/hooks/useDependency";
+import {useDependency} from "@/app/_hooks/useDependency";
 
 const CreateCharacterForm = () => {
     const createCharacterController = useDependency('createCharacterController');
