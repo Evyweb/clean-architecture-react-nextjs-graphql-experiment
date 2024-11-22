@@ -5,11 +5,11 @@ import {useCharacterRepository} from "@/app/_hooks/useCharacterRepository";
 import {
     ICreateCharacterController,
     useCreateCharacterController
-} from "@/src/client/presentation/controllers/useCreateCharacterController";
+} from "@/app/_hooks/useCreateCharacterController";
 import {
     IGetCharactersController,
     useGetCharactersController
-} from "@/src/client/presentation/controllers/useGetCharactersController";
+} from "@/app/_hooks/useGetCharactersController";
 
 type Hook<T> = () => T;
 

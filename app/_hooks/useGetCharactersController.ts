@@ -1,8 +1,8 @@
 import {useDependency} from "@/app/_hooks/useDependency";
-import {GetCharactersPresenter} from "@/src/client/presentation/presenters/GetCharactersPresenter";
 
 import {GetCharactersViewModel} from "@/src/client/presentation/viewModels/GetCharactersViewModel";
 import {GetCharactersUseCase} from "@/src/client/application/usecases/GetCharacters/GetCharactersUseCase";
+import {GetCharactersController} from "@/src/client/presentation/controllers/GetCharactersController";
 
 export interface IGetCharactersController {
     getCharacters(): GetCharactersViewModel;
@@ -11,12 +11,5 @@ export interface IGetCharactersController {
 export const useGetCharactersController = (): IGetCharactersController => {
     const repository = useDependency('characterRepository');
     const useCase = GetCharactersUseCase(repository);
-
-    return {
-        getCharacters(): GetCharactersViewModel {
-            const presenter = GetCharactersPresenter();
-            useCase.execute(presenter);
-            return presenter.getViewModel();
-        }
-    };
+    return GetCharactersController(useCase);
 }
