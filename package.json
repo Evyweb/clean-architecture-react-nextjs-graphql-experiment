@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "deps:all": "npx depcruise src --include-only \"^src\" -x \"useDependency|DependencyProvider|providers\" --output-type dot | dot -T svg | depcruise-wrap-stream-in-html > tools/index.html && npm run deps:screenshot",
+    "deps:all": "npx depcruise . --include-only \"^src|^app\" --output-type dot | dot -T svg | depcruise-wrap-stream-in-html > tools/index.html && npm run deps:screenshot",
     "deps:screenshot": "npx depcruise src --include-only \"^src\" -x \"useDependency|DependencyProvider|providers\" --output-type dot | dot -T svg > assets/deps.svg",
     "deps:server": "npx depcruise src --include-only \"^src\/server\" -x \"useDependency|DependencyProvider|providers\" --output-type dot | dot -T svg | depcruise-wrap-stream-in-html > tools/server-dependency-graph.html",
     "deps:client": "npx depcruise src --include-only \"^src\/client\" -x \"useDependency|DependencyProvider|providers\" --output-type dot | dot -T svg | depcruise-wrap-stream-in-html > tools/client-dependency-graph.html"

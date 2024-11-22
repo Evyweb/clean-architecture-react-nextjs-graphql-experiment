@@ -10,6 +10,5 @@ export interface ICreateCharacterController {
 export const useCreateCharacterController = (): ICreateCharacterController => {
     const repository = useDependency('characterRepository');
     const useCase = CreateCharacterUseCase(repository);
-
     return CreateCharacterController(useCase);
 }
