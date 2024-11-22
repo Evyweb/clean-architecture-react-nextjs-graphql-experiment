@@ -179,8 +179,8 @@
 <!-- src/client/application/ports/ICharacterRepository.ts&#45;&gt;src/client/domain/Character.ts -->
 <g id="edge1" class="edge">
 <title>src/client/application/ports/ICharacterRepository.ts&#45;&gt;src/client/domain/Character.ts</title>
-<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M515.29,-265.3C536.29,-257.43 563.57,-244.58 582.38,-226 631.58,-177.38 660.15,-97.51 671.03,-61.99"/>
-<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="672.96,-62.84 672.66,-56.49 668.94,-61.64 672.96,-62.84"/>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M539.42,-275C596.64,-275 677.12,-275 677.12,-275 677.12,-275 677.12,-62.66 677.12,-62.66"/>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="679.23,-62.66 677.13,-56.66 675.03,-62.66 679.23,-62.66"/>
 </g>
 <!-- src/client/application/ports/ICreateCharacterUseCase.ts -->
 <g id="node4" class="node">
@@ -203,8 +203,8 @@
 <!-- src/client/application/ports/ICreateCharacterUseCase.ts&#45;&gt;src/client/application/usecases/CreateCharacter/CreateCharacterUseCaseRequest.ts -->
 <g id="edge2" class="edge">
 <title>src/client/application/ports/ICreateCharacterUseCase.ts&#45;&gt;src/client/application/usecases/CreateCharacter/CreateCharacterUseCaseRequest.ts</title>
-<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M416.39,-307.12C403.85,-303.57 393.45,-296.64 389.62,-284 386.05,-272.2 386.05,-184.8 389.62,-173 390.55,-169.93 391.19,-169.08 393.62,-167 407.95,-154.8 426.51,-145.52 443.03,-138.9"/>
-<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="443.76,-140.86 448.62,-136.76 442.26,-136.94 443.76,-140.86"/>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M550.64,-309.08C570.18,-309.08 586.38,-309.08 586.38,-309.08 586.38,-309.08 586.38,-126 586.38,-126 586.38,-126 575.54,-126 575.54,-126"/>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="575.54,-123.9 569.54,-126 575.54,-128.1 575.54,-123.9"/>
 </g>
 <!-- src/client/application/ports/IGetCharactersPresenter.ts -->
 <g id="node6" class="node">
@@ -227,8 +227,8 @@
 <!-- src/client/application/ports/IGetCharactersPresenter.ts&#45;&gt;src/client/application/usecases/GetCharacters/GetCharactersUseCaseResponse.ts -->
 <g id="edge3" class="edge">
 <title>src/client/application/ports/IGetCharactersPresenter.ts&#45;&gt;src/client/application/usecases/GetCharacters/GetCharactersUseCaseResponse.ts</title>
-<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M660.49,-296.29C626.81,-275.4 547.29,-226.04 507.66,-201.45"/>
-<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="508.84,-199.71 502.64,-198.33 506.63,-203.28 508.84,-199.71"/>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M614.1,-302.92C587.2,-302.92 561.88,-302.92 561.88,-302.92 561.88,-302.92 561.88,-205.51 561.88,-205.51"/>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="563.98,-205.51 561.88,-199.51 559.78,-205.51 563.98,-205.51"/>
 </g>
 <!-- src/client/application/ports/IGetCharactersUseCase.ts -->
 <g id="node8" class="node">
@@ -242,8 +242,8 @@
 <!-- src/client/application/ports/IGetCharactersUseCase.ts&#45;&gt;src/client/application/ports/IGetCharactersPresenter.ts -->
 <g id="edge4" class="edge">
 <title>src/client/application/ports/IGetCharactersUseCase.ts&#45;&gt;src/client/application/ports/IGetCharactersPresenter.ts</title>
-<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M544.52,-327.28C564.41,-324.06 586.7,-320.46 607.2,-317.14"/>
-<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="607.29,-319.26 612.88,-316.23 606.62,-315.11 607.29,-319.26"/>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M545.77,-337C595.28,-337 656.21,-337 656.21,-337 656.21,-337 656.21,-324.5 656.21,-324.5"/>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="658.31,-324.5 656.21,-318.5 654.11,-324.5 658.31,-324.5"/>
 </g>
 <!-- src/client/application/usecases/CreateCharacter/CreateCharacterUseCase.ts -->
 <g id="node9" class="node">
@@ -257,14 +257,14 @@
 <!-- src/client/application/usecases/CreateCharacter/CreateCharacterUseCase.ts&#45;&gt;src/client/application/ports/ICharacterRepository.ts -->
 <g id="edge5" class="edge">
 <title>src/client/application/usecases/CreateCharacter/CreateCharacterUseCase.ts&#45;&gt;src/client/application/ports/ICharacterRepository.ts</title>
-<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M336.56,-135.72C354.69,-141.74 373.63,-151.44 385.62,-167 401.78,-187.96 378.67,-204.17 393.62,-226 405.1,-242.75 424.25,-254.35 441.83,-262.05"/>
-<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="440.61,-263.82 446.96,-264.16 442.21,-259.93 440.61,-263.82"/>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M351.74,-122.92C355.25,-122.92 357.38,-122.92 357.38,-122.92 357.38,-122.92 357.38,-273.15 357.38,-273.15 357.38,-273.15 418.35,-273.15 418.35,-273.15"/>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="418.35,-275.25 424.35,-273.15 418.35,-271.05 418.35,-275.25"/>
 </g>
 <!-- src/client/application/usecases/CreateCharacter/CreateCharacterUseCase.ts&#45;&gt;src/client/application/usecases/CreateCharacter/CreateCharacterUseCaseRequest.ts -->
 <g id="edge6" class="edge">
 <title>src/client/application/usecases/CreateCharacter/CreateCharacterUseCase.ts&#45;&gt;src/client/application/usecases/CreateCharacter/CreateCharacterUseCaseRequest.ts</title>
-<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M351.72,-126C364.41,-126 377.93,-126 391.28,-126"/>
-<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="390.99,-128.1 396.99,-126 390.99,-123.9 390.99,-128.1"/>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M351.66,-129.08C351.66,-129.08 391,-129.08 391,-129.08"/>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="391,-131.18 397,-129.08 391,-126.98 391,-131.18"/>
 </g>
 <!-- src/client/application/usecases/GetCharacters/GetCharactersUseCase.ts -->
 <g id="node10" class="node">
@@ -278,26 +278,26 @@
 <!-- src/client/application/usecases/GetCharacters/GetCharactersUseCase.ts&#45;&gt;src/client/application/ports/ICharacterRepository.ts -->
 <g id="edge7" class="edge">
 <title>src/client/application/usecases/GetCharacters/GetCharactersUseCase.ts&#45;&gt;src/client/application/ports/ICharacterRepository.ts</title>
-<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M307.83,-196.59C342.92,-212.35 412.87,-243.77 452.74,-261.69"/>
-<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="451.67,-263.51 458.01,-264.05 453.39,-259.68 451.67,-263.51"/>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M316.12,-196.62C316.12,-219.79 316.12,-276.85 316.12,-276.85 316.12,-276.85 418.66,-276.85 418.66,-276.85"/>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="418.66,-278.95 424.66,-276.85 418.66,-274.75 418.66,-278.95"/>
 </g>
 <!-- src/client/application/usecases/GetCharacters/GetCharactersUseCase.ts&#45;&gt;src/client/application/ports/IGetCharactersPresenter.ts -->
 <g id="edge8" class="edge">
 <title>src/client/application/usecases/GetCharacters/GetCharactersUseCase.ts&#45;&gt;src/client/application/ports/IGetCharactersPresenter.ts</title>
-<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M347.04,-185.31C361.48,-182.01 375.6,-175.9 385.62,-165 403.54,-145.52 373.7,-123.41 393.62,-106 425.21,-78.41 546.98,-83.5 582.38,-106 647.25,-147.24 668.01,-246.54 673.96,-287.67"/>
-<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="671.88,-287.93 674.75,-293.6 676.04,-287.37 671.88,-287.93"/>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M254.88,-196.33C254.88,-209.25 254.88,-231 254.88,-231 254.88,-231 629.56,-231 629.56,-231 629.56,-231 629.56,-287.47 629.56,-287.47"/>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="627.46,-287.47 629.56,-293.47 631.66,-287.47 627.46,-287.47"/>
 </g>
 <!-- src/client/application/usecases/GetCharacters/GetCharactersUseCase.ts&#45;&gt;src/client/application/usecases/GetCharacters/GetCharactersUseCaseResponse.ts -->
 <g id="edge10" class="edge">
 <title>src/client/application/usecases/GetCharacters/GetCharactersUseCase.ts&#45;&gt;src/client/application/usecases/GetCharacters/GetCharactersUseCaseResponse.ts</title>
-<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M347.13,-187C361.32,-187 376.73,-187 391.9,-187"/>
-<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="391.76,-189.1 397.76,-187 391.76,-184.9 391.76,-189.1"/>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M347.02,-187C347.02,-187 391.77,-187 391.77,-187"/>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="391.77,-189.1 397.77,-187 391.77,-184.9 391.77,-189.1"/>
 </g>
 <!-- src/client/application/usecases/GetCharacters/GetCharactersUseCase.ts&#45;&gt;src/client/application/ports/IGetCharactersUseCase.ts -->
 <g id="edge9" class="edge">
 <title>src/client/application/usecases/GetCharacters/GetCharactersUseCase.ts&#45;&gt;src/client/application/ports/IGetCharactersUseCase.ts</title>
-<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M291.13,-196.74C303.67,-221.96 340.92,-289.59 393.62,-321 399.39,-324.44 405.72,-327.17 412.26,-329.34"/>
-<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="411.37,-331.27 417.72,-330.95 412.55,-327.24 411.37,-331.27"/>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M285.5,-196.38C285.5,-229.22 285.5,-337 285.5,-337 285.5,-337 411.74,-337 411.74,-337"/>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="411.74,-339.1 417.74,-337 411.74,-334.9 411.74,-339.1"/>
 </g>
 <!-- src/client/infrastructure/GetCharactersDTO.ts -->
 <g id="node11" class="node">
@@ -320,14 +320,14 @@
 <!-- src/client/infrastructure/GraphQLCharacterRepository.ts&#45;&gt;src/client/application/ports/ICharacterRepository.ts -->
 <g id="edge11" class="edge">
 <title>src/client/infrastructure/GraphQLCharacterRepository.ts&#45;&gt;src/client/application/ports/ICharacterRepository.ts</title>
-<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M116.68,-56.69C120.93,-87.15 138.41,-181.56 195.75,-226 259.58,-275.47 355.57,-282.25 418.59,-280.37"/>
-<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="418.31,-282.48 424.23,-280.16 418.16,-278.29 418.31,-282.48"/>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M114.5,-56.74C114.5,-100.94 114.5,-280.55 114.5,-280.55 114.5,-280.55 418.32,-280.55 418.32,-280.55"/>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="418.32,-282.65 424.32,-280.55 418.32,-278.45 418.32,-282.65"/>
 </g>
 <!-- src/client/infrastructure/GraphQLCharacterRepository.ts&#45;&gt;src/client/domain/Character.ts -->
 <g id="edge12" class="edge">
 <title>src/client/infrastructure/GraphQLCharacterRepository.ts&#45;&gt;src/client/domain/Character.ts</title>
-<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M159.44,-37.27C171.18,-35.09 183.89,-33.1 195.75,-32 366.85,-16.15 410.89,-21.07 582.38,-32 599.92,-33.12 619.21,-35.4 635.7,-37.68"/>
-<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="635.31,-39.75 641.55,-38.51 635.9,-35.59 635.31,-39.75"/>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M114.5,-37.43C114.5,-28.57 114.5,-16.75 114.5,-16.75 114.5,-16.75 677.12,-16.75 677.12,-16.75 677.12,-16.75 677.12,-25.44 677.12,-25.44"/>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="675.03,-25.44 677.13,-31.44 679.23,-25.44 675.03,-25.44"/>
 </g>
 <!-- src/client/infrastructure/IGraphQLAdapter.ts -->
 <g id="node13" class="node">
@@ -341,20 +341,20 @@
 <!-- src/client/infrastructure/GraphQLCharacterRepository.ts&#45;&gt;src/client/infrastructure/IGraphQLAdapter.ts -->
 <g id="edge13" class="edge">
 <title>src/client/infrastructure/GraphQLCharacterRepository.ts&#45;&gt;src/client/infrastructure/IGraphQLAdapter.ts</title>
-<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M188.15,-47C201.67,-47 215.6,-47 228.53,-47"/>
-<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="228.27,-49.1 234.27,-47 228.27,-44.9 228.27,-49.1"/>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M188.01,-47C188.01,-47 227.96,-47 227.96,-47"/>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="227.96,-49.1 233.96,-47 227.96,-44.9 227.96,-49.1"/>
 </g>
 <!-- src/client/infrastructure/IGraphQLAdapter.ts&#45;&gt;src/client/application/ports/ICharacterRepository.ts -->
 <g id="edge14" class="edge">
 <title>src/client/infrastructure/IGraphQLAdapter.ts&#45;&gt;src/client/application/ports/ICharacterRepository.ts</title>
-<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M317.68,-56.7C340.66,-65.61 370.44,-81.25 385.62,-106 399.6,-128.78 379.28,-203.45 393.62,-226 404.35,-242.87 423.04,-254.42 440.5,-262.04"/>
-<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="439.26,-263.8 445.61,-264.13 440.85,-259.92 439.26,-263.8"/>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M334.01,-50.08C349.87,-50.08 363.5,-50.08 363.5,-50.08 363.5,-50.08 363.5,-269.45 363.5,-269.45 363.5,-269.45 418.27,-269.45 418.27,-269.45"/>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="418.27,-271.55 424.27,-269.45 418.27,-267.35 418.27,-271.55"/>
 </g>
 <!-- src/client/infrastructure/IGraphQLAdapter.ts&#45;&gt;src/client/infrastructure/GetCharactersDTO.ts -->
 <g id="edge15" class="edge">
 <title>src/client/infrastructure/IGraphQLAdapter.ts&#45;&gt;src/client/infrastructure/GetCharactersDTO.ts</title>
-<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M333.92,-47C360.7,-47 394.42,-47 422.95,-47"/>
-<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="422.6,-49.1 428.6,-47 422.6,-44.9 422.6,-49.1"/>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M333.91,-43.92C333.91,-43.92 422.63,-43.92 422.63,-43.92"/>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="422.63,-46.02 428.63,-43.92 422.63,-41.82 422.63,-46.02"/>
 </g>
 <!-- src/client/presentation/controllers/CreateCharacter/CreateCharacterController.ts -->
 <g id="node14" class="node">
@@ -368,14 +368,14 @@
 <!-- src/client/presentation/controllers/CreateCharacter/CreateCharacterController.ts&#45;&gt;src/client/application/ports/ICreateCharacterUseCase.ts -->
 <g id="edge16" class="edge">
 <title>src/client/presentation/controllers/CreateCharacter/CreateCharacterController.ts&#45;&gt;src/client/application/ports/ICreateCharacterUseCase.ts</title>
-<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M123.85,-431.39C137.41,-416.41 165.74,-387.58 195.75,-372 262.6,-337.3 347.56,-320.67 407.58,-312.82"/>
-<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="407.55,-314.94 413.24,-312.1 407.03,-310.77 407.55,-314.94"/>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M147.75,-431.29C147.75,-400.34 147.75,-306 147.75,-306 147.75,-306 407.24,-306 407.24,-306"/>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="407.24,-308.1 413.24,-306 407.24,-303.9 407.24,-308.1"/>
 </g>
 <!-- src/client/presentation/controllers/CreateCharacter/CreateCharacterController.ts&#45;&gt;src/client/application/usecases/CreateCharacter/CreateCharacterUseCaseRequest.ts -->
 <g id="edge17" class="edge">
 <title>src/client/presentation/controllers/CreateCharacter/CreateCharacterController.ts&#45;&gt;src/client/application/usecases/CreateCharacter/CreateCharacterUseCaseRequest.ts</title>
-<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M119.25,-431.33C128.72,-408.03 155.73,-348.12 195.75,-313 265.52,-251.78 330.34,-300.57 385.62,-226 401.38,-204.74 377.9,-188.28 393.62,-167 403.24,-153.99 418.01,-144.98 432.75,-138.8"/>
-<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="433.24,-140.86 438.08,-136.74 431.73,-136.94 433.24,-140.86"/>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M81.25,-431.53C81.25,-382.17 81.25,-156.5 81.25,-156.5 81.25,-156.5 483.38,-156.5 483.38,-156.5 483.38,-156.5 483.38,-144.68 483.38,-144.68"/>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="485.48,-144.68 483.38,-138.68 481.28,-144.68 485.48,-144.68"/>
 </g>
 <!-- src/client/presentation/controllers/CreateCharacter/CreateCharacterControllerRequest.ts -->
 <g id="node15" class="node">
@@ -389,8 +389,8 @@
 <!-- src/client/presentation/controllers/CreateCharacter/CreateCharacterController.ts&#45;&gt;src/client/presentation/controllers/CreateCharacter/CreateCharacterControllerRequest.ts -->
 <g id="edge18" class="edge">
 <title>src/client/presentation/controllers/CreateCharacter/CreateCharacterController.ts&#45;&gt;src/client/presentation/controllers/CreateCharacter/CreateCharacterControllerRequest.ts</title>
-<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M181.32,-441C184.87,-441 188.47,-441 192.08,-441"/>
-<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="192.06,-443.1 198.06,-441 192.06,-438.9 192.06,-443.1"/>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M181.1,-441C181.1,-441 192.07,-441 192.07,-441"/>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="192.07,-443.1 198.07,-441 192.07,-438.9 192.07,-443.1"/>
 </g>
 <!-- src/client/presentation/controllers/GetCharacters/GetCharactersController.ts -->
 <g id="node16" class="node">
@@ -404,8 +404,8 @@
 <!-- src/client/presentation/controllers/GetCharacters/GetCharactersController.ts&#45;&gt;src/client/application/ports/IGetCharactersUseCase.ts -->
 <g id="edge19" class="edge">
 <title>src/client/presentation/controllers/GetCharacters/GetCharactersController.ts&#45;&gt;src/client/application/ports/IGetCharactersUseCase.ts</title>
-<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M171.25,-492.42C177.51,-489.34 183.25,-485.29 187.75,-480 204.9,-459.85 178.5,-441.06 195.75,-421 224.11,-388.02 338.42,-362.19 413.83,-348.3"/>
-<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="413.86,-350.43 419.39,-347.29 413.11,-346.3 413.86,-350.43"/>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M176.73,-497.38C276.85,-497.38 462.58,-497.38 462.58,-497.38 462.58,-497.38 462.58,-355.58 462.58,-355.58"/>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="464.68,-355.58 462.58,-349.58 460.48,-355.58 464.68,-355.58"/>
 </g>
 <!-- src/client/presentation/presenters/GetCharactersPresenter.ts -->
 <g id="node17" class="node">
@@ -419,8 +419,8 @@
 <!-- src/client/presentation/controllers/GetCharacters/GetCharactersController.ts&#45;&gt;src/client/presentation/presenters/GetCharactersPresenter.ts -->
 <g id="edge20" class="edge">
 <title>src/client/presentation/controllers/GetCharacters/GetCharactersController.ts&#45;&gt;src/client/presentation/presenters/GetCharactersPresenter.ts</title>
-<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M176.84,-510.87C180.59,-512.08 184.26,-513.45 187.75,-515 219.98,-529.34 251.08,-556.61 268.98,-574.02"/>
-<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="267.49,-575.5 273.23,-578.24 270.45,-572.52 267.49,-575.5"/>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M176.95,-506.62C232.85,-506.62 306.04,-506.62 306.04,-506.62 306.04,-506.62 306.04,-571.41 306.04,-571.41"/>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="303.94,-571.41 306.04,-577.41 308.14,-571.41 303.94,-571.41"/>
 </g>
 <!-- src/client/presentation/viewModels/GetCharactersViewModel.ts -->
 <g id="node18" class="node">
@@ -434,26 +434,26 @@
 <!-- src/client/presentation/controllers/GetCharacters/GetCharactersController.ts&#45;&gt;src/client/presentation/viewModels/GetCharactersViewModel.ts -->
 <g id="edge21" class="edge">
 <title>src/client/presentation/controllers/GetCharacters/GetCharactersController.ts&#45;&gt;src/client/presentation/viewModels/GetCharactersViewModel.ts</title>
-<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M176.74,-506.56C180.85,-508.72 184.6,-511.49 187.75,-515 204.71,-533.9 177.17,-611.68 195.75,-629 269.14,-697.42 403.06,-638.02 457.93,-608.88"/>
-<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="458.8,-610.8 463.08,-606.1 456.8,-607.11 458.8,-610.8"/>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M176.67,-502C286.69,-502 504.17,-502 504.17,-502 504.17,-502 504.17,-576.37 504.17,-576.37"/>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="502.07,-576.37 504.17,-582.37 506.27,-576.37 502.07,-576.37"/>
 </g>
 <!-- src/client/presentation/presenters/GetCharactersPresenter.ts&#45;&gt;src/client/application/ports/IGetCharactersPresenter.ts -->
 <g id="edge22" class="edge">
 <title>src/client/presentation/presenters/GetCharactersPresenter.ts&#45;&gt;src/client/application/ports/IGetCharactersPresenter.ts</title>
-<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M299.46,-580.55C356.67,-538.86 586.73,-371.16 656.18,-320.54"/>
-<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="657.05,-322.5 660.67,-317.27 654.58,-319.1 657.05,-322.5"/>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M264.96,-580.67C264.96,-567.75 264.96,-546 264.96,-546 264.96,-546 698.04,-546 698.04,-546 698.04,-546 698.04,-324.73 698.04,-324.73"/>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="700.14,-324.73 698.04,-318.73 695.94,-324.73 700.14,-324.73"/>
 </g>
 <!-- src/client/presentation/presenters/GetCharactersPresenter.ts&#45;&gt;src/client/application/usecases/GetCharacters/GetCharactersUseCaseResponse.ts -->
 <g id="edge23" class="edge">
 <title>src/client/presentation/presenters/GetCharactersPresenter.ts&#45;&gt;src/client/application/usecases/GetCharacters/GetCharactersUseCaseResponse.ts</title>
-<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M299.93,-580.32C322.54,-563.12 367.5,-524.8 385.62,-480 395.01,-456.81 382.16,-277.23 393.62,-255 406.27,-230.48 432.23,-212.23 452.83,-200.84"/>
-<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="453.71,-202.75 458.02,-198.09 451.74,-199.04 453.71,-202.75"/>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M347.29,-590.25C376.41,-590.25 404.88,-590.25 404.88,-590.25 404.88,-590.25 404.88,-205.6 404.88,-205.6"/>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="406.98,-205.6 404.88,-199.6 402.78,-205.6 406.98,-205.6"/>
 </g>
 <!-- src/client/presentation/presenters/GetCharactersPresenter.ts&#45;&gt;src/client/presentation/viewModels/GetCharactersViewModel.ts -->
 <g id="edge24" class="edge">
 <title>src/client/presentation/presenters/GetCharactersPresenter.ts&#45;&gt;src/client/presentation/viewModels/GetCharactersViewModel.ts</title>
-<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M347.4,-591.55C366.97,-592.05 388.85,-592.61 409.2,-593.13"/>
-<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="409.04,-595.23 415.09,-593.28 409.15,-591.03 409.04,-595.23"/>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M347.57,-594.75C347.57,-594.75 409.08,-594.75 409.08,-594.75"/>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="409.08,-596.85 415.08,-594.75 409.08,-592.65 409.08,-596.85"/>
 </g>
 <!-- src/server/DependencyInjection.ts -->
 <g id="node19" class="node">
@@ -476,8 +476,8 @@
 <!-- src/server/DependencyInjection.ts&#45;&gt;src/server/application/ports/ICharacterRepository.ts -->
 <g id="edge25" class="edge">
 <title>src/server/DependencyInjection.ts&#45;&gt;src/server/application/ports/ICharacterRepository.ts</title>
-<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M170.79,-1069.58C275.41,-1072.56 501.77,-1079.02 612.51,-1082.18"/>
-<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="612.17,-1084.28 618.22,-1082.35 612.29,-1080.08 612.17,-1084.28"/>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M170.79,-1069.75C303.85,-1069.75 626.75,-1069.75 626.75,-1069.75 626.75,-1069.75 626.75,-1070.2 626.75,-1070.2"/>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="624.65,-1065.23 626.75,-1071.23 628.85,-1065.23 624.65,-1065.23"/>
 </g>
 <!-- src/server/application/ports/ICreateCharacterUseCase.ts -->
 <g id="node21" class="node">
@@ -491,8 +491,8 @@
 <!-- src/server/DependencyInjection.ts&#45;&gt;src/server/application/ports/ICreateCharacterUseCase.ts -->
 <g id="edge26" class="edge">
 <title>src/server/DependencyInjection.ts&#45;&gt;src/server/application/ports/ICreateCharacterUseCase.ts</title>
-<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M170.73,-1074.43C179.11,-1075.34 187.66,-1076.23 195.75,-1077 338.95,-1090.69 506.51,-1103.13 601.1,-1109.83"/>
-<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="600.86,-1111.92 607,-1110.25 601.16,-1107.73 600.86,-1111.92"/>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M170.55,-1072.25C301.39,-1072.25 615.88,-1072.25 615.88,-1072.25 615.88,-1072.25 615.88,-1096.49 615.88,-1096.49"/>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="613.78,-1096.49 615.88,-1102.49 617.98,-1096.49 613.78,-1096.49"/>
 </g>
 <!-- src/server/application/ports/IGetCharactersUseCase.ts -->
 <g id="node22" class="node">
@@ -506,8 +506,8 @@
 <!-- src/server/DependencyInjection.ts&#45;&gt;src/server/application/ports/IGetCharactersUseCase.ts -->
 <g id="edge27" class="edge">
 <title>src/server/DependencyInjection.ts&#45;&gt;src/server/application/ports/IGetCharactersUseCase.ts</title>
-<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M148.45,-1077.72C162.87,-1081.68 180.04,-1086.03 195.75,-1089 340.04,-1116.31 511.34,-1132.9 605.43,-1140.68"/>
-<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="605.12,-1142.76 611.27,-1141.16 605.46,-1138.58 605.12,-1142.76"/>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M142.5,-1077.56C142.5,-1098.39 142.5,-1146 142.5,-1146 142.5,-1146 605.46,-1146 605.46,-1146"/>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="605.46,-1148.1 611.46,-1146 605.46,-1143.9 605.46,-1148.1"/>
 </g>
 <!-- src/server/application/ports/IIdentityProvider.ts -->
 <g id="node23" class="node">
@@ -521,8 +521,8 @@
 <!-- src/server/DependencyInjection.ts&#45;&gt;src/server/application/ports/IIdentityProvider.ts -->
 <g id="edge28" class="edge">
 <title>src/server/DependencyInjection.ts&#45;&gt;src/server/application/ports/IIdentityProvider.ts</title>
-<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M170.79,-1066.52C278.69,-1063.63 516.08,-1057.28 622.58,-1054.43"/>
-<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="622.58,-1056.53 628.52,-1054.27 622.47,-1052.33 622.58,-1056.53"/>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M170.76,-1067.25C313.25,-1067.25 677.12,-1067.25 677.12,-1067.25 677.12,-1067.25 677.12,-1066.8 677.12,-1066.8"/>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="679.23,-1071.77 677.13,-1065.77 675.03,-1071.77 679.23,-1071.77"/>
 </g>
 <!-- src/server/application/usecases/CreateCharacter/CreateCharacterUseCase.ts -->
 <g id="node24" class="node">
@@ -536,8 +536,8 @@
 <!-- src/server/DependencyInjection.ts&#45;&gt;src/server/application/usecases/CreateCharacter/CreateCharacterUseCase.ts -->
 <g id="edge29" class="edge">
 <title>src/server/DependencyInjection.ts&#45;&gt;src/server/application/usecases/CreateCharacter/CreateCharacterUseCase.ts</title>
-<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M123.09,-1058.35C136.22,-1042.3 164.75,-1010.08 195.75,-992 265.18,-951.5 355.13,-927.84 415.58,-915.44"/>
-<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="415.85,-917.53 421.32,-914.29 415.02,-913.42 415.85,-917.53"/>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M114.5,-1058.71C114.5,-1024.02 114.5,-904 114.5,-904 114.5,-904 408.4,-904 408.4,-904"/>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="408.4,-906.1 414.4,-904 408.4,-901.9 408.4,-906.1"/>
 </g>
 <!-- src/server/application/usecases/GetCharacters/GetCharactersUseCase.ts -->
 <g id="node25" class="node">
@@ -551,8 +551,8 @@
 <!-- src/server/DependencyInjection.ts&#45;&gt;src/server/application/usecases/GetCharacters/GetCharactersUseCase.ts -->
 <g id="edge30" class="edge">
 <title>src/server/DependencyInjection.ts&#45;&gt;src/server/application/usecases/GetCharacters/GetCharactersUseCase.ts</title>
-<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M165.53,-1058.27C233.62,-1044.27 350.98,-1017.25 385.62,-991 391.03,-986.9 387.96,-981.73 393.62,-978 399.7,-974 406.52,-971.03 413.6,-968.84"/>
-<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="413.81,-970.95 419.08,-967.39 412.74,-966.89 413.81,-970.95"/>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M142.5,-1058.49C142.5,-1033 142.5,-965 142.5,-965 142.5,-965 412.62,-965 412.62,-965"/>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="412.62,-967.1 418.62,-965 412.62,-962.9 412.62,-967.1"/>
 </g>
 <!-- src/server/infrastructure/InMemoryCharacterRepository.ts -->
 <g id="node26" class="node">
@@ -566,8 +566,8 @@
 <!-- src/server/DependencyInjection.ts&#45;&gt;src/server/infrastructure/InMemoryCharacterRepository.ts -->
 <g id="edge31" class="edge">
 <title>src/server/DependencyInjection.ts&#45;&gt;src/server/infrastructure/InMemoryCharacterRepository.ts</title>
-<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M118.39,-1058.41C126.56,-1032.79 152.07,-961.86 195.75,-920 266.63,-852.07 376.8,-811.08 437.84,-792.3"/>
-<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="438.45,-794.31 443.59,-790.57 437.24,-790.29 438.45,-794.31"/>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M170.98,-1064.75C257.5,-1064.75 412.94,-1064.75 412.94,-1064.75 412.94,-1064.75 412.94,-798.5 412.94,-798.5"/>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="415.04,-798.5 412.94,-792.5 410.84,-798.5 415.04,-798.5"/>
 </g>
 <!-- src/server/infrastructure/UuidIdentityProvider.ts -->
 <g id="node27" class="node">
@@ -581,8 +581,8 @@
 <!-- src/server/DependencyInjection.ts&#45;&gt;src/server/infrastructure/UuidIdentityProvider.ts -->
 <g id="edge32" class="edge">
 <title>src/server/DependencyInjection.ts&#45;&gt;src/server/infrastructure/UuidIdentityProvider.ts</title>
-<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M115.27,-1058.45C114.93,-1020.43 119.02,-878.44 195.75,-808 256.69,-752.05 356.08,-743.41 420.34,-744.53"/>
-<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="420.09,-746.62 426.14,-744.67 420.2,-742.42 420.09,-746.62"/>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M86.5,-1058.45C86.5,-1005.38 86.5,-749 86.5,-749 86.5,-749 420.41,-749 420.41,-749"/>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="420.41,-751.1 426.41,-749 420.41,-746.9 420.41,-751.1"/>
 </g>
 <!-- src/server/presentation/controllers/CreateCharacterController.ts -->
 <g id="node28" class="node">
@@ -596,8 +596,8 @@
 <!-- src/server/DependencyInjection.ts&#45;&gt;src/server/presentation/controllers/CreateCharacterController.ts -->
 <g id="edge33" class="edge">
 <title>src/server/DependencyInjection.ts&#45;&gt;src/server/presentation/controllers/CreateCharacterController.ts</title>
-<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M116.46,-1077.75C120.11,-1109.31 136.14,-1209.4 195.75,-1257 200.17,-1260.53 205.1,-1263.38 210.32,-1265.67"/>
-<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="209.54,-1267.62 215.89,-1267.77 211.02,-1263.69 209.54,-1267.62"/>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M86.5,-1077.61C86.5,-1118.14 86.5,-1273 86.5,-1273 86.5,-1273 209.66,-1273 209.66,-1273"/>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="209.66,-1275.1 215.66,-1273 209.66,-1270.9 209.66,-1275.1"/>
 </g>
 <!-- src/server/presentation/controllers/GetCharactersController.ts -->
 <g id="node29" class="node">
@@ -611,8 +611,8 @@
 <!-- src/server/DependencyInjection.ts&#45;&gt;src/server/presentation/controllers/GetCharactersController.ts -->
 <g id="edge34" class="edge">
 <title>src/server/DependencyInjection.ts&#45;&gt;src/server/presentation/controllers/GetCharactersController.ts</title>
-<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M117.12,-1077.59C122.47,-1106.04 142.38,-1190.34 195.75,-1229 201.43,-1233.11 207.85,-1236.18 214.58,-1238.44"/>
-<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="213.98,-1240.46 220.32,-1240.07 215.13,-1236.41 213.98,-1240.46"/>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M114.5,-1077.6C114.5,-1114.08 114.5,-1242 114.5,-1242 114.5,-1242 214.25,-1242 214.25,-1242"/>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="214.25,-1244.1 220.25,-1242 214.25,-1239.9 214.25,-1244.1"/>
 </g>
 <!-- src/server/domain/Character.ts -->
 <g id="node30" class="node">
@@ -626,8 +626,8 @@
 <!-- src/server/application/ports/ICharacterRepository.ts&#45;&gt;src/server/domain/Character.ts -->
 <g id="edge35" class="edge">
 <title>src/server/application/ports/ICharacterRepository.ts&#45;&gt;src/server/domain/Character.ts</title>
-<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M733.24,-1086.76C750.06,-1084.84 767.39,-1079.65 779.88,-1068 791.54,-1057.11 784.08,-1048.5 787.88,-1033 809.54,-944.63 837.88,-839.59 849.17,-798.12"/>
-<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="851.14,-798.89 850.69,-792.54 847.09,-797.78 851.14,-798.89"/>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M733.06,-1079.38C753.58,-1079.38 771.88,-1079.38 771.88,-1079.38 771.88,-1079.38 771.88,-784.62 771.88,-784.62 771.88,-784.62 813.67,-784.62 813.67,-784.62"/>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="813.67,-786.73 819.67,-784.63 813.67,-782.53 813.67,-786.73"/>
 </g>
 <!-- src/server/application/ports/ICreateCharacterPresenter.ts -->
 <g id="node31" class="node">
@@ -641,8 +641,8 @@
 <!-- src/server/application/ports/ICreateCharacterUseCase.ts&#45;&gt;src/server/application/ports/ICreateCharacterPresenter.ts -->
 <g id="edge37" class="edge">
 <title>src/server/application/ports/ICreateCharacterUseCase.ts&#45;&gt;src/server/application/ports/ICreateCharacterPresenter.ts</title>
-<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M742.79,-1105.26C755.12,-1103.29 767.91,-1101.15 779.88,-1099 786.1,-1097.88 792.62,-1096.65 799.08,-1095.4"/>
-<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="799.39,-1097.48 804.87,-1094.26 798.58,-1093.36 799.39,-1097.48"/>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M738.38,-1105.53C738.38,-1096.41 738.38,-1084 738.38,-1084 738.38,-1084 778.52,-1084 778.52,-1084"/>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="778.52,-1086.1 784.52,-1084 778.52,-1081.9 778.52,-1086.1"/>
 </g>
 <!-- src/server/application/usecases/CreateCharacter/CreateCharacterUseCaseRequest.ts -->
 <g id="node33" class="node">
@@ -656,8 +656,8 @@
 <!-- src/server/application/ports/ICreateCharacterUseCase.ts&#45;&gt;src/server/application/usecases/CreateCharacter/CreateCharacterUseCaseRequest.ts -->
 <g id="edge38" class="edge">
 <title>src/server/application/ports/ICreateCharacterUseCase.ts&#45;&gt;src/server/application/usecases/CreateCharacter/CreateCharacterUseCaseRequest.ts</title>
-<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M610.01,-1114.86C598.9,-1111.16 589.85,-1104.48 586.38,-1093 583.19,-1082.47 583.19,-905.53 586.38,-895 586.94,-893.14 587.65,-891.4 588.49,-889.79"/>
-<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="590.08,-891.17 591.94,-885.09 586.69,-888.69 590.08,-891.17"/>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M744.23,-1113.25C763.72,-1113.25 779.88,-1113.25 779.88,-1113.25 779.88,-1113.25 779.88,-873 779.88,-873 779.88,-873 769.58,-873 769.58,-873"/>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="769.58,-870.9 763.58,-873 769.58,-875.1 769.58,-870.9"/>
 </g>
 <!-- src/server/application/ports/IGetCharactersPresenter.ts -->
 <g id="node34" class="node">
@@ -671,38 +671,38 @@
 <!-- src/server/application/ports/IGetCharactersUseCase.ts&#45;&gt;src/server/application/ports/IGetCharactersPresenter.ts -->
 <g id="edge40" class="edge">
 <title>src/server/application/ports/IGetCharactersUseCase.ts&#45;&gt;src/server/application/ports/IGetCharactersPresenter.ts</title>
-<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M739.68,-1140.4C753.72,-1139.13 768.75,-1137.76 783.14,-1136.45"/>
-<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="783.21,-1138.56 788.99,-1135.92 782.83,-1134.37 783.21,-1138.56"/>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M677.12,-1136.5C677.12,-1134.83 677.12,-1133.62 677.12,-1133.62 677.12,-1133.62 783.09,-1133.62 783.09,-1133.62"/>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="783.09,-1135.73 789.09,-1133.63 783.09,-1131.53 783.09,-1135.73"/>
 </g>
 <!-- src/server/application/usecases/CreateCharacter/CreateCharacterUseCase.ts&#45;&gt;src/server/application/ports/ICharacterRepository.ts -->
 <g id="edge41" class="edge">
 <title>src/server/application/usecases/CreateCharacter/CreateCharacterUseCase.ts&#45;&gt;src/server/application/ports/ICharacterRepository.ts</title>
-<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M535.21,-913.69C552.97,-919.69 571.23,-929.39 582.38,-945 598.28,-967.3 572.2,-1047.51 590.38,-1068 596.33,-1074.71 604.12,-1079.17 612.58,-1082.07"/>
-<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="611.96,-1084.08 618.3,-1083.66 613.08,-1080.03 611.96,-1084.08"/>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M549.55,-910.61C550.63,-910.61 551.23,-910.61 551.23,-910.61 551.23,-910.61 551.23,-1085.25 551.23,-1085.25 551.23,-1085.25 612.14,-1085.25 612.14,-1085.25"/>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="612.14,-1087.35 618.14,-1085.25 612.14,-1083.15 612.14,-1087.35"/>
 </g>
 <!-- src/server/application/usecases/CreateCharacter/CreateCharacterUseCase.ts&#45;&gt;src/server/application/ports/ICreateCharacterUseCase.ts -->
 <g id="edge43" class="edge">
 <title>src/server/application/usecases/CreateCharacter/CreateCharacterUseCase.ts&#45;&gt;src/server/application/ports/ICreateCharacterUseCase.ts</title>
-<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M535.58,-913.7C553.27,-919.7 571.39,-929.39 582.38,-945 592.24,-959.01 579.09,-1086.11 590.38,-1099 593.68,-1102.77 597.56,-1105.84 601.82,-1108.32"/>
-<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="600.81,-1110.16 607.12,-1110.86 602.62,-1106.37 600.81,-1110.16"/>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M549.61,-902.68C565.7,-902.68 578.38,-902.68 578.38,-902.68 578.38,-902.68 578.38,-1111.92 578.38,-1111.92 578.38,-1111.92 600.86,-1111.92 600.86,-1111.92"/>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="600.86,-1114.02 606.86,-1111.92 600.86,-1109.82 600.86,-1114.02"/>
 </g>
 <!-- src/server/application/usecases/CreateCharacter/CreateCharacterUseCase.ts&#45;&gt;src/server/application/ports/IIdentityProvider.ts -->
 <g id="edge44" class="edge">
 <title>src/server/application/usecases/CreateCharacter/CreateCharacterUseCase.ts&#45;&gt;src/server/application/ports/IIdentityProvider.ts</title>
-<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M533.37,-913.68C551.45,-919.71 570.42,-929.42 582.38,-945 598.49,-965.99 575.58,-982.06 590.38,-1004 601.5,-1020.49 620.15,-1032.1 637.22,-1039.86"/>
-<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="636.31,-1041.76 642.65,-1042.18 637.96,-1037.9 636.31,-1041.76"/>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M549.55,-907.96C552.76,-907.96 554.67,-907.96 554.67,-907.96 554.67,-907.96 554.67,-1053.75 554.67,-1053.75 554.67,-1053.75 622.5,-1053.75 622.5,-1053.75"/>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="622.5,-1055.85 628.5,-1053.75 622.5,-1051.65 622.5,-1055.85"/>
 </g>
 <!-- src/server/application/usecases/CreateCharacter/CreateCharacterUseCase.ts&#45;&gt;src/server/domain/Character.ts -->
 <g id="edge47" class="edge">
 <title>src/server/application/usecases/CreateCharacter/CreateCharacterUseCase.ts&#45;&gt;src/server/domain/Character.ts</title>
-<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M494.58,-894.43C512.47,-878.21 551.33,-845.49 590.38,-829 665.2,-797.39 760.49,-786.11 813.63,-782.13"/>
-<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="813.56,-784.24 819.4,-781.72 813.27,-780.05 813.56,-784.24"/>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M549.31,-897.39C561.45,-897.39 570.38,-897.39 570.38,-897.39 570.38,-897.39 570.38,-780 570.38,-780 570.38,-780 813.43,-780 813.43,-780"/>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="813.43,-782.1 819.43,-780 813.43,-777.9 813.43,-782.1"/>
 </g>
 <!-- src/server/application/usecases/CreateCharacter/CreateCharacterUseCase.ts&#45;&gt;src/server/application/ports/ICreateCharacterPresenter.ts -->
 <g id="edge42" class="edge">
 <title>src/server/application/usecases/CreateCharacter/CreateCharacterUseCase.ts&#45;&gt;src/server/application/ports/ICreateCharacterPresenter.ts</title>
-<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M495.44,-894.28C513.7,-878.96 551.94,-849.85 590.38,-839 630.9,-827.56 746.05,-813.91 779.88,-839 817.27,-866.74 843.18,-1013.15 851.37,-1065.43"/>
-<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="849.28,-1065.7 852.27,-1071.32 853.44,-1065.07 849.28,-1065.7"/>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M483.38,-913.65C483.38,-922.59 483.38,-934.5 483.38,-934.5 483.38,-934.5 799.5,-934.5 799.5,-934.5 799.5,-934.5 799.5,-1065.62 799.5,-1065.62"/>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="797.4,-1065.62 799.5,-1071.62 801.6,-1065.62 797.4,-1065.62"/>
 </g>
 <!-- src/server/application/usecases/CreateCharacter/CreateCharacterUseCaseResponse.ts -->
 <g id="node32" class="node">
@@ -716,32 +716,32 @@
 <!-- src/server/application/usecases/CreateCharacter/CreateCharacterUseCase.ts&#45;&gt;src/server/application/usecases/CreateCharacter/CreateCharacterUseCaseResponse.ts -->
 <g id="edge46" class="edge">
 <title>src/server/application/usecases/CreateCharacter/CreateCharacterUseCase.ts&#45;&gt;src/server/application/usecases/CreateCharacter/CreateCharacterUseCaseResponse.ts</title>
-<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M549.56,-904C559.74,-904 570.43,-904 581.11,-904"/>
-<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="581.04,-906.1 587.04,-904 581.04,-901.9 581.04,-906.1"/>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M549.51,-900.04C549.51,-900.04 581.02,-900.04 581.02,-900.04"/>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="581.02,-902.14 587.02,-900.04 581.02,-897.94 581.02,-902.14"/>
 </g>
 <!-- src/server/application/usecases/CreateCharacter/CreateCharacterUseCase.ts&#45;&gt;src/server/application/usecases/CreateCharacter/CreateCharacterUseCaseRequest.ts -->
 <g id="edge45" class="edge">
 <title>src/server/application/usecases/CreateCharacter/CreateCharacterUseCase.ts&#45;&gt;src/server/application/usecases/CreateCharacter/CreateCharacterUseCaseRequest.ts</title>
-<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M544.52,-894.28C564.41,-891.06 586.7,-887.46 607.2,-884.14"/>
-<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="607.29,-886.26 612.88,-883.23 606.62,-882.11 607.29,-886.26"/>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M483.38,-894.53C483.38,-885.41 483.38,-873 483.38,-873 483.38,-873 584.81,-873 584.81,-873"/>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="584.81,-875.1 590.81,-873 584.81,-870.9 584.81,-875.1"/>
 </g>
 <!-- src/server/application/usecases/GetCharacters/GetCharactersUseCase.ts&#45;&gt;src/server/application/ports/ICharacterRepository.ts -->
 <g id="edge48" class="edge">
 <title>src/server/application/usecases/GetCharacters/GetCharactersUseCase.ts&#45;&gt;src/server/application/ports/ICharacterRepository.ts</title>
-<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M544.91,-960.73C558.92,-962.79 572.58,-967.77 582.38,-978 596.26,-992.5 576.87,-1053.14 590.38,-1068 596.41,-1074.64 604.24,-1079.07 612.72,-1081.94"/>
-<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="612.11,-1083.95 618.45,-1083.52 613.23,-1079.9 612.11,-1083.95"/>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M514,-974.75C514,-1004.04 514,-1089.25 514,-1089.25 514,-1089.25 612.42,-1089.25 612.42,-1089.25"/>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="612.42,-1091.35 618.42,-1089.25 612.42,-1087.15 612.42,-1091.35"/>
 </g>
 <!-- src/server/application/usecases/GetCharacters/GetCharactersUseCase.ts&#45;&gt;src/server/application/ports/IGetCharactersUseCase.ts -->
 <g id="edge50" class="edge">
 <title>src/server/application/usecases/GetCharacters/GetCharactersUseCase.ts&#45;&gt;src/server/application/ports/IGetCharactersUseCase.ts</title>
-<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M544.91,-960.45C559.01,-962.49 572.71,-967.54 582.38,-978 605.33,-1002.85 568.09,-1104.56 590.38,-1130 594.77,-1135.01 600.18,-1138.77 606.14,-1141.57"/>
-<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="605.37,-1143.52 611.73,-1143.72 606.88,-1139.6 605.37,-1143.52"/>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M452.75,-974.73C452.75,-1011.71 452.75,-1141.38 452.75,-1141.38 452.75,-1141.38 605.3,-1141.38 605.3,-1141.38"/>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="605.3,-1143.48 611.3,-1141.38 605.3,-1139.28 605.3,-1143.48"/>
 </g>
 <!-- src/server/application/usecases/GetCharacters/GetCharactersUseCase.ts&#45;&gt;src/server/application/ports/IGetCharactersPresenter.ts -->
 <g id="edge49" class="edge">
 <title>src/server/application/usecases/GetCharacters/GetCharactersUseCase.ts&#45;&gt;src/server/application/ports/IGetCharactersPresenter.ts</title>
-<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M545.09,-963.35C559.19,-960.03 572.84,-953.89 582.38,-943 595.6,-927.9 575.56,-866.55 590.38,-853 605.91,-838.79 764.75,-838.36 779.88,-853 799.52,-872.02 772.82,-1076.17 787.88,-1099 792.75,-1106.4 799.89,-1112.06 807.69,-1116.39"/>
-<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="806.63,-1118.21 812.94,-1118.96 808.47,-1114.44 806.63,-1118.21"/>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M483.38,-974.37C483.38,-1009.38 483.38,-1130.5 483.38,-1130.5 483.38,-1130.5 783.04,-1130.5 783.04,-1130.5"/>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="783.04,-1132.6 789.04,-1130.5 783.04,-1128.4 783.04,-1132.6"/>
 </g>
 <!-- src/server/application/usecases/GetCharacters/GetCharactersUseCaseResponse.ts -->
 <g id="node35" class="node">
@@ -755,32 +755,32 @@
 <!-- src/server/application/usecases/GetCharacters/GetCharactersUseCase.ts&#45;&gt;src/server/application/usecases/GetCharacters/GetCharactersUseCaseResponse.ts -->
 <g id="edge51" class="edge">
 <title>src/server/application/usecases/GetCharacters/GetCharactersUseCase.ts&#45;&gt;src/server/application/usecases/GetCharacters/GetCharactersUseCaseResponse.ts</title>
-<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M545.05,-965C557.92,-965 571.77,-965 585.48,-965"/>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M544.94,-965C544.94,-965 585.43,-965 585.43,-965"/>
 <polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="585.43,-967.1 591.43,-965 585.43,-962.9 585.43,-967.1"/>
 </g>
 <!-- src/server/infrastructure/InMemoryCharacterRepository.ts&#45;&gt;src/server/application/ports/ICharacterRepository.ts -->
 <g id="edge52" class="edge">
 <title>src/server/infrastructure/InMemoryCharacterRepository.ts&#45;&gt;src/server/application/ports/ICharacterRepository.ts</title>
-<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M506.98,-789.57C530.52,-800.9 566.19,-822.2 582.38,-853 593.5,-874.16 574.76,-1049.9 590.38,-1068 596.24,-1074.79 603.98,-1079.3 612.41,-1082.21"/>
-<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="611.78,-1084.22 618.12,-1083.81 612.91,-1080.17 611.78,-1084.22"/>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M552.95,-789.68C552.95,-841.25 552.95,-1081.25 552.95,-1081.25 552.95,-1081.25 612.19,-1081.25 612.19,-1081.25"/>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="612.19,-1083.35 618.19,-1081.25 612.19,-1079.15 612.19,-1083.35"/>
 </g>
 <!-- src/server/infrastructure/InMemoryCharacterRepository.ts&#45;&gt;src/server/domain/Character.ts -->
 <g id="edge53" class="edge">
 <title>src/server/infrastructure/InMemoryCharacterRepository.ts&#45;&gt;src/server/domain/Character.ts</title>
-<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M558.31,-780C635.09,-780 752.37,-780 813.64,-780"/>
-<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="813.6,-782.1 819.6,-780 813.6,-777.9 813.6,-782.1"/>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M558.6,-775.38C558.6,-775.38 813.67,-775.38 813.67,-775.38"/>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="813.67,-777.48 819.67,-775.38 813.67,-773.28 813.67,-777.48"/>
 </g>
 <!-- src/server/infrastructure/UuidIdentityProvider.ts&#45;&gt;src/server/application/ports/IIdentityProvider.ts -->
 <g id="edge54" class="edge">
 <title>src/server/infrastructure/UuidIdentityProvider.ts&#45;&gt;src/server/application/ports/IIdentityProvider.ts</title>
-<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M537.54,-745.26C554.24,-746.99 571.22,-752.31 582.38,-765 599.92,-784.95 576.66,-981.25 590.38,-1004 600.42,-1020.66 618.4,-1032.17 635.31,-1039.83"/>
-<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="634.35,-1041.71 640.7,-1042.11 635.99,-1037.84 634.35,-1041.71"/>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M537.51,-749C560.62,-749 582.38,-749 582.38,-749 582.38,-749 582.38,-1048.75 582.38,-1048.75 582.38,-1048.75 622.67,-1048.75 622.67,-1048.75"/>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="622.67,-1050.85 628.67,-1048.75 622.67,-1046.65 622.67,-1050.85"/>
 </g>
 <!-- src/server/presentation/controllers/CreateCharacterController.ts&#45;&gt;src/server/application/ports/ICreateCharacterUseCase.ts -->
 <g id="edge55" class="edge">
 <title>src/server/presentation/controllers/CreateCharacterController.ts&#45;&gt;src/server/application/ports/ICreateCharacterUseCase.ts</title>
-<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M352.28,-1272.66C364.44,-1269.9 376.24,-1265.07 385.62,-1257 394.47,-1249.39 386.08,-1240.9 393.62,-1232 457.18,-1157.02 497.37,-1162.79 590.38,-1131 594.85,-1129.47 599.52,-1128.07 604.25,-1126.8"/>
-<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="604.59,-1128.88 609.89,-1125.39 603.56,-1124.81 604.59,-1128.88"/>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M352.32,-1272.25C367.82,-1272.25 379.88,-1272.25 379.88,-1272.25 379.88,-1272.25 379.88,-1118.08 379.88,-1118.08 379.88,-1118.08 601.02,-1118.08 601.02,-1118.08"/>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="601.02,-1120.18 607.02,-1118.08 601.02,-1115.98 601.02,-1120.18"/>
 </g>
 <!-- src/server/presentation/presenters/CreateCharacterPresenter.ts -->
 <g id="node36" class="node">
@@ -794,8 +794,8 @@
 <!-- src/server/presentation/controllers/CreateCharacterController.ts&#45;&gt;src/server/presentation/presenters/CreateCharacterPresenter.ts -->
 <g id="edge56" class="edge">
 <title>src/server/presentation/controllers/CreateCharacterController.ts&#45;&gt;src/server/presentation/presenters/CreateCharacterPresenter.ts</title>
-<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M334.17,-1282.73C361.87,-1288.39 396.95,-1295.56 426.02,-1301.49"/>
-<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="425.57,-1303.54 431.87,-1302.69 426.41,-1299.43 425.57,-1303.54"/>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M352.26,-1277.25C402.26,-1277.25 462.08,-1277.25 462.08,-1277.25 462.08,-1277.25 462.08,-1294.58 462.08,-1294.58"/>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="459.98,-1294.58 462.08,-1300.58 464.18,-1294.58 459.98,-1294.58"/>
 </g>
 <!-- src/server/presentation/requests/CreateCharacterRequest.ts -->
 <g id="node37" class="node">
@@ -809,8 +809,8 @@
 <!-- src/server/presentation/controllers/CreateCharacterController.ts&#45;&gt;src/server/presentation/requests/CreateCharacterRequest.ts -->
 <g id="edge57" class="edge">
 <title>src/server/presentation/controllers/CreateCharacterController.ts&#45;&gt;src/server/presentation/requests/CreateCharacterRequest.ts</title>
-<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M352.27,-1265.95C370.88,-1263.95 391.24,-1261.77 410.21,-1259.74"/>
-<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="410.35,-1261.83 416.09,-1259.11 409.9,-1257.66 410.35,-1261.83"/>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M285.5,-1263.45C285.5,-1259.69 285.5,-1256.25 285.5,-1256.25 285.5,-1256.25 410.1,-1256.25 410.1,-1256.25"/>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="410.1,-1258.35 416.1,-1256.25 410.1,-1254.15 410.1,-1258.35"/>
 </g>
 <!-- src/server/presentation/viewModels/CreateCharacterViewModel.ts -->
 <g id="node38" class="node">
@@ -824,14 +824,14 @@
 <!-- src/server/presentation/controllers/CreateCharacterController.ts&#45;&gt;src/server/presentation/viewModels/CreateCharacterViewModel.ts -->
 <g id="edge58" class="edge">
 <title>src/server/presentation/controllers/CreateCharacterController.ts&#45;&gt;src/server/presentation/viewModels/CreateCharacterViewModel.ts</title>
-<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M291.96,-1282.49C305.62,-1305.12 343.77,-1361.96 393.62,-1383 470.91,-1415.62 505.73,-1417.1 582.38,-1383 622.31,-1365.23 652.39,-1321.12 666.77,-1296.44"/>
-<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="668.58,-1297.48 669.7,-1291.23 664.93,-1295.42 668.58,-1297.48"/>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M352.38,-1274.75C352.38,-1274.75 598.2,-1274.75 598.2,-1274.75"/>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="598.2,-1276.85 604.2,-1274.75 598.2,-1272.65 598.2,-1276.85"/>
 </g>
 <!-- src/server/presentation/controllers/GetCharactersController.ts&#45;&gt;src/server/application/ports/IGetCharactersUseCase.ts -->
 <g id="edge59" class="edge">
 <title>src/server/presentation/controllers/GetCharactersController.ts&#45;&gt;src/server/application/ports/IGetCharactersUseCase.ts</title>
-<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M347.99,-1237.17C360.61,-1235.29 373.68,-1232.66 385.62,-1229 389.43,-1227.84 389.91,-1226.41 393.62,-1225 474.84,-1194.08 498.79,-1197.77 582.38,-1174 600.04,-1168.98 619.52,-1163.2 636.11,-1158.2"/>
-<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="636.47,-1160.29 641.61,-1156.54 635.26,-1156.27 636.47,-1160.29"/>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M264.96,-1232.57C264.96,-1209.22 264.96,-1150.62 264.96,-1150.62 264.96,-1150.62 605.5,-1150.62 605.5,-1150.62"/>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="605.5,-1152.73 611.5,-1150.63 605.5,-1148.53 605.5,-1152.73"/>
 </g>
 <!-- src/server/presentation/presenters/GetCharactersPresenter.ts -->
 <g id="node39" class="node">
@@ -845,8 +845,8 @@
 <!-- src/server/presentation/controllers/GetCharactersController.ts&#45;&gt;src/server/presentation/presenters/GetCharactersPresenter.ts -->
 <g id="edge60" class="edge">
 <title>src/server/presentation/controllers/GetCharactersController.ts&#45;&gt;src/server/presentation/presenters/GetCharactersPresenter.ts</title>
-<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M347.95,-1239.8C362.04,-1242.3 375.75,-1247.66 385.62,-1258 407.25,-1280.65 372.21,-1305.15 393.62,-1328 399.05,-1333.79 405.81,-1337.91 413.15,-1340.8"/>
-<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="412.09,-1342.66 418.44,-1342.53 413.39,-1338.67 412.09,-1342.66"/>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M347.87,-1247C370.28,-1247 390.12,-1247 390.12,-1247 390.12,-1247 390.12,-1344 390.12,-1344 390.12,-1344 412.41,-1344 412.41,-1344"/>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="412.41,-1346.1 418.41,-1344 412.41,-1341.9 412.41,-1346.1"/>
 </g>
 <!-- src/server/presentation/viewModels/GetCharactersViewModel.ts -->
 <g id="node40" class="node">
@@ -860,56 +860,56 @@
 <!-- src/server/presentation/controllers/GetCharactersController.ts&#45;&gt;src/server/presentation/viewModels/GetCharactersViewModel.ts -->
 <g id="edge61" class="edge">
 <title>src/server/presentation/controllers/GetCharactersController.ts&#45;&gt;src/server/presentation/viewModels/GetCharactersViewModel.ts</title>
-<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M347.89,-1235.28C362.84,-1233.92 378.79,-1232.69 393.62,-1232 477.42,-1228.1 498.79,-1224.92 582.38,-1232 594.55,-1233.03 607.53,-1234.81 619.82,-1236.8"/>
-<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="619.38,-1238.86 625.65,-1237.79 620.08,-1234.72 619.38,-1238.86"/>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M306.04,-1232.29C306.04,-1218.26 306.04,-1194 306.04,-1194 306.04,-1194 677.12,-1194 677.12,-1194 677.12,-1194 677.12,-1229.57 677.12,-1229.57"/>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="675.03,-1229.57 677.13,-1235.57 679.23,-1229.57 675.03,-1229.57"/>
 </g>
 <!-- src/server/application/ports/ICreateCharacterPresenter.ts&#45;&gt;src/server/application/usecases/CreateCharacter/CreateCharacterUseCaseResponse.ts -->
 <g id="edge36" class="edge">
 <title>src/server/application/ports/ICreateCharacterPresenter.ts&#45;&gt;src/server/application/usecases/CreateCharacter/CreateCharacterUseCaseResponse.ts</title>
-<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M851.53,-1074.47C844.34,-1049.71 821.81,-982.65 779.88,-945 765.31,-931.93 746.05,-922.74 728.2,-916.43"/>
-<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="729.35,-914.6 722.99,-914.69 728.02,-918.58 729.35,-914.6"/>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M811.12,-1074.32C811.12,-1036.93 811.12,-904 811.12,-904 811.12,-904 773.29,-904 773.29,-904"/>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="773.29,-901.9 767.29,-904 773.29,-906.1 773.29,-901.9"/>
 </g>
 <!-- src/server/application/ports/IGetCharactersPresenter.ts&#45;&gt;src/server/application/usecases/GetCharacters/GetCharactersUseCaseResponse.ts -->
 <g id="edge39" class="edge">
 <title>src/server/application/ports/IGetCharactersPresenter.ts&#45;&gt;src/server/application/usecases/GetCharacters/GetCharactersUseCaseResponse.ts</title>
-<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M817.22,-1120.38C806.13,-1115.7 795.03,-1108.87 787.88,-1099 770.54,-1075.07 795.35,-1058.17 779.88,-1033 764.22,-1007.53 735.03,-989.51 711.92,-978.45"/>
-<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="712.79,-976.55 706.47,-975.95 711.04,-980.36 712.79,-976.55"/>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M792.08,-1127.38C772.11,-1127.38 755.12,-1127.38 755.12,-1127.38 755.12,-1127.38 755.12,-983.7 755.12,-983.7"/>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="757.23,-983.7 755.13,-977.7 753.03,-983.7 757.23,-983.7"/>
 </g>
 <!-- src/server/presentation/presenters/CreateCharacterPresenter.ts&#45;&gt;src/server/application/ports/ICreateCharacterPresenter.ts -->
 <g id="edge62" class="edge">
 <title>src/server/presentation/presenters/CreateCharacterPresenter.ts&#45;&gt;src/server/application/ports/ICreateCharacterPresenter.ts</title>
-<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M549.9,-1318.89C631.92,-1325.53 763.72,-1333.54 779.88,-1318 796.15,-1302.36 775.39,-1133.8 787.88,-1115 792.78,-1107.62 799.92,-1101.96 807.73,-1097.63"/>
-<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="808.51,-1099.59 812.98,-1095.06 806.67,-1095.82 808.51,-1099.59"/>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M549.84,-1316.08C629.07,-1316.08 750.88,-1316.08 750.88,-1316.08 750.88,-1316.08 750.88,-1088.62 750.88,-1088.62 750.88,-1088.62 778.6,-1088.62 778.6,-1088.62"/>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="778.6,-1090.73 784.6,-1088.63 778.6,-1086.53 778.6,-1090.73"/>
 </g>
 <!-- src/server/presentation/presenters/CreateCharacterPresenter.ts&#45;&gt;src/server/application/usecases/CreateCharacter/CreateCharacterUseCaseResponse.ts -->
 <g id="edge63" class="edge">
 <title>src/server/presentation/presenters/CreateCharacterPresenter.ts&#45;&gt;src/server/application/usecases/CreateCharacter/CreateCharacterUseCaseResponse.ts</title>
-<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M549.89,-1310.66C562.4,-1307.11 574.14,-1301.05 582.38,-1291 594.56,-1276.13 579.94,-961.15 590.38,-945 598.76,-932.03 612.49,-923.06 626.52,-916.9"/>
-<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="627.18,-918.9 631.97,-914.72 625.62,-915 627.18,-918.9"/>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M549.99,-1309.92C563.87,-1309.92 574.38,-1309.92 574.38,-1309.92 574.38,-1309.92 574.38,-905.32 574.38,-905.32 574.38,-905.32 580.95,-905.32 580.95,-905.32"/>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="580.95,-907.42 586.95,-905.32 580.95,-903.22 580.95,-907.42"/>
 </g>
 <!-- src/server/presentation/presenters/CreateCharacterPresenter.ts&#45;&gt;src/server/presentation/viewModels/CreateCharacterViewModel.ts -->
 <g id="edge64" class="edge">
 <title>src/server/presentation/presenters/CreateCharacterPresenter.ts&#45;&gt;src/server/presentation/viewModels/CreateCharacterViewModel.ts</title>
-<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M539.32,-1303.26C562.19,-1299.2 588.88,-1294.47 612.58,-1290.27"/>
-<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="612.65,-1292.39 618.19,-1289.27 611.91,-1288.25 612.65,-1292.39"/>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M504.67,-1303.56C504.67,-1293.73 504.67,-1279.75 504.67,-1279.75 504.67,-1279.75 598.45,-1279.75 598.45,-1279.75"/>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="598.45,-1281.85 604.45,-1279.75 598.45,-1277.65 598.45,-1281.85"/>
 </g>
 <!-- src/server/presentation/presenters/GetCharactersPresenter.ts&#45;&gt;src/server/application/ports/IGetCharactersPresenter.ts -->
 <g id="edge65" class="edge">
 <title>src/server/presentation/presenters/GetCharactersPresenter.ts&#45;&gt;src/server/application/ports/IGetCharactersPresenter.ts</title>
-<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M521.29,-1353.75C581.75,-1367.36 702.83,-1384.54 779.88,-1328 838.94,-1284.66 851.04,-1188.58 853.5,-1148.32"/>
-<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="855.59,-1148.68 853.79,-1142.58 851.39,-1148.47 855.59,-1148.68"/>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M545.18,-1348.62C650.89,-1348.62 855.12,-1348.62 855.12,-1348.62 855.12,-1348.62 855.12,-1148.7 855.12,-1148.7"/>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="857.23,-1148.7 855.13,-1142.7 853.03,-1148.7 857.23,-1148.7"/>
 </g>
 <!-- src/server/presentation/presenters/GetCharactersPresenter.ts&#45;&gt;src/server/application/usecases/GetCharacters/GetCharactersUseCaseResponse.ts -->
 <g id="edge66" class="edge">
 <title>src/server/presentation/presenters/GetCharactersPresenter.ts&#45;&gt;src/server/application/usecases/GetCharacters/GetCharactersUseCaseResponse.ts</title>
-<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M545.25,-1346.72C559.35,-1344.25 572.96,-1338.78 582.38,-1328 593.16,-1315.65 583.04,-1047.66 590.38,-1033 602.48,-1008.8 627.64,-990.49 647.6,-979"/>
-<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="648.61,-980.84 652.85,-976.1 646.58,-977.16 648.61,-980.84"/>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M545.42,-1344C573.82,-1344 601.25,-1344 601.25,-1344 601.25,-1344 601.25,-983.78 601.25,-983.78"/>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="603.35,-983.78 601.25,-977.78 599.15,-983.78 603.35,-983.78"/>
 </g>
 <!-- src/server/presentation/presenters/GetCharactersPresenter.ts&#45;&gt;src/server/presentation/viewModels/GetCharactersViewModel.ts -->
 <g id="edge67" class="edge">
 <title>src/server/presentation/presenters/GetCharactersPresenter.ts&#45;&gt;src/server/presentation/viewModels/GetCharactersViewModel.ts</title>
-<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M545.32,-1345.94C559.15,-1343.42 572.63,-1338.12 582.38,-1328 602.26,-1307.35 570.72,-1284.87 590.38,-1264 594.26,-1259.88 598.84,-1256.62 603.83,-1254.05"/>
-<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="604.48,-1256.06 609.18,-1251.77 602.84,-1252.19 604.48,-1256.06"/>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" d="M545.31,-1339.38C551.98,-1339.38 556.4,-1339.38 556.4,-1339.38 556.4,-1339.38 556.4,-1250 556.4,-1250 556.4,-1250 602.79,-1250 602.79,-1250"/>
+<polygon fill="#000000" fill-opacity="0.200000" stroke="#000000" stroke-width="2" stroke-opacity="0.200000" points="602.79,-1252.1 608.79,-1250 602.79,-1247.9 602.79,-1252.1"/>
 </g>
 </g>
 </svg>
