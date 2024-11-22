@@ -1,6 +1,6 @@
 import {IGetCharactersPresenter} from "@/src/server/application/ports/IGetCharactersPresenter";
-import {Character} from "@/src/server/domain/Character";
 import {GetCharactersViewModel} from "@/src/server/presentation/viewModels/GetCharactersViewModel";
+import {GetCharactersUseCaseResponse} from "@/src/server/application/usecases/GetCharacters/GetCharactersUseCaseResponse";
 
 export const GetCharactersPresenter = (): IGetCharactersPresenter => {
     const viewModel: GetCharactersViewModel = {
@@ -8,7 +8,7 @@ export const GetCharactersPresenter = (): IGetCharactersPresenter => {
     };
 
     return {
-        presentCharacters(characters: Character[]): void {
+        present({characters}: GetCharactersUseCaseResponse): void {
             viewModel.characters = characters.map(character => ({
                 id: character.id,
                 name: character.name,

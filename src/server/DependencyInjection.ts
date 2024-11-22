@@ -1,8 +1,8 @@
 import {createContainer, InjectionTokens} from "@evyweb/ioctopus";
 import {InMemoryCharacterRepository} from "@/src/server/infrastructure/InMemoryCharacterRepository";
-import {GetCharactersUseCase} from "@/src/server/application/usecases/GetCharactersUseCase";
+import {GetCharactersUseCase} from "@/src/server/application/usecases/GetCharacters/GetCharactersUseCase";
 import {UuidIdentityProvider} from "@/src/server/infrastructure/UuidIdentityProvider";
-import {CreateCharacterUseCase} from "@/src/server/application/usecases/CreateCharacterUseCase";
+import {CreateCharacterUseCase} from "@/src/server/application/usecases/CreateCharacter/CreateCharacterUseCase";
 import {ICharacterRepository} from "@/src/server/application/ports/ICharacterRepository";
 import {IGetCharactersUseCase} from "@/src/server/application/ports/IGetCharactersUseCase";
 import {IIdentityProvider} from "@/src/server/application/ports/IIdentityProvider";

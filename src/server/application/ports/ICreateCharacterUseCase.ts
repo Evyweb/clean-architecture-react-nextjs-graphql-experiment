@@ -1,10 +1,5 @@
 import {ICreateCharacterPresenter} from "@/src/server/application/ports/ICreateCharacterPresenter";
-
-export interface CreateCharacterUseCaseRequest {
-    name: string;
-    species: string;
-    homeworld: string;
-}
+import {CreateCharacterUseCaseRequest} from "@/src/server/application/usecases/CreateCharacter/CreateCharacterUseCaseRequest";
 
 export interface ICreateCharacterUseCase {
     execute(characterToCreate: CreateCharacterUseCaseRequest, presenter: ICreateCharacterPresenter): Promise<void>;

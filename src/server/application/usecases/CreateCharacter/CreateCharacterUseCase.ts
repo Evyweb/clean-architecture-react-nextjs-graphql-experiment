@@ -1,11 +1,10 @@
 import {ICharacterRepository} from "@/src/server/application/ports/ICharacterRepository";
 import {Character} from "@/src/server/domain/Character";
-import {
-    CreateCharacterUseCaseRequest,
-    ICreateCharacterUseCase
-} from "@/src/server/application/ports/ICreateCharacterUseCase";
+import {ICreateCharacterUseCase} from "@/src/server/application/ports/ICreateCharacterUseCase";
 import {ICreateCharacterPresenter} from "@/src/server/application/ports/ICreateCharacterPresenter";
 import {IIdentityProvider} from "@/src/server/application/ports/IIdentityProvider";
+import {CreateCharacterUseCaseRequest} from "@/src/server/application/usecases/CreateCharacter/CreateCharacterUseCaseRequest";
+import {CreateCharacterUseCaseResponse} from "@/src/server/application/usecases/CreateCharacter/CreateCharacterUseCaseResponse";
 
 interface Dependencies {
     characterRepository: ICharacterRepository;
@@ -25,7 +24,15 @@ export const CreateCharacterUseCase = (
                 homeworld: characterToCreate.homeworld
             };
             await characterRepository.add(character);
-            presenter.presentCharacter(character);
+            const response: CreateCharacterUseCaseResponse = {
+                createdCharacter: {
+                    id: character.id,
+                    name: character.name,
+                    species: character.species,
+                    homeworld: character.homeworld
+                }
+            };
+            presenter.present(response);
         }
     };
 }

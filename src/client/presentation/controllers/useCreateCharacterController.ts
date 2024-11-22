@@ -1,6 +1,6 @@
 import {useDependency} from "@/src/client/presentation/hooks/useDependency";
-import {CreateCharacterUseCaseRequest} from "@/src/client/application/ports/ICreateCharacterUseCase";
 import {CreateCharacterRequest} from "@/src/client/presentation/requests/CreateCharacterRequest";
+import {CreateCharacterUseCaseRequest} from "@/src/client/application/usecases/CreateCharacter/CreateCharacterUseCaseRequest";
 
 export interface ICreateCharacterController {
     createCharacter(request: CreateCharacterRequest): Promise<void>;

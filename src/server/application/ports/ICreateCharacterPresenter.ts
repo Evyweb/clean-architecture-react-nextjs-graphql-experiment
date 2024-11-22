@@ -1,7 +1,7 @@
-import {Character} from "@/src/server/domain/Character";
+import {CreateCharacterUseCaseResponse} from "@/src/server/application/usecases/CreateCharacter/CreateCharacterUseCaseResponse";
 
 export interface ICreateCharacterPresenter {
-    presentCharacter(character: Character): void;
+    present(response: CreateCharacterUseCaseResponse): void;
 
     getViewModel<T>(): T;
 }

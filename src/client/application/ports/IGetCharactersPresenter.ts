@@ -1,7 +1,9 @@
-import {Character} from "@/src/client/domain/Character";
+import {
+    GetCharactersUseCaseResponse
+} from "@/src/client/application/usecases/GetCharacters/GetCharactersUseCaseResponse";
 
 export interface IGetCharactersPresenter {
-    presentCharacters(characters: Character[]): void;
+    present(response: GetCharactersUseCaseResponse): void;
 
     getViewModel<T>(): T;
 }

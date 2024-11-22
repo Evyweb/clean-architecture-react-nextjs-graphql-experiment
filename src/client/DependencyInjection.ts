@@ -2,7 +2,7 @@
 
 import {ICreateCharacterUseCase} from "@/src/client/application/ports/ICreateCharacterUseCase";
 import {ICharacterRepository} from "@/src/client/application/ports/ICharacterRepository";
-import {useCreateCharacterUseCase} from "@/src/client/application/usecases/useCreateCharacterUseCase";
+import {useCreateCharacterUseCase} from "@/src/client/application/usecases/CreateCharacter/useCreateCharacterUseCase";
 import {useCharacterRepository} from "@/src/client/infrastructure/useCharacterRepository";
 import {
     ICreateCharacterController,
@@ -13,7 +13,7 @@ import {
     useGetCharactersController
 } from "@/src/client/presentation/controllers/useGetCharactersController";
 import {IGetCharactersUseCase} from "@/src/client/application/ports/IGetCharactersUseCase";
-import {useGetCharactersUseCase} from "@/src/client/application/usecases/useGetCharactersUseCase";
+import {useGetCharactersUseCase} from "@/src/client/application/usecases/GetCharacters/useGetCharactersUseCase";
 
 type Hook<T> = () => T;
 

@@ -1,6 +1,6 @@
-import {Character} from "@/src/server/domain/Character";
 import {ICreateCharacterPresenter} from "@/src/server/application/ports/ICreateCharacterPresenter";
 import {CreateCharacterViewModel} from "@/src/server/presentation/viewModels/CreateCharacterViewModel";
+import {CreateCharacterUseCaseResponse} from "@/src/server/application/usecases/CreateCharacter/CreateCharacterUseCaseResponse";
 
 export const CreateCharacterPresenter = (): ICreateCharacterPresenter => {
     const viewModel: CreateCharacterViewModel = {
@@ -13,12 +13,12 @@ export const CreateCharacterPresenter = (): ICreateCharacterPresenter => {
     };
 
     return {
-        presentCharacter(character: Character): void {
+        present({createdCharacter}: CreateCharacterUseCaseResponse): void {
             viewModel.createdCharacter = {
-                id: character.id,
-                name: character.name,
-                species: character.species,
-                homeworld: character.homeworld,
+                id: createdCharacter.id,
+                name: createdCharacter.name,
+                species: createdCharacter.species,
+                homeworld: createdCharacter.homeworld,
             };
         },
 
