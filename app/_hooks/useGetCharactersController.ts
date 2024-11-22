@@ -2,7 +2,7 @@ import {useDependency} from "@/app/_hooks/useDependency";
 
 import {GetCharactersViewModel} from "@/src/client/presentation/viewModels/GetCharactersViewModel";
 import {GetCharactersUseCase} from "@/src/client/application/usecases/GetCharacters/GetCharactersUseCase";
-import {GetCharactersController} from "@/src/client/presentation/controllers/GetCharactersController";
+import {GetCharactersController} from "@/src/client/presentation/controllers/GetCharacters/GetCharactersController";
 
 export interface IGetCharactersController {
     getCharacters(): GetCharactersViewModel;

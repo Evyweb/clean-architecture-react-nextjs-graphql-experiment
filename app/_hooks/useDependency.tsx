@@ -1,7 +1,7 @@
 'use client';
 
 import {useContext} from "react";
-import {DependencyContext} from "@/src/client/presentation/providers/DependencyProvider";
+import {DependencyContext} from "@/app/_providers/DependencyProvider";
 import {DependencyContainer} from "@/src/client/DependencyInjection";
 
 export function useDependency<K extends keyof DependencyContainer>(key: K): ReturnType<DependencyContainer[K]> {

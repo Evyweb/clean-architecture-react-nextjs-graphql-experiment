@@ -1,5 +1,5 @@
 import {Suspense} from "react";
-import {PreloadQuery} from "@/src/client/presentation/providers/RSCApolloClient";
+import {PreloadQuery} from "@/app/_providers/RSCApolloClient";
 import CharactersList from "@/app/_components/CharactersList";
 
 import {gql} from "graphql-tag";
