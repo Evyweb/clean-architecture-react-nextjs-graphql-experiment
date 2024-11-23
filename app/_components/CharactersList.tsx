@@ -1,10 +1,12 @@
 'use client';
 
 import {useAutoAnimate} from '@formkit/auto-animate/react';
-import {useGetCharactersController} from "@/app/_hooks/useGetCharactersController";
+import {useDependency} from "@/app/_DependencyInjection/useDependency";
 
 const CharactersList = () => {
-    const getCharactersController = useGetCharactersController()
+    const repository = useDependency('useCharacterRepository');
+    const getCharactersController = useDependency('useGetCharactersController', repository);
+
     const viewModel = getCharactersController.getCharacters();
 
     const [animationParent] = useAutoAnimate();

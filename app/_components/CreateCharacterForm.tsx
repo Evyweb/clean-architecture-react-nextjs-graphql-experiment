@@ -1,10 +1,11 @@
 'use client';
 
 import {FormEvent, useState} from 'react';
-import {useCreateCharacterController} from "@/app/_hooks/useCreateCharacterController";
+import {useDependency} from "@/app/_DependencyInjection/useDependency";
 
 const CreateCharacterForm = () => {
-    const createCharacterController = useCreateCharacterController();
+    const repository = useDependency('useCharacterRepository');
+    const createCharacterController = useDependency('useCreateCharacterController', repository);
 
     const [name, setName] = useState('');
     const [species, setSpecies] = useState('');

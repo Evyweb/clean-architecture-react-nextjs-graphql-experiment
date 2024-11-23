@@ -2,9 +2,12 @@ import {
     CreateCharacterUseCaseRequest
 } from "@/src/client/application/usecases/CreateCharacter/CreateCharacterUseCaseRequest";
 import {ICreateCharacterUseCase} from "@/src/client/application/ports/ICreateCharacterUseCase";
-import {
-    CreateCharacterControllerRequest
-} from "@/src/client/presentation/controllers/CreateCharacter/CreateCharacterControllerRequest";
+
+export interface CreateCharacterControllerRequest {
+    name: string;
+    species: string;
+    homeworld: string;
+}
 
 interface ICreateCharacterController {
     createCharacter(request: CreateCharacterControllerRequest): Promise<void>;

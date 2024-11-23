@@ -2,8 +2,8 @@ import type {Metadata} from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import ApolloWrapper from "@/app/_providers/ApolloProvider";
-import {dependencyContainer} from "@/src/client/DependencyInjection";
-import {DependencyProvider} from "@/app/_providers/DependencyProvider";
+import {dependencyContainer} from "@/app/_DependencyInjection/DependencyInjection";
+import {DependencyProvider} from "@/app/_DependencyInjection/DependencyProvider";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",

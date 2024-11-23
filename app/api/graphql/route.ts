@@ -1,7 +1,6 @@
 import {startServerAndCreateNextHandler} from '@as-integrations/next';
 import {ApolloServer} from '@apollo/server';
 import {gql} from 'graphql-tag';
-import {CreateCharacterRequest} from "@/src/server/presentation/requests/CreateCharacterRequest";
 import {inject} from "@/src/server/DependencyInjection";
 
 const createCharacterController = inject('CREATE_CHARACTER_CONTROLLER');
@@ -16,7 +15,11 @@ const server = new ApolloServer({
             },
         },
         Mutation: {
-            createCharacter: async (_: never, request: CreateCharacterRequest) => {
+            createCharacter: async (_: never, request: {
+                name: string;
+                species: string;
+                homeworld: string;
+            }) => {
                 const viewModel = await createCharacterController.createCharacter(request);
                 return viewModel.createdCharacter;
             },

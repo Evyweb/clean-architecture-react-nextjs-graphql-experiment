@@ -7,11 +7,12 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "deps:github": "npm run deps:all && node tools/github.js",
-    "deps:all": "npx depcruise . --include-only \"^src|^app\" --output-type dot | dot -T svg | depcruise-wrap-stream-in-html > tools/index.html && npm run deps:screenshot",
-    "deps:screenshot": "npx depcruise src --include-only \"^src\" -x \"useDependency|DependencyProvider|providers\" --output-type dot | dot -T svg > assets/deps.svg",
-    "deps:server": "npx depcruise src --include-only \"^src\/server\" -x \"useDependency|DependencyProvider|providers\" --output-type dot | dot -T svg | depcruise-wrap-stream-in-html > tools/server-dependency-graph.html",
-    "deps:client": "npx depcruise src --include-only \"^src\/client\" -x \"useDependency|DependencyProvider|providers\" --output-type dot | dot -T svg | depcruise-wrap-stream-in-html > tools/client-dependency-graph.html"
+    "deps:all": "npm run deps:screenshot && npm run deps:graph && npm run deps:github && npm run deps:server && npm run deps:client",
+    "deps:github": "node tools/github.js",
+    "deps:graph": "npx depcruise . --include-only \"^src|^app\" --output-type dot | dot -T svg | depcruise-wrap-stream-in-html > tools/index.html",
+    "deps:screenshot": "npx depcruise . --include-only \"^src|^app\" --output-type dot | dot -T svg > assets/deps.svg",
+    "deps:server": "npx depcruise src --include-only \"^src\/server\" --output-type dot | dot -T svg | depcruise-wrap-stream-in-html > tools/server-dependency-graph.html",
+    "deps:client": "npx depcruise src --include-only \"^src\/client\" --output-type dot | dot -T svg | depcruise-wrap-stream-in-html > tools/client-dependency-graph.html"
   },
   "dependencies": {
     "@apollo/client": "^3.11.10",

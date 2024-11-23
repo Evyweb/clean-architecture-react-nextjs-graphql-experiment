@@ -1,14 +1,21 @@
-import {useMutation} from "@apollo/client";
+import {GetCharactersDTO, GraphQLCharacterRepository} from "@/src/client/infrastructure/GraphQLCharacterRepository";
+import {useMutation, useSuspenseQuery} from "@apollo/client";
 import {gql} from "graphql-tag";
-import {CharacterToCreateDTO} from "@/src/client/application/ports/ICharacterRepository";
 
 let tempIdCounter = 0;
 
-export interface CreateCharacterMutation {
-    createCharacterMutation: (mutations: { variables: CharacterToCreateDTO }) => Promise<unknown>;
-}
+const GET_CHARACTERS = `
+    query {
+        characters {
+            id
+            name
+            species
+            homeworld
+        }
+    }
+`;
 
-export const useCreateCharacterMutation = (): CreateCharacterMutation => {
+export const useGraphQLCharacterRepository = () => {
     const [createCharacterMutation] = useMutation(
         gql`
             mutation CreateCharacter($name: String!, $species: String!, $homeworld: String!) {
@@ -53,7 +60,10 @@ export const useCreateCharacterMutation = (): CreateCharacterMutation => {
         }
     );
 
-    return {
-        createCharacterMutation
-    };
-};
+    const {data} = useSuspenseQuery<GetCharactersDTO>(gql`${GET_CHARACTERS}`);
+
+    return GraphQLCharacterRepository(
+        createCharacterMutation,
+        data
+    );
+}

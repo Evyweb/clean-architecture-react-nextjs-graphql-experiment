@@ -224,9 +224,6 @@ module.exports = {
            dependency-cruiser falls back to a built-in one.
         */
         theme: {
-          graph: {
-            splines: 'ortho',
-          },
           modules: [
             {
               criteria: { source: '^src/client/domain' },
