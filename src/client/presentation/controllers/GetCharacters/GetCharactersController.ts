@@ -2,11 +2,15 @@ import {GetCharactersViewModel} from "@/src/client/presentation/viewModels/GetCh
 import {GetCharactersPresenter} from "@/src/client/presentation/presenters/GetCharactersPresenter";
 import {IGetCharactersUseCase} from "@/src/client/application/ports/IGetCharactersUseCase";
 
+export interface IGetCharactersController {
+    getCharacters(): Promise<GetCharactersViewModel>;
+}
+
 export const GetCharactersController = (useCase: IGetCharactersUseCase) => {
     return {
-        getCharacters(): GetCharactersViewModel {
+        async getCharacters(): Promise<GetCharactersViewModel> {
             const presenter = GetCharactersPresenter();
-            useCase.execute(presenter);
+            await useCase.execute(presenter);
             return presenter.getViewModel();
         }
     };

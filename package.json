@@ -11,16 +11,15 @@
     "deps:github": "node tools/github.js",
     "deps:graph": "npx depcruise . --include-only \"^src|^app\" --output-type dot | dot -T svg | depcruise-wrap-stream-in-html > tools/index.html",
     "deps:screenshot": "npx depcruise . --include-only \"^src|^app\" --output-type dot | dot -T svg > assets/deps.svg",
-    "deps:server": "npx depcruise src --include-only \"^src\/server\" --output-type dot | dot -T svg | depcruise-wrap-stream-in-html > tools/server-dependency-graph.html",
-    "deps:client": "npx depcruise src --include-only \"^src\/client\" --output-type dot | dot -T svg | depcruise-wrap-stream-in-html > tools/client-dependency-graph.html"
+    "deps:server": "npx depcruise src --include-only \"^src/server\" --output-type dot | dot -T svg | depcruise-wrap-stream-in-html > tools/server-dependency-graph.html",
+    "deps:client": "npx depcruise src --include-only \"^src/client\" --output-type dot | dot -T svg | depcruise-wrap-stream-in-html > tools/client-dependency-graph.html"
   },
   "dependencies": {
-    "@apollo/client": "^3.11.10",
-    "@apollo/experimental-nextjs-app-support": "^0.11.6",
-    "@apollo/server": "^4.11.2",
     "@as-integrations/next": "^3.2.0",
     "@evyweb/ioctopus": "^1.0.0",
     "@formkit/auto-animate": "^0.8.2",
+    "@tanstack/react-query": "^5.61.3",
+    "@tanstack/react-query-devtools": "^5.61.3",
     "graphql": "^16.9.0",
     "next": "15.0.3",
     "react": "19.0.0-rc-66855b96-20241106",

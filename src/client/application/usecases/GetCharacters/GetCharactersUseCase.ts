@@ -7,8 +7,8 @@ import {IGetCharactersUseCase} from "@/src/client/application/ports/IGetCharacte
 
 export const GetCharactersUseCase = (repository: ICharacterRepository): IGetCharactersUseCase => {
     return {
-        execute: (presenter: IGetCharactersPresenter): void => {
-            const characters = repository.getAll();
+        execute: async (presenter: IGetCharactersPresenter): Promise<void> => {
+            const characters = await repository.getAll();
             const response: GetCharactersUseCaseResponse = {
                 characters: characters.map(character => ({
                     id: character.id,

@@ -1,11 +1,10 @@
 'use client';
 
 import {FormEvent, useState} from 'react';
-import {useDependency} from "@/app/_DependencyInjection/useDependency";
+import {useCreateCharacterController} from "@/app/_hooks/useCreateCharacterController";
 
 const CreateCharacterForm = () => {
-    const repository = useDependency('useCharacterRepository');
-    const createCharacterController = useDependency('useCreateCharacterController', repository);
+    const {createCharacter} = useCreateCharacterController();
 
     const [name, setName] = useState('');
     const [species, setSpecies] = useState('');
@@ -13,7 +12,7 @@ const CreateCharacterForm = () => {
 
     const handleSubmit = async (e: FormEvent) => {
         e.preventDefault();
-        await createCharacterController.createCharacter({name, species, homeworld});
+        createCharacter({name, species, homeworld});
         setName('');
         setSpecies('');
         setHomeworld('');

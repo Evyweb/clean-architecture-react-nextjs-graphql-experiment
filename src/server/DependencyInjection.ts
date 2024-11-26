@@ -15,6 +15,10 @@ import {
     GetCharactersController,
     IGetCharactersController
 } from "@/src/server/presentation/controllers/GetCharactersController";
+import {
+    ILoadCharactersController,
+    LoadCharactersController
+} from "@/src/server/presentation/controllers/LoadCharactersController";
 
 const DI_SYMBOLS: InjectionTokens = {
     CHARACTER_REPOSITORY: Symbol('CHARACTER_REPOSITORY'),
@@ -23,6 +27,7 @@ const DI_SYMBOLS: InjectionTokens = {
     CREATE_CHARACTER_USE_CASE: Symbol('CREATE_CHARACTER_USE_CASE'),
     CREATE_CHARACTER_CONTROLLER: Symbol('CREATE_CHARACTER_CONTROLLER'),
     GET_CHARACTERS_CONTROLLER: Symbol('GET_CHARACTERS_CONTROLLER'),
+    LOAD_CHARACTERS_CONTROLLER: Symbol('LOAD_CHARACTERS_CONTROLLER'),
 }
 
 type DI_RETURN_TYPES = {
@@ -32,6 +37,7 @@ type DI_RETURN_TYPES = {
     CREATE_CHARACTER_USE_CASE: ICreateCharacterUseCase,
     CREATE_CHARACTER_CONTROLLER: ICreateCharacterController,
     GET_CHARACTERS_CONTROLLER: IGetCharactersController,
+    LOAD_CHARACTERS_CONTROLLER: ILoadCharactersController
 }
 
 const container = createContainer();
@@ -49,6 +55,9 @@ container.bind(DI_SYMBOLS.CREATE_CHARACTER_CONTROLLER).toHigherOrderFunction(Cre
     createCharacterUseCase: DI_SYMBOLS.CREATE_CHARACTER_USE_CASE
 });
 container.bind(DI_SYMBOLS.GET_CHARACTERS_CONTROLLER).toHigherOrderFunction(GetCharactersController, {
+    getCharactersUseCase: DI_SYMBOLS.GET_CHARACTERS_USE_CASE
+});
+container.bind(DI_SYMBOLS.LOAD_CHARACTERS_CONTROLLER).toHigherOrderFunction(LoadCharactersController, {
     getCharactersUseCase: DI_SYMBOLS.GET_CHARACTERS_USE_CASE
 });
 

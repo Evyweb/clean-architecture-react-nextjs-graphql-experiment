@@ -1,7 +1,5 @@
+import {CharacterViewModel} from "@/src/server/presentation/viewModels/CharacterViewModel";
+
 export interface GetCharactersViewModel {
-    characters: {
-        name: string;
-        species: string;
-        homeworld: string;
-    }[];
+    characters: CharacterViewModel[];
 }

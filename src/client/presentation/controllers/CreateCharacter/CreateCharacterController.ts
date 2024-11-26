@@ -9,7 +9,7 @@ export interface CreateCharacterControllerRequest {
     homeworld: string;
 }
 
-interface ICreateCharacterController {
+export interface ICreateCharacterController {
     createCharacter(request: CreateCharacterControllerRequest): Promise<void>;
 }
 

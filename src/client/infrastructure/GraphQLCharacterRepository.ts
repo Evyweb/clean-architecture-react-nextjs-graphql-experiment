@@ -1,32 +1,61 @@
-import {CharacterToCreateDTO, ICharacterRepository} from "@/src/client/application/ports/ICharacterRepository";
 import {Character} from "@/src/client/domain/Character";
+import {fetchGraphQL} from "@/src/client/infrastructure/fetchGraphQL";
+
+type CharacterDTO = {
+    id: string;
+    name: string;
+    species: string;
+    homeworld: string;
+};
 
 export interface GetCharactersDTO {
-    characters: {
-        id: string;
-        name: string;
-        homeworld: string;
-        species: string;
-    }[];
+    characters: CharacterDTO[];
 }
 
-export const GraphQLCharacterRepository = (
-    createCharacterMutation: (mutations: { variables: CharacterToCreateDTO }) => Promise<unknown>,
-    getCharactersQueryResult: GetCharactersDTO
-): ICharacterRepository => {
+export interface IGraphQLCharacterRepository {
+    getAll(): Promise<Character[]>;
+
+    createCharacter(characterToCreate: CharacterDTO): Promise<void>;
+}
+
+export const GraphQLCharacterRepository = (): IGraphQLCharacterRepository => {
+
+    const endpoint = "http://localhost:3000/api/graphql";
+
+    const GET_CHARACTERS = `
+        query {
+            characters {
+                id
+                name
+                species
+                homeworld
+            }
+        }
+    `;
+
+    const CREATE_CHARACTER = `
+        mutation CreateCharacter($name: String!, $species: String!, $homeworld: String!) {
+            createCharacter(name: $name, species: $species, homeworld: $homeworld) {
+                id
+                name
+                species
+                homeworld
+            }
+        }
+    `;
+
     return {
-        createCharacter: async (characterToCreate: CharacterToCreateDTO) => {
-            await createCharacterMutation({
-                variables: characterToCreate,
-            })
-        },
-        getAll: (): Character[] => {
-            return getCharactersQueryResult.characters.map((character) => ({
+        async getAll(): Promise<Character[]> {
+            const result = await fetchGraphQL<GetCharactersDTO>(endpoint, GET_CHARACTERS);
+            return result.characters.map((character: CharacterDTO) => ({
                 id: character.id,
                 name: character.name,
+                species: character.species,
                 homeworld: character.homeworld,
-                species: character.species
             }));
-        }
-    }
-}
+        },
+        async createCharacter(character: CharacterDTO): Promise<void> {
+            await fetchGraphQL(endpoint, CREATE_CHARACTER, character);
+        },
+    };
+};

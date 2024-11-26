@@ -9,5 +9,5 @@ export interface CharacterToCreateDTO {
 export interface ICharacterRepository {
     createCharacter: (characterToCreate: CharacterToCreateDTO) => Promise<void>;
 
-    getAll: () => Character[];
+    getAll: () => Promise<Character[]>;
 }

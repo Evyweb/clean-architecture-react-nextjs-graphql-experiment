@@ -1,7 +1,5 @@
+import {CharacterViewModel} from "@/src/client/presentation/viewModels/CharacterViewModel";
+
 export interface GetCharactersViewModel {
-    characters: {
-        id: string;
-        name: string;
-        description: string;
-    }[];
+    characters: CharacterViewModel[];
 }

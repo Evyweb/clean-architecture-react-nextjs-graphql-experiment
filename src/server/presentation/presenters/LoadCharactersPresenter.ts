@@ -1,11 +1,11 @@
 import {IGetCharactersPresenter} from "@/src/server/application/ports/IGetCharactersPresenter";
-import {GetCharactersViewModel} from "@/src/server/presentation/viewModels/GetCharactersViewModel";
 import {
     GetCharactersUseCaseResponse
 } from "@/src/server/application/usecases/GetCharacters/GetCharactersUseCaseResponse";
+import {LoadCharactersViewModel} from "@/src/server/presentation/viewModels/LoadCharactersViewModel";
 
-export const GetCharactersPresenter = (): IGetCharactersPresenter => {
-    const viewModel: GetCharactersViewModel = {
+export const LoadCharactersPresenter = (): IGetCharactersPresenter => {
+    const viewModel: LoadCharactersViewModel = {
         characters: []
     };
 
@@ -13,9 +13,8 @@ export const GetCharactersPresenter = (): IGetCharactersPresenter => {
         present({characters}: GetCharactersUseCaseResponse): void {
             viewModel.characters = characters.map(character => ({
                 id: character.id,
-                name: `[UPDATED VALUE] ${character.name}`,
-                species: character.species,
-                homeworld: character.homeworld
+                name: `[INITIAL] ${character.name}`,
+                description: `${character.species} from ${character.homeworld}`
             }));
         },
         getViewModel<T>(): T {
