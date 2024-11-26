@@ -25,12 +25,12 @@ export const useCreateCharacterController = (): IUseCreateCharacterController =>
                 const oldCharacters = old?.characters || [];
                 return {
                     characters: [
-                        ...oldCharacters,
                         {
                             id: `temp-${Date.now()}`,
                             name: `[OPTIMISTIC UPDATE] ${characterToCreate.name}`,
                             description: `${characterToCreate.species} from ${characterToCreate.homeworld}`,
                         },
+                        ...oldCharacters,
                     ],
                 };
             });

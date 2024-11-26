@@ -1,9 +1,10 @@
 'use client';
 
-import {FormEvent, useState} from 'react';
+import React, {FormEvent, useState} from 'react';
 import {useCreateCharacterController} from "@/app/_hooks/useCreateCharacterController";
+import {Flex, TextField, Button, Text} from '@radix-ui/themes';
 
-const CreateCharacterForm = () => {
+const CreateCharacterForm: React.FC = () => {
     const {createCharacter} = useCreateCharacterController();
 
     const [name, setName] = useState('');
@@ -19,36 +20,44 @@ const CreateCharacterForm = () => {
     };
 
     return (
-        <form onSubmit={handleSubmit} className="space-y-4">
-            <input
-                type="text"
-                placeholder="Name"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-                required
-                className="w-full p-2 border border-gray-300 rounded"
-            />
-            <input
-                type="text"
-                placeholder="Species"
-                value={species}
-                onChange={(e) => setSpecies(e.target.value)}
-                required
-                className="w-full p-2 border border-gray-300 rounded"
-            />
-            <input
-                type="text"
-                placeholder="Homeworld"
-                value={homeworld}
-                onChange={(e) => setHomeworld(e.target.value)}
-                required
-                className="w-full p-2 border border-gray-300 rounded"
-            />
-            <button type="submit" className="w-full p-2 bg-blue-500 text-white rounded hover:bg-blue-600">Add
-                character
-            </button>
+        <form onSubmit={handleSubmit}>
+            <Flex direction="row" gap="3">
+                <input
+                    className="Input"
+                    id="name"
+                    placeholder="Enter character name"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                    required
+                    autoComplete="off"
+                />
+                <input
+                    className="Input"
+                    id="species"
+                    placeholder="Enter character species"
+                    value={species}
+                    onChange={(e) => setSpecies(e.target.value)}
+                    required
+                    autoComplete="off"
+                />
+                <input
+                    className="Input"
+                    id="homeworld"
+                    placeholder="Enter character homeworld"
+                    value={homeworld}
+                    onChange={(e) => setHomeworld(e.target.value)}
+                    required
+                    autoComplete="off"
+                />
+                <Button type="submit" size="3" className="hover:cursor-pointer">
+                    <Text size="3" weight="bold">
+                        + Add character
+                    </Text>
+                </Button>
+            </Flex>
         </form>
     );
 };
 
 export default CreateCharacterForm;
+

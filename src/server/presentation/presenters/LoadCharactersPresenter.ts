@@ -11,7 +11,7 @@ export const LoadCharactersPresenter = (): IGetCharactersPresenter => {
 
     return {
         present({characters}: GetCharactersUseCaseResponse): void {
-            viewModel.characters = characters.map(character => ({
+            viewModel.characters = characters.reverse().map(character => ({
                 id: character.id,
                 name: `[INITIAL] ${character.name}`,
                 description: `${character.species} from ${character.homeworld}`

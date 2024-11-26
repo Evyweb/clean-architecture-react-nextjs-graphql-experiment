@@ -1,5 +1,4 @@
 import CharactersList from "@/app/_components/CharactersList";
-import {Suspense} from "react";
 import {inject} from "@/src/server/DependencyInjection";
 
 const CharactersListContainer = async () => {
@@ -7,9 +6,7 @@ const CharactersListContainer = async () => {
     const viewModel = await controller.loadCharacters();
 
     return (
-        <Suspense fallback={<>loading</>}>
-            <CharactersList initialData={viewModel}/>
-        </Suspense>
+        <CharactersList initialData={viewModel}/>
     );
 };
 

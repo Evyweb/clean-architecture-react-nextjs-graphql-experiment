@@ -11,7 +11,7 @@ export const GetCharactersPresenter = (): IGetCharactersPresenter => {
 
     return {
         present({characters}: GetCharactersUseCaseResponse): void {
-            viewModel.characters = characters.map(character => ({
+            viewModel.characters = characters.reverse().map(character => ({
                 id: character.id,
                 name: `[UPDATED VALUE] ${character.name}`,
                 species: character.species,

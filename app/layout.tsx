@@ -1,9 +1,12 @@
 import type {Metadata} from "next";
 import localFont from "next/font/local";
+import "@radix-ui/themes/styles.css";
 import "./globals.css";
 import {DependencyProvider} from "@/app/_providers/DependencyProvider";
 import {ReactNode} from "react";
 import {ReactQueryClientProvider} from "@/app/_providers/ReactQueryClientProvider";
+import {Container, Theme} from "@radix-ui/themes";
+import Background from "@/app/_components/Background";
 
 const geistSans = localFont({
     src: "./fonts/GeistVF.woff",
@@ -24,12 +27,16 @@ export const metadata: Metadata = {
 export default function RootLayout({children}: Readonly<{ children: ReactNode }>) {
     return (
         <html lang="en">
-        <body
-            className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-        >
+        <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <DependencyProvider>
             <ReactQueryClientProvider>
-                {children}
+                <Theme appearance="dark" accentColor="iris" grayColor="slate" radius="large">
+                    <Background/>
+
+                    <Container className="pt-4">
+                        {children}
+                    </Container>
+                </Theme>
             </ReactQueryClientProvider>
         </DependencyProvider>
         </body>

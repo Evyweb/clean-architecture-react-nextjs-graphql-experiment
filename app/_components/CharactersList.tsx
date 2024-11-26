@@ -3,32 +3,52 @@
 import {useAutoAnimate} from '@formkit/auto-animate/react';
 import {useGetCharactersController} from "@/app/_hooks/useGetCharactersController";
 import {GetCharactersViewModel} from "@/src/client/presentation/viewModels/GetCharactersViewModel";
+import {Avatar, Box, Card, Flex, Text} from '@radix-ui/themes';
+import {PersonIcon} from '@radix-ui/react-icons';
 
 interface CharactersListProps {
     initialData: GetCharactersViewModel
 }
 
-const CharactersList = ({initialData}: CharactersListProps) => {
-    const {data, isLoading, isError} = useGetCharactersController(initialData);
+const CharactersList = ({ initialData }: CharactersListProps) => {
+    const { data, isLoading, isError } = useGetCharactersController(initialData);
     const [animationParent] = useAutoAnimate();
 
-    if (isLoading) return <p>Loading...</p>;
-    if (isError) return <p>Error fetching characters</p>;
+    if (isLoading) return <Text size="3">Loading...</Text>;
+    if (isError) return <Text size="3" color="red">Error fetching characters</Text>;
 
     return (
-        <ul className="space-y-2" ref={animationParent}>
+        <Flex direction="column" gap="2" ref={animationParent}>
             {data?.characters.map((character: {
                 id: string;
                 name: string;
                 description: string;
             }) => (
-                <li key={character.id} className="p-4 bg-white rounded shadow flex items-center justify-between">
-                    <strong className="block text-lg font-semibold">{character.name}</strong>
-                    <span className="block text-gray-700">{character.description}</span>
-                </li>
+                <Card
+                    key={character.id}
+                    size="1">
+                    <Flex gap="3" align="center">
+                        <Avatar
+                            size="3"
+                            fallback={<PersonIcon />}
+                            style={{
+                                backgroundColor: 'var(--color-background-translucent)',
+                            }}
+                        />
+                        <Box>
+                            <Text as="div" size="3" weight="bold">
+                                {character.name}
+                            </Text>
+                            <Text as="div" size="2" color="gray">
+                                {character.description}
+                            </Text>
+                        </Box>
+                    </Flex>
+                </Card>
             ))}
-        </ul>
+        </Flex>
     );
 };
 
 export default CharactersList;
+

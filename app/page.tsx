@@ -1,14 +1,28 @@
 import CharactersListContainer from "@/app/_components/CharactersListContainer";
 import CreateCharacterForm from "@/app/_components/CreateCharacterForm";
+import {Card, Container, Flex, Heading} from "@radix-ui/themes";
 
 const CharactersPage = () => {
     return (
-        <div className="max-w-2xl mx-auto p-5 bg-gray-100 text-gray-900 rounded-lg shadow-md mt-6">
-            <h1 className="text-center text-3xl font-bold mb-6">Star Wars characters</h1>
-            <CharactersListContainer />
-            <hr className="my-4 border-t border-gray-300"/>
-            <CreateCharacterForm />
-        </div>
+        <Container size="2" py="6">
+            <Flex direction="column" gap="6">
+                <Flex direction="column" gap="2">
+                    <Heading size="8" align="center" mb="4">Star Wars Characters</Heading>
+                    <Heading size="3" align="center" mb="2">Clean Architecture is applied on both React (front-end) and NextJS (back-end).</Heading>
+                    <Heading size="3" align="center" mb="4">React Query is used for data fetching using optimistic updates and caching.</Heading>
+                </Flex>
+                <Flex
+                    direction="column"
+                    gap="4">
+                    <Card>
+                        <CreateCharacterForm/>
+                    </Card>
+                    <Card>
+                        <CharactersListContainer/>
+                    </Card>
+                </Flex>
+            </Flex>
+        </Container>
     );
 };
 
