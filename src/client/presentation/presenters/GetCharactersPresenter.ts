@@ -15,7 +15,8 @@ export const GetCharactersPresenter = (): IGetCharactersPresenter => {
             viewModel.characters = characters.map(character => ({
                 id: character.id,
                 name: character.name,
-                description: `${character.species} from ${character.homeworld}`
+                description: `${character.species} from ${character.homeworld}`,
+                loadedFrom: 'Data refreshed after the mutation'
             }));
         },
         getViewModel<T>(): T {

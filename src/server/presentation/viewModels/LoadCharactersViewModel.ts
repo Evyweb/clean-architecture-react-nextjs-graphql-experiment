@@ -3,5 +3,6 @@ export interface LoadCharactersViewModel {
         id: string;
         name: string;
         description: string;
+        loadedFrom: string;
     }[]
 }

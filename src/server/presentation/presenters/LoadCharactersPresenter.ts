@@ -13,8 +13,9 @@ export const LoadCharactersPresenter = (): IGetCharactersPresenter => {
         present({characters}: GetCharactersUseCaseResponse): void {
             viewModel.characters = characters.reverse().map(character => ({
                 id: character.id,
-                name: `[INITIAL] ${character.name}`,
-                description: `${character.species} from ${character.homeworld}`
+                name: character.name,
+                description: `${character.species} from ${character.homeworld}`,
+                loadedFrom: 'Data provided by the Server Component '
             }));
         },
         getViewModel<T>(): T {

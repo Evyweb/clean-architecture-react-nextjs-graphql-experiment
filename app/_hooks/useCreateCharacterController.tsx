@@ -27,8 +27,9 @@ export const useCreateCharacterController = (): IUseCreateCharacterController =>
                     characters: [
                         {
                             id: `temp-${Date.now()}`,
-                            name: `[OPTIMISTIC UPDATE] ${characterToCreate.name}`,
+                            name: characterToCreate.name,
                             description: `${characterToCreate.species} from ${characterToCreate.homeworld}`,
+                            loadedFrom: 'Temporary data used for optimistic UI',
                         },
                         ...oldCharacters,
                     ],
