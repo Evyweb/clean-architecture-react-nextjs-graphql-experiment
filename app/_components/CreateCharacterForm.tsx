@@ -10,13 +10,16 @@ const CreateCharacterForm: React.FC = () => {
     const [name, setName] = useState('');
     const [species, setSpecies] = useState('');
     const [homeworld, setHomeworld] = useState('');
+    const [isLoading, setIsLoading] = useState(false);
 
     const handleSubmit = async (e: FormEvent) => {
+        setIsLoading(true);
         e.preventDefault();
         createCharacter({name, species, homeworld});
         setName('');
         setSpecies('');
         setHomeworld('');
+        setIsLoading(false);
     };
 
     return (
@@ -49,10 +52,8 @@ const CreateCharacterForm: React.FC = () => {
                     required
                     autoComplete="off"
                 />
-                <Button type="submit" size="3" className="hover:cursor-pointer">
-                    <Text size="3" weight="bold">
-                        + Add character
-                    </Text>
+                <Button type="submit" size="3" className="hover:cursor-pointer" loading={isLoading}>
+                    <Text size="3" weight="bold">+ Add character</Text>
                 </Button>
             </Flex>
         </form>

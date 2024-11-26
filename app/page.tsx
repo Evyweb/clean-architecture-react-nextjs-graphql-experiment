@@ -1,17 +1,23 @@
 import CharactersListContainer from "@/app/_components/CharactersListContainer";
 import CreateCharacterForm from "@/app/_components/CreateCharacterForm";
-import {Card, Container, Flex, Heading, ScrollArea} from "@radix-ui/themes";
+import {Callout, Card, Container, Flex, Heading, ScrollArea} from "@radix-ui/themes";
+import {InfoCircledIcon} from "@radix-ui/react-icons";
 
 const CharactersPage = () => {
     return (
         <Container size="2" py="6">
             <Flex direction="column" gap="6">
                 <Flex direction="column" gap="2">
-                    <Heading size="8" align="center" mb="4">Star Wars Characters</Heading>
-                    <Heading size="3" align="center" mb="2">Clean Architecture is applied on both React (front-end) and
-                        NextJS (back-end).</Heading>
-                    <Heading size="3" align="center" mb="4">Tanstack Query is used for data fetching using optimistic
-                        updates and caching.</Heading>
+                    <Heading size="8" align="center" mb="4">Star Wars Application</Heading>
+
+                    <Callout.Root>
+                        <Callout.Icon>
+                            <InfoCircledIcon/>
+                        </Callout.Icon>
+                        <Callout.Text>
+                            <b>Clean Architecture</b> is applied on both <b>React (front-end)</b> and <b>NextJS (back-end)</b>.
+                        </Callout.Text>
+                    </Callout.Root>
                 </Flex>
                 <Flex
                     direction="column"
