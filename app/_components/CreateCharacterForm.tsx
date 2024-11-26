@@ -2,7 +2,7 @@
 
 import React, {FormEvent, useState} from 'react';
 import {useCreateCharacterController} from "@/app/_hooks/useCreateCharacterController";
-import {Flex, TextField, Button, Text} from '@radix-ui/themes';
+import {Button, Flex, Text} from '@radix-ui/themes';
 
 const CreateCharacterForm: React.FC = () => {
     const {createCharacter} = useCreateCharacterController();
