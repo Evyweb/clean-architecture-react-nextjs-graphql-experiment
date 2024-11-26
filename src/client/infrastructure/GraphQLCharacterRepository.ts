@@ -1,5 +1,7 @@
 import {Character} from "@/src/client/domain/Character";
 import {fetchGraphQL} from "@/src/client/infrastructure/fetchGraphQL";
+import {CharacterToCreateDTO, ICharacterRepository} from "@/src/client/application/ports/ICharacterRepository";
+import {CREATE_CHARACTER, GET_CHARACTERS} from "@/src/client/infrastructure/queries";
 
 type CharacterDTO = {
     id: string;
@@ -12,37 +14,9 @@ export interface GetCharactersDTO {
     characters: CharacterDTO[];
 }
 
-export interface IGraphQLCharacterRepository {
-    getAll(): Promise<Character[]>;
-
-    createCharacter(characterToCreate: CharacterDTO): Promise<void>;
-}
-
-export const GraphQLCharacterRepository = (): IGraphQLCharacterRepository => {
+export const GraphQLCharacterRepository = (): ICharacterRepository => {
 
     const endpoint = "http://localhost:3000/api/graphql";
-
-    const GET_CHARACTERS = `
-        query {
-            characters {
-                id
-                name
-                species
-                homeworld
-            }
-        }
-    `;
-
-    const CREATE_CHARACTER = `
-        mutation CreateCharacter($name: String!, $species: String!, $homeworld: String!) {
-            createCharacter(name: $name, species: $species, homeworld: $homeworld) {
-                id
-                name
-                species
-                homeworld
-            }
-        }
-    `;
 
     return {
         async getAll(): Promise<Character[]> {
@@ -54,7 +28,7 @@ export const GraphQLCharacterRepository = (): IGraphQLCharacterRepository => {
                 homeworld: character.homeworld,
             }));
         },
-        async createCharacter(character: CharacterDTO): Promise<void> {
+        async createCharacter(character: CharacterToCreateDTO): Promise<void> {
             await fetchGraphQL(endpoint, CREATE_CHARACTER, character);
         },
     };

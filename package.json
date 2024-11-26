@@ -11,8 +11,8 @@
     "deps:github": "node tools/github.js",
     "deps:graph": "npx depcruise . --include-only \"^src|^app\" --output-type dot | dot -T svg | depcruise-wrap-stream-in-html > tools/index.html",
     "deps:screenshot": "npx depcruise . --include-only \"^src|^app\" --output-type dot | dot -T svg > assets/deps.svg",
-    "deps:server": "npx depcruise src --include-only \"^src/server\" --output-type dot | dot -T svg | depcruise-wrap-stream-in-html > tools/server-dependency-graph.html",
-    "deps:client": "npx depcruise src --include-only \"^src/client\" --output-type dot | dot -T svg | depcruise-wrap-stream-in-html > tools/client-dependency-graph.html"
+    "deps:server": "npx depcruise . --include-only \"^src/server|^app\" --output-type dot | dot -T svg | depcruise-wrap-stream-in-html > tools/server-dependency-graph.html",
+    "deps:client": "npx depcruise . --include-only \"^src/client|^app\" --output-type dot | dot -T svg | depcruise-wrap-stream-in-html > tools/client-dependency-graph.html"
   },
   "dependencies": {
     "@as-integrations/next": "^3.2.0",
