@@ -1,5 +1,5 @@
 export const GET_CHARACTERS = `
-    query {
+    query GetCharacters {
         characters {
             id
             name

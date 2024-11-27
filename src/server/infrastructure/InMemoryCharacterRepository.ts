@@ -1,12 +1,8 @@
 import {ICharacterRepository} from "@/src/server/application/ports/ICharacterRepository";
 import {Character} from "@/src/server/domain/Character";
 
-export const InMemoryCharacterRepository = (): ICharacterRepository => {
-    const characters: Character[] = [
-        {id: '1', name: 'Luke Skywalker', species: 'Human', homeworld: 'Tatooine'},
-        {id: '2', name: 'Darth Vader', species: 'Human', homeworld: 'Tatooine'},
-        {id: '3', name: 'Yoda', species: 'Yoda', homeworld: 'Dagobah'},
-    ];
+export const InMemoryCharacterRepository = (existingCharacters: Character[]): ICharacterRepository => {
+    const characters: Character[] = existingCharacters;
 
     return {
         async getAll(): Promise<Character[]> {
@@ -14,6 +10,9 @@ export const InMemoryCharacterRepository = (): ICharacterRepository => {
         },
         async add(character: Character): Promise<void> {
             characters.push(character);
+        },
+        clear(): void {
+            characters.length = 0;
         }
     };
 }

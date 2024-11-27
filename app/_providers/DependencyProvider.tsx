@@ -13,7 +13,9 @@ interface DependencyProviderProps {
 
 export const DependencyProvider: FC<DependencyProviderProps> = ({customContainer, children}) => {
     const resolvedContainer = useMemo(() => {
-        if (customContainer) return customContainer;
+        if (customContainer) {
+            return customContainer;
+        }
         return container;
     }, [customContainer]);
 

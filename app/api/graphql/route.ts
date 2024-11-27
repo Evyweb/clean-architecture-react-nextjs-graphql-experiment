@@ -3,9 +3,8 @@ import {graphql} from "graphql";
 import {schema} from "@/app/api/graphql/schema";
 import {revalidatePath} from "next/cache";
 
-const characterController = inject('GRAPHQL_CHARACTER_CONTROLLER');
-
 async function graphqlHandler(request: Request, shouldRevalidate: boolean = false): Promise<Response> {
+    const characterController = inject('GRAPHQL_CHARACTER_CONTROLLER');
     const {query, variables} = await request.json();
 
     const result = await graphql({

@@ -23,8 +23,10 @@ import {
     GraphQLCharacterController,
     IGraphQLCharacterController
 } from "@/src/server/presentation/controllers/GraphQLCharacterController";
+import {Character} from "@/src/server/domain/Character";
 
-const DI_SYMBOLS: InjectionTokens = {
+export const DI_SYMBOLS: InjectionTokens = {
+    EXISTING_CHARACTERS: Symbol('EXISTING_CHARACTERS'),
     CHARACTER_REPOSITORY: Symbol('CHARACTER_REPOSITORY'),
     GET_CHARACTERS_USE_CASE: Symbol('GET_CHARACTERS_USE_CASE'),
     IDENTITY_PROVIDER: Symbol('IDENTITY_PROVIDER'),
@@ -36,6 +38,7 @@ const DI_SYMBOLS: InjectionTokens = {
 }
 
 type DI_RETURN_TYPES = {
+    EXISTING_CHARACTERS: Character[],
     CHARACTER_REPOSITORY: ICharacterRepository,
     GET_CHARACTERS_USE_CASE: IGetCharactersUseCase,
     IDENTITY_PROVIDER: IIdentityProvider,
@@ -48,7 +51,13 @@ type DI_RETURN_TYPES = {
 
 const container = createContainer();
 
-container.bind(DI_SYMBOLS.CHARACTER_REPOSITORY).toHigherOrderFunction(InMemoryCharacterRepository);
+const existingCharacters: Character[] = [
+    {id: '1', name: 'Luke Skywalker', species: 'Human', homeworld: 'Tatooine'},
+    {id: '2', name: 'Darth Vader', species: 'Human', homeworld: 'Tatooine'},
+    {id: '3', name: 'Yoda', species: 'Yoda', homeworld: 'Dagobah'},
+];
+container.bind(DI_SYMBOLS.EXISTING_CHARACTERS).toValue(existingCharacters);
+container.bind(DI_SYMBOLS.CHARACTER_REPOSITORY).toHigherOrderFunction(InMemoryCharacterRepository, [DI_SYMBOLS.EXISTING_CHARACTERS]);
 container.bind(DI_SYMBOLS.GET_CHARACTERS_USE_CASE).toHigherOrderFunction(GetCharactersUseCase, {
     characterRepository: DI_SYMBOLS.CHARACTER_REPOSITORY
 });
@@ -76,3 +85,5 @@ export function inject<K extends keyof typeof DI_SYMBOLS>(
 ): K extends keyof DI_RETURN_TYPES ? DI_RETURN_TYPES[K] : never {
     return container.get(DI_SYMBOLS[symbol]);
 }
+
+export {container};
