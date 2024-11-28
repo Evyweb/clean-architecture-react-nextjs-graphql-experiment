@@ -1,22 +1,15 @@
-import {useMutation, useQueryClient} from "@tanstack/react-query";
+import {FormEvent, useState} from "react";
+import {CreateCharacterFormViewModel} from "@/src/client/presentation/viewModels/CreateCharacterFormViewModel";
 import {useDependency} from "@/app/_hooks/useDependency";
+import {useMutation, useQueryClient} from "@tanstack/react-query";
 import {CharacterViewModel} from "@/src/client/presentation/viewModels/CharacterViewModel";
+import {CharacterToCreateDTO} from "@/src/client/application/ports/ICharacterRepository";
 
-interface CharacterToCreateDTO {
-    name: string;
-    species: string;
-    homeworld: string;
-}
-
-interface IUseCreateCharacterController {
-    createCharacter: (characterToCreate: CharacterToCreateDTO) => void;
-}
-
-export const useCreateCharacterController = (): IUseCreateCharacterController => {
+export const useCreateCharacterForm = (viewModel: CreateCharacterFormViewModel) => {
     const controller = useDependency('CREATE_CHARACTER_CONTROLLER');
     const queryClient = useQueryClient();
 
-    const mutationResult = useMutation({
+    const {mutate: createCharacter} = useMutation({
         mutationFn: (characterToCreate: CharacterToCreateDTO) => controller.createCharacter(characterToCreate),
         onMutate: async (characterToCreate) => {
             const previousCharacters = queryClient.getQueryData<{ characters: CharacterViewModel[] }>(['characters']);
@@ -48,7 +41,29 @@ export const useCreateCharacterController = (): IUseCreateCharacterController =>
         },
     });
 
-    return {
-        createCharacter: mutationResult.mutate,
+    const [name, setName] = useState(viewModel.name.initialValue);
+    const [species, setSpecies] = useState(viewModel.species.initialValue);
+    const [homeworld, setHomeworld] = useState(viewModel.homeworld.initialValue);
+    const [isLoading, setIsLoading] = useState(viewModel.isLoading.initialValue);
+
+    const handleSubmit = async (e: FormEvent) => {
+        setIsLoading(true);
+        e.preventDefault();
+        createCharacter({name, species, homeworld});
+        setName('');
+        setSpecies('');
+        setHomeworld('');
+        setIsLoading(false);
     };
-};
+
+    return {
+        name,
+        species,
+        homeworld,
+        isLoading,
+        setName,
+        setSpecies,
+        setHomeworld,
+        handleSubmit
+    };
+}

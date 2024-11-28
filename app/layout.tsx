@@ -6,7 +6,7 @@ import {DependencyProvider} from "@/app/_providers/DependencyProvider";
 import {ReactNode} from "react";
 import {ReactQueryClientProvider} from "@/app/_providers/ReactQueryClientProvider";
 import {Container, Theme} from "@radix-ui/themes";
-import Background from "@/app/_components/Background";
+import Background from "@/app/_components/Background/Background";
 
 const geistSans = localFont({
     src: "./fonts/GeistVF.woff",

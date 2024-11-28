@@ -1,7 +1,7 @@
-import CharactersListContainer from "@/app/_components/CharactersListContainer";
-import CreateCharacterForm from "@/app/_components/CreateCharacterForm";
+import CharactersListContainer from "@/app/_features/GetCharacters/CharactersListContainer";
 import {Callout, Card, Container, Flex, Heading, ScrollArea} from "@radix-ui/themes";
 import {InfoCircledIcon} from "@radix-ui/react-icons";
+import CreateCharacterFormContainer from "@/app/_features/CreateCharacter/CreateCharacterFormContainer";
 
 const CharactersPage = () => {
     return (
@@ -19,11 +19,9 @@ const CharactersPage = () => {
                         </Callout.Text>
                     </Callout.Root>
                 </Flex>
-                <Flex
-                    direction="column"
-                    gap="4">
+                <Flex direction="column" gap="4">
                     <Card>
-                        <CreateCharacterForm/>
+                        <CreateCharacterFormContainer/>
                     </Card>
 
                     <ScrollArea type="hover" scrollbars="vertical" style={{height: 400}}>

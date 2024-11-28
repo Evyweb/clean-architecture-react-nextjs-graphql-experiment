@@ -1,4 +1,4 @@
-import CharactersList from "@/app/_components/CharactersList";
+import CharactersList from "@/app/_features/GetCharacters/CharactersList";
 import {inject} from "@/src/server/DependencyInjection";
 
 const CharactersListContainer = async () => {
@@ -6,7 +6,7 @@ const CharactersListContainer = async () => {
     const viewModel = await controller.loadCharacters();
 
     return (
-        <CharactersList initialData={viewModel}/>
+        <CharactersList viewModel={viewModel}/>
     );
 };
 

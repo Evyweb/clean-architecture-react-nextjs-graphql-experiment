@@ -1,4 +1,4 @@
-export interface LoadCharactersViewModel {
+export interface CharactersListViewModel {
     loadingMessage: string;
     errorMessage: string;
     initialData: {

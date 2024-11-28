@@ -4,14 +4,18 @@ import {
 } from "@/src/server/application/usecases/GetCharacters/GetCharactersUseCaseResponse";
 import {LoadCharactersViewModel} from "@/src/server/presentation/viewModels/LoadCharactersViewModel";
 
-export const LoadCharactersPresenter = (): IGetCharactersPresenter => {
+export const CharactersListPresenter = (): IGetCharactersPresenter => {
     const viewModel: LoadCharactersViewModel = {
-        characters: []
+        loadingMessage: 'Loading characters...',
+        errorMessage: 'An error occurred while loading characters',
+        initialData: {
+            characters: []
+        }
     };
 
     return {
         present({characters}: GetCharactersUseCaseResponse): void {
-            viewModel.characters = characters.reverse().map(character => ({
+            viewModel.initialData.characters = characters.reverse().map(character => ({
                 id: character.id,
                 name: character.name,
                 description: `${character.species} from ${character.homeworld}`,

@@ -1,13 +1,13 @@
 import {render} from "@testing-library/react";
-import CharactersList from "@/app/_components/CharactersList";
+import CharactersList from "@/app/_features/GetCharacters/CharactersList";
 import {DependencyProvider} from "@/app/_providers/DependencyProvider";
 import {ReactQueryClientProvider} from "@/app/_providers/ReactQueryClientProvider";
-import {GetCharactersViewModel} from "@/src/client/presentation/viewModels/GetCharactersViewModel";
 import {Container, createContainer} from "@evyweb/ioctopus";
 import {GetCharactersUseCase} from "@/src/client/application/usecases/GetCharacters/GetCharactersUseCase";
 import {GetCharactersController} from "@/src/client/presentation/controllers/GetCharacters/GetCharactersController";
 import {DI_SYMBOLS} from "@/src/client/DependencyInjection";
 import {InMemoryCharacterRepository} from "@/src/client/specs/utils/fakes/InMemoryCharacterRepository";
+import {CharactersListViewModel} from "@/src/client/presentation/viewModels/CharactersListViewModel";
 
 describe('CharactersList', () => {
     let container: Container;
@@ -22,31 +22,35 @@ describe('CharactersList', () => {
     describe('When the characters list is displayed', () => {
         it('should have all initially given characters', async () => {
             // Arrange
-            const initialCharacters = {
-                characters: [
-                    {
-                        id: '1',
-                        name: 'Luke Skywalker',
-                        description: 'Human from Tatooine',
-                        loadedFrom: 'Luke Test data',
-                    },
-                    {
-                        id: '2',
-                        name: 'Leia Organa',
-                        description: 'Human from Alderaan',
-                        loadedFrom: 'Leia Test data',
-                    },
-                    {
-                        id: '3',
-                        name: 'Han Solo',
-                        description: 'Human from Corellia',
-                        loadedFrom: 'Han Test data',
-                    },
-                ]
+            const viewModel: CharactersListViewModel = {
+                loadingMessage: 'Loading characters...',
+                errorMessage: 'An error occurred while loading characters',
+                initialData: {
+                    characters: [
+                        {
+                            id: '1',
+                            name: 'Luke Skywalker',
+                            description: 'Human from Tatooine',
+                            loadedFrom: 'Luke Test data',
+                        },
+                        {
+                            id: '2',
+                            name: 'Leia Organa',
+                            description: 'Human from Alderaan',
+                            loadedFrom: 'Leia Test data',
+                        },
+                        {
+                            id: '3',
+                            name: 'Han Solo',
+                            description: 'Human from Corellia',
+                            loadedFrom: 'Han Test data',
+                        },
+                    ]
+                }
             };
 
             // Act
-            const {findByText} = renderCharacterList(initialCharacters, container);
+            const {findByText} = renderCharacterList(viewModel, container);
 
             // Assert
             expect(await findByText('Luke Skywalker')).toBeInTheDocument();
@@ -63,11 +67,11 @@ describe('CharactersList', () => {
         });
     });
 
-    function renderCharacterList(initialCharacters: GetCharactersViewModel, container: Container) {
+    function renderCharacterList(viewModel: CharactersListViewModel, container: Container) {
         return render(
             <DependencyProvider customContainer={container}>
                 <ReactQueryClientProvider>
-                    <CharactersList initialData={initialCharacters}/>
+                    <CharactersList viewModel={viewModel}/>
                 </ReactQueryClientProvider>
             </DependencyProvider>
         );

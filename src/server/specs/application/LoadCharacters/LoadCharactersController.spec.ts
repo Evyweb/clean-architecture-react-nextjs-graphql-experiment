@@ -26,26 +26,30 @@ describe('LoadCharactersController', () => {
 
         // Assert
         expect(viewModel).toEqual<LoadCharactersViewModel>({
-            characters: [
-                {
-                    description: "Yoda from Dagobah",
-                    id: "3",
-                    loadedFrom: "Data provided by the Server Component ",
-                    name: "Yoda",
-                },
-                {
-                    description: "Human from Tatooine",
-                    id: "2",
-                    loadedFrom: "Data provided by the Server Component ",
-                    name: "Darth Vader",
-                },
-                {
-                    description: "Human from Tatooine",
-                    id: "1",
-                    loadedFrom: "Data provided by the Server Component ",
-                    name: "Luke Skywalker",
-                },
-            ],
+            loadingMessage: "Loading characters...",
+            errorMessage: "An error occurred while loading characters",
+            initialData: {
+                characters: [
+                    {
+                        description: "Yoda from Dagobah",
+                        id: "3",
+                        loadedFrom: "Data provided by the Server Component ",
+                        name: "Yoda",
+                    },
+                    {
+                        description: "Human from Tatooine",
+                        id: "2",
+                        loadedFrom: "Data provided by the Server Component ",
+                        name: "Darth Vader",
+                    },
+                    {
+                        description: "Human from Tatooine",
+                        id: "1",
+                        loadedFrom: "Data provided by the Server Component ",
+                        name: "Luke Skywalker",
+                    },
+                ],
+            }
         });
     });
 });

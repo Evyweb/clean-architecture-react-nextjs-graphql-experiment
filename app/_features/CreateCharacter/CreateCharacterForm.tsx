@@ -1,26 +1,25 @@
 'use client';
 
-import React, {FormEvent, useState} from 'react';
-import {useCreateCharacterController} from "@/app/_hooks/useCreateCharacterController";
+import React from 'react';
 import {Button, Flex, Text} from '@radix-ui/themes';
+import {useCreateCharacterForm} from "@/app/_features/CreateCharacter/useCreateCharacterForm";
+import {CreateCharacterFormViewModel} from "@/src/client/presentation/viewModels/CreateCharacterFormViewModel";
 
-const CreateCharacterForm: React.FC = () => {
-    const {createCharacter} = useCreateCharacterController();
+interface CreateCharacterFormProps {
+    viewModel: CreateCharacterFormViewModel;
+}
 
-    const [name, setName] = useState('');
-    const [species, setSpecies] = useState('');
-    const [homeworld, setHomeworld] = useState('');
-    const [isLoading, setIsLoading] = useState(false);
-
-    const handleSubmit = async (e: FormEvent) => {
-        setIsLoading(true);
-        e.preventDefault();
-        createCharacter({name, species, homeworld});
-        setName('');
-        setSpecies('');
-        setHomeworld('');
-        setIsLoading(false);
-    };
+const CreateCharacterForm: React.FC<CreateCharacterFormProps> = ({viewModel}: CreateCharacterFormProps) => {
+    const {
+        name,
+        species,
+        homeworld,
+        isLoading,
+        setName,
+        setSpecies,
+        setHomeworld,
+        handleSubmit
+    } = useCreateCharacterForm(viewModel);
 
     return (
         <form onSubmit={handleSubmit}>
@@ -28,7 +27,7 @@ const CreateCharacterForm: React.FC = () => {
                 <input
                     className="Input"
                     id="name"
-                    placeholder="Enter character name"
+                    placeholder={viewModel.name.placeholder}
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                     required

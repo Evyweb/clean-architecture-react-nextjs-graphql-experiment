@@ -1,6 +1,6 @@
 import {IGetCharactersUseCase} from "@/src/server/application/ports/IGetCharactersUseCase";
 import {LoadCharactersViewModel} from "@/src/server/presentation/viewModels/LoadCharactersViewModel";
-import {LoadCharactersPresenter} from "@/src/server/presentation/presenters/LoadCharactersPresenter";
+import {CharactersListPresenter} from "@/src/server/presentation/presenters/CharactersListPresenter";
 
 export interface ILoadCharactersController {
     loadCharacters(): Promise<LoadCharactersViewModel>;
@@ -13,7 +13,7 @@ interface Dependencies {
 export const LoadCharactersController = ({getCharactersUseCase}: Dependencies): ILoadCharactersController => {
     return {
         async loadCharacters(): Promise<LoadCharactersViewModel> {
-            const presenter = LoadCharactersPresenter();
+            const presenter = CharactersListPresenter();
             await getCharactersUseCase.execute(presenter);
             return presenter.getViewModel();
         }
