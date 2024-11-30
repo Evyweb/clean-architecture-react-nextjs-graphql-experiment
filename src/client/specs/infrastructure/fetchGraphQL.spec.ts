@@ -104,4 +104,4 @@ describe('fetchGraphQL', () => {
             await expect(fetchGraphQL(endpoint, 'INVALID_QUERY')).rejects.toThrow('Invalid request');
         });
     });
-})
+});

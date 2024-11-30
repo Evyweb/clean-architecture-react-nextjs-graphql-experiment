@@ -13,8 +13,10 @@ import {
 import {ICharacterRepository} from "@/src/client/application/ports/ICharacterRepository";
 import {IGetCharactersUseCase} from "@/src/client/application/ports/IGetCharactersUseCase";
 import {ICreateCharacterUseCase} from "@/src/client/application/ports/ICreateCharacterUseCase";
+import {QueryClient} from "@tanstack/react-query";
 
 export const DI_SYMBOLS: InjectionTokens = {
+    QUERY_CLIENT: Symbol('QUERY_CLIENT'),
     CHARACTER_REPOSITORY: Symbol('CHARACTER_REPOSITORY'),
     GET_CHARACTERS_USE_CASE: Symbol('GET_CHARACTERS_USE_CASE'),
     CREATE_CHARACTER_USE_CASE: Symbol('CREATE_CHARACTER_USE_CASE'),
@@ -23,6 +25,7 @@ export const DI_SYMBOLS: InjectionTokens = {
 } as const;
 
 export type DI_RETURN_TYPES = {
+    QUERY_CLIENT: QueryClient,
     CHARACTER_REPOSITORY: ICharacterRepository,
     GET_CHARACTERS_USE_CASE: IGetCharactersUseCase,
     CREATE_CHARACTER_USE_CASE: ICreateCharacterUseCase,
@@ -31,6 +34,14 @@ export type DI_RETURN_TYPES = {
 }
 
 const container = createContainer();
+
+container.bind(DI_SYMBOLS.QUERY_CLIENT).toValue(new QueryClient({
+    defaultOptions: {
+        queries: {
+            staleTime: 60 * 1000,
+        },
+    },
+}));
 
 container.bind(DI_SYMBOLS.CHARACTER_REPOSITORY).toHigherOrderFunction(GraphQLCharacterRepository, []);
 container.bind(DI_SYMBOLS.GET_CHARACTERS_USE_CASE).toHigherOrderFunction(GetCharactersUseCase, [DI_SYMBOLS.CHARACTER_REPOSITORY]);
